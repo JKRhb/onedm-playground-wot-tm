@@ -1,0 +1,42 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-03-21"
+    },
+    "properties": {
+        "impactsensor_impactstatus": {
+            "sdf:jsonPointer": "#/sdfObject/impactsensor/sdfProperty/impactstatus",
+            "description": "The \"impactstatus\" Property indicates the impact as: \"true\" A physical impact is detected, \"false\" Normal status, an impact is not detected.",
+            "type": "boolean"
+        },
+        "impactsensor_impactlevel": {
+            "sdf:jsonPointer": "#/sdfObject/impactsensor/sdfProperty/impactlevel",
+            "description": "The \"impactlevel\" Property provides the level of impact. The unit is in \"G\" (G-force).",
+            "type": "number"
+        },
+        "impactsensor_impactdirectionhorizontal": {
+            "sdf:jsonPointer": "#/sdfObject/impactsensor/sdfProperty/impactdirectionhorizontal",
+            "description": "The \"impactdirectionhorizontal\" Property shows a horizontal direction where the impact comes from. The value is 0 to 360 degrees. 0 is the front of the sensor and clockwise increment.",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 360
+        },
+        "impactsensor_impactdirectionvertical": {
+            "sdf:jsonPointer": "#/sdfObject/impactsensor/sdfProperty/impactdirectionvertical",
+            "description": "The \"impactdirectionvertical\" Property shows a vertical direction where the impact comes from. The value is 0 to 360 degrees. 0 is the front of the sensor and upward increment.",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 360
+        }
+    },
+    "tm:required": [
+        "#/properties/impactsensor_impactstatus"
+    ]
+}

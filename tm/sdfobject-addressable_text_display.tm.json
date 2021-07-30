@@ -1,0 +1,79 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "Copyright (c) 2018-2020 IPSO",
+    "version": {
+        "instance": "2021-02-11"
+    },
+    "actions": {
+        "Addressable_Text_Display_Clear_Display": {
+            "sdf:jsonPointer": "#/sdfObject/Addressable_Text_Display/sdfAction/Clear_Display",
+            "title": "Clear Display",
+            "description": "Command to clear the display."
+        }
+    },
+    "properties": {
+        "Addressable_Text_Display_Text": {
+            "sdf:jsonPointer": "#/sdfObject/Addressable_Text_Display/sdfProperty/Text",
+            "title": "Text",
+            "description": "A string of text.",
+            "type": "string"
+        },
+        "Addressable_Text_Display_X_Coordinate": {
+            "sdf:jsonPointer": "#/sdfObject/Addressable_Text_Display/sdfProperty/X_Coordinate",
+            "title": "X Coordinate",
+            "description": "X Coordinate.",
+            "type": "integer"
+        },
+        "Addressable_Text_Display_Y_Coordinate": {
+            "sdf:jsonPointer": "#/sdfObject/Addressable_Text_Display/sdfProperty/Y_Coordinate",
+            "title": "Y Coordinate",
+            "description": "Y Coordinate.",
+            "type": "integer"
+        },
+        "Addressable_Text_Display_Max_X_Coordinate": {
+            "sdf:jsonPointer": "#/sdfObject/Addressable_Text_Display/sdfProperty/Max_X_Coordinate",
+            "title": "Max X Coordinate",
+            "description": "The highest X coordinate the display supports before wrapping to the next line.",
+            "type": "integer"
+        },
+        "Addressable_Text_Display_Max_Y_Coordinate": {
+            "sdf:jsonPointer": "#/sdfObject/Addressable_Text_Display/sdfProperty/Max_Y_Coordinate",
+            "title": "Max Y Coordinate",
+            "description": "The highest Y coordinate the display supports before wrapping to the next line.",
+            "type": "integer"
+        },
+        "Addressable_Text_Display_Level": {
+            "sdf:jsonPointer": "#/sdfObject/Addressable_Text_Display/sdfProperty/Level",
+            "title": "Level",
+            "description": "Used to represent a level control such as audio volume.",
+            "type": "number",
+            "unit": "/100",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Addressable_Text_Display_Contrast": {
+            "sdf:jsonPointer": "#/sdfObject/Addressable_Text_Display/sdfProperty/Contrast",
+            "title": "Contrast",
+            "description": "Proportional control, integer value between 0 and 100 as a percentage.",
+            "type": "number",
+            "unit": "/100",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Addressable_Text_Display_Application_Type": {
+            "sdf:jsonPointer": "#/sdfObject/Addressable_Text_Display/sdfProperty/Application_Type",
+            "title": "Application Type",
+            "description": "The application type of the sensor or actuator as a string depending on the use case.",
+            "type": "string"
+        }
+    },
+    "tm:required": [
+        "#/properties/Addressable_Text_Display_Text"
+    ]
+}

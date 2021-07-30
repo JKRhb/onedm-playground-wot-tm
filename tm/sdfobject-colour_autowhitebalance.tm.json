@@ -1,0 +1,23 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-02-22"
+    },
+    "properties": {
+        "colour.autowhitebalance_autoWhiteBalance": {
+            "sdf:jsonPointer": "#/sdfObject/colour.autowhitebalance/sdfProperty/autoWhiteBalance",
+            "description": "The status of the Auto White balance feature.",
+            "type": "boolean"
+        }
+    },
+    "tm:required": [
+        "#/properties/colour.autowhitebalance_autoWhiteBalance"
+    ]
+}

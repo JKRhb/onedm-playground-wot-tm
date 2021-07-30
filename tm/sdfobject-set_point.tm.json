@@ -1,0 +1,57 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "Copyright (c) 2018-2020 IPSO",
+    "version": {
+        "instance": "2021-02-11"
+    },
+    "properties": {
+        "Set_Point_Set_Point_Value": {
+            "sdf:jsonPointer": "#/sdfObject/Set_Point/sdfProperty/Set_Point_Value",
+            "title": "Set Point Value",
+            "description": "The setpoint value.",
+            "type": "number"
+        },
+        "Set_Point_Sensor_Units": {
+            "sdf:jsonPointer": "#/sdfObject/Set_Point/sdfProperty/Sensor_Units",
+            "title": "Sensor Units",
+            "description": "Measurement Units Definition.",
+            "type": "string"
+        },
+        "Set_Point_Colour": {
+            "sdf:jsonPointer": "#/sdfObject/Set_Point/sdfProperty/Colour",
+            "title": "Colour",
+            "description": "A string representing a value in some color space.",
+            "type": "string"
+        },
+        "Set_Point_Application_Type": {
+            "sdf:jsonPointer": "#/sdfObject/Set_Point/sdfProperty/Application_Type",
+            "title": "Application Type",
+            "description": "The application type of the sensor or actuator as a string depending on the use case.",
+            "type": "string"
+        },
+        "Set_Point_Timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/Set_Point/sdfProperty/Timestamp",
+            "title": "Timestamp",
+            "description": "The timestamp of when the measurement was performed.",
+            "type": "number"
+        },
+        "Set_Point_Fractional_Timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/Set_Point/sdfProperty/Fractional_Timestamp",
+            "title": "Fractional Timestamp",
+            "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "type": "number",
+            "unit": "s",
+            "minimum": 0,
+            "maximum": 1
+        }
+    },
+    "tm:required": [
+        "#/properties/Set_Point_Set_Point_Value"
+    ]
+}

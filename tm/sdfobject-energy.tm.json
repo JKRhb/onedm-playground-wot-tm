@@ -1,0 +1,74 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "Copyright (c) 2018-2020 IPSO",
+    "version": {
+        "instance": "2021-02-11"
+    },
+    "actions": {
+        "Energy_Reset_Cumulative_energy": {
+            "sdf:jsonPointer": "#/sdfObject/Energy/sdfAction/Reset_Cumulative_energy",
+            "title": "Reset Cumulative energy",
+            "description": "Reset both cumulative active/reactive power."
+        }
+    },
+    "properties": {
+        "Energy_Sensor_Value": {
+            "sdf:jsonPointer": "#/sdfObject/Energy/sdfProperty/Sensor_Value",
+            "title": "Sensor Value",
+            "description": "Last or Current Measured Value from the Sensor.",
+            "type": "number"
+        },
+        "Energy_Sensor_Units": {
+            "sdf:jsonPointer": "#/sdfObject/Energy/sdfProperty/Sensor_Units",
+            "title": "Sensor Units",
+            "description": "Measurement Units Definition.",
+            "type": "string"
+        },
+        "Energy_Application_Type": {
+            "sdf:jsonPointer": "#/sdfObject/Energy/sdfProperty/Application_Type",
+            "title": "Application Type",
+            "description": "The application type of the sensor or actuator as a string depending on the use case.",
+            "type": "string"
+        },
+        "Energy_Timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/Energy/sdfProperty/Timestamp",
+            "title": "Timestamp",
+            "description": "The timestamp of when the measurement was performed.",
+            "type": "number"
+        },
+        "Energy_Fractional_Timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/Energy/sdfProperty/Fractional_Timestamp",
+            "title": "Fractional Timestamp",
+            "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "type": "number",
+            "unit": "s",
+            "minimum": 0,
+            "maximum": 1
+        },
+        "Energy_Measurement_Quality_Indicator": {
+            "sdf:jsonPointer": "#/sdfObject/Energy/sdfProperty/Measurement_Quality_Indicator",
+            "title": "Measurement Quality Indicator",
+            "description": "Measurement quality indicator reported by a smart sensor. 0: UNCHECKED No quality checks were done because they do not exist or can not be applied. 1: REJECTED WITH CERTAINTY The measured value is invalid. 2: REJECTED WITH PROBABILITY The measured value is likely invalid. 3: ACCEPTED BUT SUSPICIOUS The measured value is likely OK. 4: ACCEPTED The measured value is OK. 5-15: Reserved for future extensions. 16-23: Vendor specific measurement quality.",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 23
+        },
+        "Energy_Measurement_Quality_Level": {
+            "sdf:jsonPointer": "#/sdfObject/Energy/sdfProperty/Measurement_Quality_Level",
+            "title": "Measurement Quality Level",
+            "description": "Measurement quality level reported by a smart sensor. Quality level 100 means that the measurement has fully passed quality check algorithms. Smaller quality levels mean that quality has decreased and the measurement has only partially passed quality check algorithms. The smaller the quality level, the more caution should be used by the application when using the measurement. When the quality level is 0 it means that the measurement should certainly be rejected.",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+        }
+    },
+    "tm:required": [
+        "#/properties/Energy_Sensor_Value"
+    ]
+}

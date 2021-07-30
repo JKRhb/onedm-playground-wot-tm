@@ -1,0 +1,48 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-11-18"
+    },
+    "properties": {
+        "sensor.carbonmonoxide_value": {
+            "sdf:jsonPointer": "#/sdfObject/sensor.carbonmonoxide/sdfProperty/value",
+            "description": "The carbon monoxide indicator, true = sensed, false = not sensed.",
+            "type": "boolean"
+        },
+        "sensor.carbonmonoxide_measurement": {
+            "sdf:jsonPointer": "#/sdfObject/sensor.carbonmonoxide/sdfProperty/measurement",
+            "description": "Measured value for this sensor, units are in ppm",
+            "type": "number"
+        },
+        "sensor.carbonmonoxide_precision": {
+            "sdf:jsonPointer": "#/sdfObject/sensor.carbonmonoxide/sdfProperty/precision",
+            "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
+            "type": "number"
+        },
+        "sensor.carbonmonoxide_range": {
+            "sdf:jsonPointer": "#/sdfObject/sensor.carbonmonoxide/sdfProperty/range",
+            "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+                "type": "number"
+            }
+        },
+        "sensor.carbonmonoxide_step": {
+            "sdf:jsonPointer": "#/sdfObject/sensor.carbonmonoxide/sdfProperty/step",
+            "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
+            "type": "number"
+        }
+    },
+    "tm:required": [
+        "#/properties/sensor.carbonmonoxide_value"
+    ]
+}

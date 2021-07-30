@@ -1,0 +1,41 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-05-13"
+    },
+    "properties": {
+        "powersource_powersources": {
+            "sdf:jsonPointer": "#/sdfObject/powersource/sdfProperty/powersources",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "enum": [
+                    "unknown",
+                    "DC power",
+                    "Internal Battery",
+                    "External Battery",
+                    "Power over Ethernet",
+                    "USB",
+                    "AC (Mains) Power",
+                    "Solar"
+                ]
+            }
+        },
+        "powersource_sourcefault": {
+            "sdf:jsonPointer": "#/sdfObject/powersource/sdfProperty/sourcefault",
+            "description": "Fault detected in currently active power source. True = fault detected",
+            "type": "boolean"
+        }
+    },
+    "tm:required": [
+        "#/properties/powersource_powersources"
+    ]
+}

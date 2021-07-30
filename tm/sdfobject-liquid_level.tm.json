@@ -1,0 +1,37 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-02-15"
+    },
+    "properties": {
+        "liquid.level_currentlevel": {
+            "sdf:jsonPointer": "#/sdfObject/liquid.level/sdfProperty/currentlevel",
+            "description": "The current level of the liquid in percentage.",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "liquid.level_desiredlevel": {
+            "sdf:jsonPointer": "#/sdfObject/liquid.level/sdfProperty/desiredlevel",
+            "description": "The desired level of the liquid in percentage.",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "liquid.level_step": {
+            "sdf:jsonPointer": "#/sdfObject/liquid.level/sdfProperty/step",
+            "description": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.",
+            "type": "integer"
+        }
+    },
+    "tm:required": [
+        "#/properties/liquid.level_desiredlevel"
+    ]
+}

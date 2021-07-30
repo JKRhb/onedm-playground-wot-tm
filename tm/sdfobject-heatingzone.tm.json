@@ -1,0 +1,29 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-02-15"
+    },
+    "properties": {
+        "heatingzone_heatinglevel": {
+            "sdf:jsonPointer": "#/sdfObject/heatingzone/sdfProperty/heatinglevel",
+            "description": "The current heating level for the zone.",
+            "type": "integer"
+        },
+        "heatingzone_maxheatinglevel": {
+            "sdf:jsonPointer": "#/sdfObject/heatingzone/sdfProperty/maxheatinglevel",
+            "description": "The maximum heating level for the zone.",
+            "type": "integer"
+        }
+    },
+    "tm:required": [
+        "#/properties/heatingzone_heatinglevel",
+        "#/properties/heatingzone_maxheatinglevel"
+    ]
+}

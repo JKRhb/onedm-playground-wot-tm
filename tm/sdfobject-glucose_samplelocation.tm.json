@@ -1,0 +1,29 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "Copyright 2016-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-03-22"
+    },
+    "properties": {
+        "glucose.samplelocation_samplelocation": {
+            "sdf:jsonPointer": "#/sdfObject/glucose.samplelocation/sdfProperty/samplelocation",
+            "description": "The possible blood locations where the blood sample may be taken.",
+            "type": "string",
+            "enum": [
+                "finger",
+                "ast",
+                "earlobe",
+                "ctrlsolution"
+            ]
+        }
+    },
+    "tm:required": [
+        "#/properties/glucose.samplelocation_samplelocation"
+    ]
+}

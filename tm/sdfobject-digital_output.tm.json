@@ -1,0 +1,51 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "Copyright (c) 2018-2020 IPSO",
+    "version": {
+        "instance": "2021-02-11"
+    },
+    "properties": {
+        "Digital_Output_Digital_Output_State": {
+            "sdf:jsonPointer": "#/sdfObject/Digital_Output/sdfProperty/Digital_Output_State",
+            "title": "Digital Output State",
+            "description": "The current state of a digital output.",
+            "type": "boolean"
+        },
+        "Digital_Output_Digital_Output_Polarity": {
+            "sdf:jsonPointer": "#/sdfObject/Digital_Output/sdfProperty/Digital_Output_Polarity",
+            "title": "Digital Output Polarity",
+            "description": "The polarity of the digital output as a Boolean (False = Normal, True = Reversed).",
+            "type": "boolean"
+        },
+        "Digital_Output_Application_Type": {
+            "sdf:jsonPointer": "#/sdfObject/Digital_Output/sdfProperty/Application_Type",
+            "title": "Application Type",
+            "description": "The application type of the sensor or actuator as a string depending on the use case.",
+            "type": "string"
+        },
+        "Digital_Output_Timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/Digital_Output/sdfProperty/Timestamp",
+            "title": "Timestamp",
+            "description": "The timestamp of when the measurement was performed.",
+            "type": "number"
+        },
+        "Digital_Output_Fractional_Timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/Digital_Output/sdfProperty/Fractional_Timestamp",
+            "title": "Fractional Timestamp",
+            "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "type": "number",
+            "unit": "s",
+            "minimum": 0,
+            "maximum": 1
+        }
+    },
+    "tm:required": [
+        "#/properties/Digital_Output_Digital_Output_State"
+    ]
+}

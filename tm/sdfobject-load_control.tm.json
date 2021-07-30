@@ -1,0 +1,86 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "Copyright (c) 2018-2020 IPSO",
+    "version": {
+        "instance": "2021-02-11"
+    },
+    "properties": {
+        "Load_Control_Event_Identifier": {
+            "sdf:jsonPointer": "#/sdfObject/Load_Control/sdfProperty/Event_Identifier",
+            "title": "Event Identifier",
+            "description": "The event identifier as a string.",
+            "type": "string"
+        },
+        "Load_Control_Start_Time": {
+            "sdf:jsonPointer": "#/sdfObject/Load_Control/sdfProperty/Start_Time",
+            "title": "Start Time",
+            "description": "Time when the event started.",
+            "type": "number"
+        },
+        "Load_Control_Duration_In_Min": {
+            "sdf:jsonPointer": "#/sdfObject/Load_Control/sdfProperty/Duration_In_Min",
+            "title": "Duration In Min",
+            "description": "The duration of the event in minutes.",
+            "type": "integer",
+            "unit": "min"
+        },
+        "Load_Control_Criticality_Level": {
+            "sdf:jsonPointer": "#/sdfObject/Load_Control/sdfProperty/Criticality_Level",
+            "title": "Criticality Level",
+            "description": "The criticality of the event. The device receiving the event will react in an appropriate fashion for the device.",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 3
+        },
+        "Load_Control_Avg_Load_AdjPct": {
+            "sdf:jsonPointer": "#/sdfObject/Load_Control/sdfProperty/Avg_Load_AdjPct",
+            "title": "Avg Load AdjPct",
+            "description": "Defines the maximum energy usage of the receiving device, as a percentage of the device's normal maximum energy usage.",
+            "type": "integer",
+            "unit": "/100",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Load_Control_Duty_Cycle": {
+            "sdf:jsonPointer": "#/sdfObject/Load_Control/sdfProperty/Duty_Cycle",
+            "title": "Duty Cycle",
+            "description": "Defines the duty cycle for the load control event, i.e, what percentage of time the receiving device is allowed to be on.",
+            "type": "integer",
+            "unit": "/100",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Load_Control_Application_Type": {
+            "sdf:jsonPointer": "#/sdfObject/Load_Control/sdfProperty/Application_Type",
+            "title": "Application Type",
+            "description": "The application type of the sensor or actuator as a string depending on the use case.",
+            "type": "string"
+        },
+        "Load_Control_Timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/Load_Control/sdfProperty/Timestamp",
+            "title": "Timestamp",
+            "description": "The timestamp of when the measurement was performed.",
+            "type": "number"
+        },
+        "Load_Control_Fractional_Timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/Load_Control/sdfProperty/Fractional_Timestamp",
+            "title": "Fractional Timestamp",
+            "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "type": "number",
+            "unit": "s",
+            "minimum": 0,
+            "maximum": 1
+        }
+    },
+    "tm:required": [
+        "#/properties/Load_Control_Event_Identifier",
+        "#/properties/Load_Control_Start_Time",
+        "#/properties/Load_Control_Duration_In_Min"
+    ]
+}

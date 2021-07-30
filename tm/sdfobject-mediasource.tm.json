@@ -1,0 +1,44 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-02-15"
+    },
+    "properties": {
+        "mediasource_status": {
+            "sdf:jsonPointer": "#/sdfObject/mediasource/sdfProperty/status",
+            "description": "Specifies if the specific source instance is selected or not.",
+            "type": "boolean"
+        },
+        "mediasource_sourceType": {
+            "sdf:jsonPointer": "#/sdfObject/mediasource/sdfProperty/sourceType",
+            "description": "Specifies the type of the source.",
+            "type": "string",
+            "enum": [
+                "audioOnly",
+                "videoOnly",
+                "audioPlusVideo"
+            ]
+        },
+        "mediasource_sourceName": {
+            "sdf:jsonPointer": "#/sdfObject/mediasource/sdfProperty/sourceName",
+            "description": "Specifies a pre-defined media input or output.",
+            "type": "string"
+        },
+        "mediasource_sourceNumber": {
+            "sdf:jsonPointer": "#/sdfObject/mediasource/sdfProperty/sourceNumber",
+            "description": "Label to specify the instance.",
+            "type": "string"
+        }
+    },
+    "tm:required": [
+        "#/properties/mediasource_status",
+        "#/properties/mediasource_sourceName"
+    ]
+}

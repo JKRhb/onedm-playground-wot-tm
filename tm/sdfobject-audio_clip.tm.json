@@ -1,0 +1,53 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "Copyright (c) 2018-2020 IPSO",
+    "version": {
+        "instance": "2021-02-11"
+    },
+    "actions": {
+        "Audio_Clip_Trigger": {
+            "sdf:jsonPointer": "#/sdfObject/Audio_Clip/sdfAction/Trigger",
+            "title": "Trigger",
+            "description": "Trigger initiating actuation."
+        }
+    },
+    "properties": {
+        "Audio_Clip_Clip": {
+            "sdf:jsonPointer": "#/sdfObject/Audio_Clip/sdfProperty/Clip",
+            "title": "Clip",
+            "description": "Audio clip that is playable (e.g., a short audio recording indicating the floor in an elevator).",
+            "type": "string"
+        },
+        "Audio_Clip_Level": {
+            "sdf:jsonPointer": "#/sdfObject/Audio_Clip/sdfProperty/Level",
+            "title": "Level",
+            "description": "Used to represent a level control such as audio volume.",
+            "type": "number",
+            "unit": "/100",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Audio_Clip_Duration": {
+            "sdf:jsonPointer": "#/sdfObject/Audio_Clip/sdfProperty/Duration",
+            "title": "Duration",
+            "description": "The duration of the sound once trigger.",
+            "type": "number",
+            "unit": "s"
+        },
+        "Audio_Clip_Application_Type": {
+            "sdf:jsonPointer": "#/sdfObject/Audio_Clip/sdfProperty/Application_Type",
+            "title": "Application Type",
+            "description": "The application type of the sensor or actuator as a string depending on the use case.",
+            "type": "string"
+        }
+    },
+    "tm:required": [
+        "#/properties/Audio_Clip_Clip"
+    ]
+}

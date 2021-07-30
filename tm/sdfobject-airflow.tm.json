@@ -1,0 +1,61 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-02-15"
+    },
+    "properties": {
+        "airflow_speed": {
+            "sdf:jsonPointer": "#/sdfObject/airflow/sdfProperty/speed",
+            "description": "The current speed level.",
+            "type": "integer"
+        },
+        "airflow_direction": {
+            "sdf:jsonPointer": "#/sdfObject/airflow/sdfProperty/direction",
+            "description": "The directionality of the air flow, a value indicated by \"supporteddirections\".",
+            "type": "string"
+        },
+        "airflow_automode": {
+            "sdf:jsonPointer": "#/sdfObject/airflow/sdfProperty/automode",
+            "description": "The status of the automode feature, if on speed is set by the Device.",
+            "type": "string",
+            "enum": [
+                "On",
+                "Off"
+            ]
+        },
+        "airflow_supporteddirections": {
+            "sdf:jsonPointer": "#/sdfObject/airflow/sdfProperty/supporteddirections",
+            "description": "The array of possible direction settings for this instance of the Resource Type.",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
+        },
+        "airflow_range": {
+            "sdf:jsonPointer": "#/sdfObject/airflow/sdfProperty/range",
+            "description": "The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+                "type": "integer"
+            }
+        },
+        "airflow_step": {
+            "sdf:jsonPointer": "#/sdfObject/airflow/sdfProperty/step",
+            "description": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.",
+            "type": "integer"
+        }
+    },
+    "tm:required": [
+        "#/properties/airflow_speed"
+    ]
+}

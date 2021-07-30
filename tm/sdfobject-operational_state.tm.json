@@ -1,0 +1,58 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-02-15"
+    },
+    "properties": {
+        "operational.state_currentMachineState": {
+            "sdf:jsonPointer": "#/sdfObject/operational.state/sdfProperty/currentMachineState",
+            "description": "The current state of operation of the device.",
+            "type": "string"
+        },
+        "operational.state_currentJobState": {
+            "sdf:jsonPointer": "#/sdfObject/operational.state/sdfProperty/currentJobState",
+            "description": "The currently active jobState.",
+            "type": "string"
+        },
+        "operational.state_machineStates": {
+            "sdf:jsonPointer": "#/sdfObject/operational.state/sdfProperty/machineStates",
+            "description": "The array of the possible operational states.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "operational.state_runningTime": {
+            "sdf:jsonPointer": "#/sdfObject/operational.state/sdfProperty/runningTime",
+            "description": "A string representing duration formatted as defined in ISO 8601. Allowable formats are: P[n]Y[n]M[n]DT[n]H[n]M[n]S, P[n]W, P[n]Y[n]-M[n]-DT[0-23]H[0-59]:M[0-59]:S, and P[n]W, P[n]Y[n]M[n]DT[0-23]H[0-59]M[0-59]S. P is mandatory, all other elements are optional, time elements must follow a T.",
+            "type": "string"
+        },
+        "operational.state_remainingTime": {
+            "sdf:jsonPointer": "#/sdfObject/operational.state/sdfProperty/remainingTime",
+            "description": "A string representing duration formatted as defined in ISO 8601. Allowable formats are: P[n]Y[n]M[n]DT[n]H[n]M[n]S, P[n]W, P[n]Y[n]-M[n]-DT[0-23]H[0-59]:M[0-59]:S, and P[n]W, P[n]Y[n]M[n]DT[0-23]H[0-59]M[0-59]S. P is mandatory, all other elements are optional, time elements must follow a T.",
+            "type": "string"
+        },
+        "operational.state_progressPercentage": {
+            "sdf:jsonPointer": "#/sdfObject/operational.state/sdfProperty/progressPercentage",
+            "description": "The percentage completeness of the current jobState.",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "operational.state_jobStates": {
+            "sdf:jsonPointer": "#/sdfObject/operational.state/sdfProperty/jobStates",
+            "description": "The Array of the possible job states.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

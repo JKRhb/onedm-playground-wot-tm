@@ -1,0 +1,25 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-07-24"
+    },
+    "properties": {
+        "hvac.capacity_capacity": {
+            "sdf:jsonPointer": "#/sdfObject/hvac.capacity/sdfProperty/capacity",
+            "description": "The rated capacity for the Device.",
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMinimum": true
+        }
+    },
+    "tm:required": [
+        "#/properties/hvac.capacity_capacity"
+    ]
+}

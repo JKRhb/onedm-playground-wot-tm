@@ -1,0 +1,37 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-02-15"
+    },
+    "properties": {
+        "door_openDuration": {
+            "sdf:jsonPointer": "#/sdfObject/door/sdfProperty/openDuration",
+            "description": "A string representing duration formatted as defined in ISO 8601. Allowable formats are: P[n]Y[n]M[n]DT[n]H[n]M[n]S, P[n]W, P[n]Y[n]-M[n]-DT[0-23]H[0-59]:M[0-59]:S, and P[n]W, P[n]Y[n]M[n]DT[0-23]H[0-59]M[0-59]S. P is mandatory, all other elements are optional, time elements must follow a T.",
+            "type": "string"
+        },
+        "door_openState": {
+            "sdf:jsonPointer": "#/sdfObject/door/sdfProperty/openState",
+            "description": "The state of the door (open or closed).",
+            "type": "string",
+            "enum": [
+                "Open",
+                "Closed"
+            ]
+        },
+        "door_openAlarm": {
+            "sdf:jsonPointer": "#/sdfObject/door/sdfProperty/openAlarm",
+            "description": "The state of the door open alarm.",
+            "type": "boolean"
+        }
+    },
+    "tm:required": [
+        "#/properties/door_openAlarm"
+    ]
+}

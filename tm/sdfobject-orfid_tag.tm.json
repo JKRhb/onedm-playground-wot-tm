@@ -1,0 +1,29 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-02-15"
+    },
+    "properties": {
+        "orfid.tag_tagid": {
+            "sdf:jsonPointer": "#/sdfObject/orfid.tag/sdfProperty/tagid",
+            "description": "The tag read by the RFID reader.",
+            "type": "integer"
+        },
+        "orfid.tag_reading": {
+            "sdf:jsonPointer": "#/sdfObject/orfid.tag/sdfProperty/reading",
+            "description": "The reading indication. true: the tagid is read e.g. being valid. false: the tagid is invalid.",
+            "type": "boolean"
+        }
+    },
+    "tm:required": [
+        "#/properties/orfid.tag_tagid",
+        "#/properties/orfid.tag_reading"
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-02-15"
+    },
+    "properties": {
+        "signalstrength_lqi": {
+            "sdf:jsonPointer": "#/sdfObject/signalstrength/sdfProperty/lqi",
+            "description": "The current value of Link Quality Indicator.",
+            "type": "number"
+        },
+        "signalstrength_rssi": {
+            "sdf:jsonPointer": "#/sdfObject/signalstrength/sdfProperty/rssi",
+            "description": "The current value of Received Signal Strength Indicator.",
+            "type": "number"
+        }
+    },
+    "tm:required": [
+        "#/properties/signalstrength_lqi",
+        "#/properties/signalstrength_rssi"
+    ]
+}

@@ -1,0 +1,111 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2018-07-12"
+    },
+    "properties": {
+        "sleep_awake": {
+            "sdf:jsonPointer": "#/sdfObject/sleep/sdfProperty/awake",
+            "description": "Time spent in Awake stage (in seconds)",
+            "type": "integer",
+            "minimum": 0
+        },
+        "sleep_nrem1": {
+            "sdf:jsonPointer": "#/sdfObject/sleep/sdfProperty/nrem1",
+            "description": "Time spent in Non Rapid Eye Movement stage 1 (in seconds)",
+            "type": "integer",
+            "minimum": 0
+        },
+        "sleep_nrem2": {
+            "sdf:jsonPointer": "#/sdfObject/sleep/sdfProperty/nrem2",
+            "description": "Time spent in Non Rapid Eye Movement stage 2 (in seconds)",
+            "type": "integer",
+            "minimum": 0
+        },
+        "sleep_nrem3": {
+            "sdf:jsonPointer": "#/sdfObject/sleep/sdfProperty/nrem3",
+            "description": "Time spent in Non Rapid Eye Movement stage 3 (in seconds)",
+            "type": "integer",
+            "minimum": 0
+        },
+        "sleep_nrem4": {
+            "sdf:jsonPointer": "#/sdfObject/sleep/sdfProperty/nrem4",
+            "description": "Time spent in Non Rapid Eye Movement stage 4 (in seconds)",
+            "type": "integer",
+            "minimum": 0
+        },
+        "sleep_rem": {
+            "sdf:jsonPointer": "#/sdfObject/sleep/sdfProperty/rem",
+            "description": "Time spent in Rapid Eye Movement (in seconds)",
+            "type": "integer",
+            "minimum": 0
+        },
+        "sleep_lightsleep": {
+            "sdf:jsonPointer": "#/sdfObject/sleep/sdfProperty/lightsleep",
+            "description": "Time spent in Light Sleep stage, consisting in NREM stages 1 and 2 (in seconds)",
+            "type": "integer",
+            "minimum": 0
+        },
+        "sleep_deepsleep": {
+            "sdf:jsonPointer": "#/sdfObject/sleep/sdfProperty/deepsleep",
+            "description": "Time spent in Deep Sleep stage, consisting in NREM stages 3 and 4 (in seconds)",
+            "type": "integer",
+            "minimum": 0
+        },
+        "sleep_sleepscore": {
+            "sdf:jsonPointer": "#/sdfObject/sleep/sdfProperty/sleepscore",
+            "description": "Score computed from the time spent in each sleep stage, indicative of the quality of sleep",
+            "type": "number",
+            "minimum": 0
+        },
+        "sleep_range_phases": {
+            "sdf:jsonPointer": "#/sdfObject/sleep/sdfProperty/range_phases",
+            "description": "The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+                "type": "integer"
+            }
+        },
+        "sleep_step_phases": {
+            "sdf:jsonPointer": "#/sdfObject/sleep/sdfProperty/step_phases",
+            "description": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.",
+            "type": "integer"
+        },
+        "sleep_range_score": {
+            "sdf:jsonPointer": "#/sdfObject/sleep/sdfProperty/range_score",
+            "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+                "type": "number"
+            }
+        },
+        "sleep_step_score": {
+            "sdf:jsonPointer": "#/sdfObject/sleep/sdfProperty/step_score",
+            "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
+            "type": "number"
+        },
+        "sleep_precision": {
+            "sdf:jsonPointer": "#/sdfObject/sleep/sdfProperty/precision",
+            "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
+            "type": "number"
+        }
+    },
+    "tm:required": [
+        "#/properties/sleep_awake",
+        "#/properties/sleep_nrem1",
+        "#/properties/sleep_nrem2",
+        "#/properties/sleep_nrem3",
+        "#/properties/sleep_rem"
+    ]
+}

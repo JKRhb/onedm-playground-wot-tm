@@ -1,0 +1,52 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-07-09"
+    },
+    "properties": {
+        "energy.drlc_start": {
+            "sdf:jsonPointer": "#/sdfObject/energy.drlc/sdfProperty/start",
+            "description": "The start time for the application of DR.",
+            "type": "string",
+            "format": "date-time"
+        },
+        "energy.drlc_duration": {
+            "sdf:jsonPointer": "#/sdfObject/energy.drlc/sdfProperty/duration",
+            "description": "The duration of the to be applied DR type in minutes. A value of 0 means no applied DR.",
+            "type": "integer",
+            "minimum": 0
+        },
+        "energy.drlc_override": {
+            "sdf:jsonPointer": "#/sdfObject/energy.drlc/sdfProperty/override",
+            "description": "Whether the consumer has overriden the application of DR.",
+            "type": "boolean"
+        },
+        "energy.drlc_DRType": {
+            "sdf:jsonPointer": "#/sdfObject/energy.drlc/sdfProperty/DRType",
+            "description": "The to be applied demand-response type.",
+            "type": "integer"
+        },
+        "energy.drlc_drlevel": {
+            "sdf:jsonPointer": "#/sdfObject/energy.drlc/sdfProperty/drlevel",
+            "description": "Indicator of the strength of the DR response that is requested; 0-0%, 1-30%, 2-50%, 3-70%",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 3
+        },
+        "energy.drlc_mandate": {
+            "sdf:jsonPointer": "#/sdfObject/energy.drlc/sdfProperty/mandate",
+            "description": "Whether overriding the DR request by the consumer is allowed",
+            "type": "boolean"
+        }
+    },
+    "tm:required": [
+        "#/properties/energy.drlc_DRType"
+    ]
+}

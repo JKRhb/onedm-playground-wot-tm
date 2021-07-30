@@ -1,0 +1,58 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-06-13"
+    },
+    "properties": {
+        "pvconnectionterminal_ratedarrayvoltage": {
+            "sdf:jsonPointer": "#/sdfObject/pvconnectionterminal/sdfProperty/ratedarrayvoltage",
+            "description": "Rated voltage of array (Nominal values of maximum power voltage * number of modules) (V)",
+            "type": "number"
+        },
+        "pvconnectionterminal_ratedarraycurrent": {
+            "sdf:jsonPointer": "#/sdfObject/pvconnectionterminal/sdfProperty/ratedarraycurrent",
+            "description": "Rated current of array (Nominal values of maximum power current * number of modules) (A), defined at manufacturing time.",
+            "type": "number"
+        },
+        "pvconnectionterminal_arrayvoltage": {
+            "sdf:jsonPointer": "#/sdfObject/pvconnectionterminal/sdfProperty/arrayvoltage",
+            "description": "Output voltage of array in volts (V).",
+            "type": "number"
+        },
+        "pvconnectionterminal_arraycurrent": {
+            "sdf:jsonPointer": "#/sdfObject/pvconnectionterminal/sdfProperty/arraycurrent",
+            "description": "Output current of array in Ampere (A).",
+            "type": "number"
+        },
+        "pvconnectionterminal_leakagecurrent": {
+            "sdf:jsonPointer": "#/sdfObject/pvconnectionterminal/sdfProperty/leakagecurrent",
+            "description": "The leakage current in mA.",
+            "type": "number"
+        },
+        "pvconnectionterminal_insulationresistance": {
+            "sdf:jsonPointer": "#/sdfObject/pvconnectionterminal/sdfProperty/insulationresistance",
+            "description": "Insulation resistance of circuit breaker (M Ohm).",
+            "type": "number"
+        },
+        "pvconnectionterminal_timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/pvconnectionterminal/sdfProperty/timestamp",
+            "description": "An RFC3339 formatted time indicating when the data was observed (e.g.: 2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00). Note that 1/100 time resolution should be used.",
+            "type": "string",
+            "format": "date-time"
+        }
+    },
+    "tm:required": [
+        "#/properties/pvconnectionterminal_ratedarrayvoltage",
+        "#/properties/pvconnectionterminal_ratedarraycurrent",
+        "#/properties/pvconnectionterminal_arrayvoltage",
+        "#/properties/pvconnectionterminal_arraycurrent",
+        "#/properties/pvconnectionterminal_timestamp"
+    ]
+}

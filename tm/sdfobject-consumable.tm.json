@@ -1,0 +1,44 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-02-15"
+    },
+    "properties": {
+        "consumable_remaining": {
+            "sdf:jsonPointer": "#/sdfObject/consumable/sdfProperty/remaining",
+            "description": "The percentage remaining lifespan.",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "consumable_typeofconsumable": {
+            "sdf:jsonPointer": "#/sdfObject/consumable/sdfProperty/typeofconsumable",
+            "description": "The thing that is being consumed.",
+            "type": "string"
+        },
+        "consumable_url": {
+            "sdf:jsonPointer": "#/sdfObject/consumable/sdfProperty/url",
+            "description": "The URL at which additional ordering information may be found.",
+            "type": "string",
+            "format": "uri"
+        },
+        "consumable_orderpercentage": {
+            "sdf:jsonPointer": "#/sdfObject/consumable/sdfProperty/orderpercentage",
+            "description": "The percentage at which re-ordering is recommended by the manufacturer.",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+        }
+    },
+    "tm:required": [
+        "#/properties/consumable_remaining",
+        "#/properties/consumable_typeofconsumable"
+    ]
+}

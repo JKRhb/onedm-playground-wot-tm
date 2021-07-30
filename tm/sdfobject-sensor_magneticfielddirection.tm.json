@@ -1,0 +1,28 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-02-15"
+    },
+    "properties": {
+        "sensor.magneticfielddirection_value": {
+            "sdf:jsonPointer": "#/sdfObject/sensor.magneticfielddirection/sdfProperty/value",
+            "description": "The array containing Hx, Hy, Hz.",
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+                "type": "number"
+            }
+        }
+    },
+    "tm:required": [
+        "#/properties/sensor.magneticfielddirection_value"
+    ]
+}

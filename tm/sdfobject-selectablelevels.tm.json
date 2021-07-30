@@ -1,0 +1,31 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-02-15"
+    },
+    "properties": {
+        "selectablelevels_targetlevel": {
+            "sdf:jsonPointer": "#/sdfObject/selectablelevels/sdfProperty/targetlevel",
+            "description": "The target level from the available selectable set.",
+            "type": "number"
+        },
+        "selectablelevels_availablelevels": {
+            "sdf:jsonPointer": "#/sdfObject/selectablelevels/sdfProperty/availablelevels",
+            "description": "The set of levels to select from.",
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        }
+    },
+    "tm:required": [
+        "#/properties/selectablelevels_targetlevel"
+    ]
+}

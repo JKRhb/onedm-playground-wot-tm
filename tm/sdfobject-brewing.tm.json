@@ -1,0 +1,37 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-02-22"
+    },
+    "properties": {
+        "brewing_strength": {
+            "sdf:jsonPointer": "#/sdfObject/brewing/sdfProperty/strength",
+            "description": "The strength of a brewed drink.",
+            "type": "integer"
+        },
+        "brewing_amountrequested": {
+            "sdf:jsonPointer": "#/sdfObject/brewing/sdfProperty/amountrequested",
+            "description": "The amount requested in ml.",
+            "type": "integer"
+        },
+        "brewing_strengthrange": {
+            "sdf:jsonPointer": "#/sdfObject/brewing/sdfProperty/strengthrange",
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+                "type": "integer"
+            }
+        }
+    },
+    "tm:required": [
+        "#/properties/brewing_amountrequested"
+    ]
+}

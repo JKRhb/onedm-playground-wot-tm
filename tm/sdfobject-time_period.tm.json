@@ -1,0 +1,68 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019, 2020 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2020-02-04"
+    },
+    "properties": {
+        "time.period_interval": {
+            "sdf:jsonPointer": "#/sdfObject/time.period/sdfProperty/interval",
+            "description": "The time interval in minutes after the \"startTime\", if present the Property \"stopTime\" cannot be present.",
+            "type": "integer",
+            "minimum": 0
+        },
+        "time.period_intervalsecond": {
+            "sdf:jsonPointer": "#/sdfObject/time.period/sdfProperty/intervalsecond",
+            "description": "The time interval in seconds after the \"startTime\", if present the Property \"stopTime\" cannot be present.",
+            "type": "integer",
+            "minimum": 0
+        },
+        "time.period_stopTime": {
+            "sdf:jsonPointer": "#/sdfObject/time.period/sdfProperty/stopTime",
+            "description": "The stop time for the time period, if present the Property \"interval\" or \"intervalsecond\" cannot be present.",
+            "type": "string",
+            "format": "date-time"
+        },
+        "time.period_startTime": {
+            "sdf:jsonPointer": "#/sdfObject/time.period/sdfProperty/startTime",
+            "description": "The start time for the time period.",
+            "type": "string",
+            "format": "date-time"
+        },
+        "time.period_repeat": {
+            "sdf:jsonPointer": "#/sdfObject/time.period/sdfProperty/repeat",
+            "description": "The number of times to repeat the time period",
+            "type": "integer",
+            "minimum": -1
+        },
+        "time.period_triggertiming": {
+            "sdf:jsonPointer": "#/sdfObject/time.period/sdfProperty/triggertiming",
+            "description": "The desired timing to trigger an action execution",
+            "type": "string",
+            "enum": [
+                "startTime",
+                "stopTime",
+                "totalInterval"
+            ]
+        },
+        "time.period_state": {
+            "sdf:jsonPointer": "#/sdfObject/time.period/sdfProperty/state",
+            "description": "The current state of the time interval",
+            "type": "string",
+            "enum": [
+                "preInterval",
+                "inInterval",
+                "postInterval"
+            ]
+        }
+    },
+    "tm:required": [
+        "#/properties/time.period_startTime"
+    ]
+}

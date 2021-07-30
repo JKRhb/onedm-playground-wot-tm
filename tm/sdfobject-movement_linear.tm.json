@@ -1,0 +1,37 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-02-15"
+    },
+    "properties": {
+        "movement.linear_movementSettings": {
+            "sdf:jsonPointer": "#/sdfObject/movement.linear/sdfProperty/movementSettings",
+            "description": "The array of possible movement values.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "movement.linear_movementModifier": {
+            "sdf:jsonPointer": "#/sdfObject/movement.linear/sdfProperty/movementModifier",
+            "description": "The modifier to the movement value (e.g. spin-90, left-20), units are device dependent.",
+            "type": "string"
+        },
+        "movement.linear_movement": {
+            "sdf:jsonPointer": "#/sdfObject/movement.linear/sdfProperty/movement",
+            "description": "The current movement value.",
+            "type": "string"
+        }
+    },
+    "tm:required": [
+        "#/properties/movement.linear_movementSettings",
+        "#/properties/movement.linear_movement"
+    ]
+}

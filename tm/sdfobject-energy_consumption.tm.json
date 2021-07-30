@@ -1,0 +1,29 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-02-15"
+    },
+    "properties": {
+        "energy.consumption_power": {
+            "sdf:jsonPointer": "#/sdfObject/energy.consumption/sdfProperty/power",
+            "description": "The instantaneous Power.",
+            "type": "number"
+        },
+        "energy.consumption_energy": {
+            "sdf:jsonPointer": "#/sdfObject/energy.consumption/sdfProperty/energy",
+            "description": "The energy consumed.",
+            "type": "number"
+        }
+    },
+    "tm:required": [
+        "#/properties/energy.consumption_power",
+        "#/properties/energy.consumption_energy"
+    ]
+}

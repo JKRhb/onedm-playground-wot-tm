@@ -1,0 +1,25 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-02-22"
+    },
+    "properties": {
+        "light.brightness_brightness": {
+            "sdf:jsonPointer": "#/sdfObject/light.brightness/sdfProperty/brightness",
+            "description": "The Quantized representation in the range 0-100 of the current sensed or set value for Brightness.",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+        }
+    },
+    "tm:required": [
+        "#/properties/light.brightness_brightness"
+    ]
+}

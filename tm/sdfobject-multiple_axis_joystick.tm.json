@@ -1,0 +1,51 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "Copyright (c) 2018-2020 IPSO",
+    "version": {
+        "instance": "2021-02-11"
+    },
+    "properties": {
+        "Multiple_Axis_Joystick_Digital_Input_State": {
+            "sdf:jsonPointer": "#/sdfObject/Multiple_Axis_Joystick/sdfProperty/Digital_Input_State",
+            "title": "Digital Input State",
+            "description": "The current state of a digital input.",
+            "type": "boolean"
+        },
+        "Multiple_Axis_Joystick_Digital_Input_Counter": {
+            "sdf:jsonPointer": "#/sdfObject/Multiple_Axis_Joystick/sdfProperty/Digital_Input_Counter",
+            "title": "Digital Input Counter",
+            "description": "The cumulative value of active state detected.",
+            "type": "integer"
+        },
+        "Multiple_Axis_Joystick_X_Value": {
+            "sdf:jsonPointer": "#/sdfObject/Multiple_Axis_Joystick/sdfProperty/X_Value",
+            "title": "X Value",
+            "description": "The measured value along the X axis.",
+            "type": "number"
+        },
+        "Multiple_Axis_Joystick_Y_Value": {
+            "sdf:jsonPointer": "#/sdfObject/Multiple_Axis_Joystick/sdfProperty/Y_Value",
+            "title": "Y Value",
+            "description": "The measured value along the Y axis.",
+            "type": "number"
+        },
+        "Multiple_Axis_Joystick_Z_Value": {
+            "sdf:jsonPointer": "#/sdfObject/Multiple_Axis_Joystick/sdfProperty/Z_Value",
+            "title": "Z Value",
+            "description": "The measured value along the Z axis.",
+            "type": "number"
+        },
+        "Multiple_Axis_Joystick_Application_Type": {
+            "sdf:jsonPointer": "#/sdfObject/Multiple_Axis_Joystick/sdfProperty/Application_Type",
+            "title": "Application Type",
+            "description": "The application type of the sensor or actuator as a string depending on the use case.",
+            "type": "string"
+        }
+    }
+}

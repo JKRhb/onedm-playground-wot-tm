@@ -1,0 +1,93 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "Copyright (c) 2018-2020 IPSO",
+    "version": {
+        "instance": "2021-02-11"
+    },
+    "actions": {
+        "Positioner_Reset_Min_and_Max_Measured_Values": {
+            "sdf:jsonPointer": "#/sdfObject/Positioner/sdfAction/Reset_Min_and_Max_Measured_Values",
+            "title": "Reset Min and Max Measured Values",
+            "description": "Reset the Min and Max Measured Values to Current Value."
+        }
+    },
+    "properties": {
+        "Positioner_Current_Position": {
+            "sdf:jsonPointer": "#/sdfObject/Positioner/sdfProperty/Current_Position",
+            "title": "Current Position",
+            "description": "Current position or desired position of a positioner actuator.",
+            "type": "number",
+            "unit": "/100",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Positioner_Transition_Time": {
+            "sdf:jsonPointer": "#/sdfObject/Positioner/sdfProperty/Transition_Time",
+            "title": "Transition Time",
+            "description": "The time expected to move the actuator to the new position.",
+            "type": "number",
+            "unit": "s"
+        },
+        "Positioner_Remaining_Time": {
+            "sdf:jsonPointer": "#/sdfObject/Positioner/sdfProperty/Remaining_Time",
+            "title": "Remaining Time",
+            "description": "The time remaining in an operation.",
+            "type": "number",
+            "unit": "s"
+        },
+        "Positioner_Min_Measured_Value": {
+            "sdf:jsonPointer": "#/sdfObject/Positioner/sdfProperty/Min_Measured_Value",
+            "title": "Min Measured Value",
+            "description": "The minimum value measured by the sensor since power ON or reset.",
+            "type": "number"
+        },
+        "Positioner_Max_Measured_Value": {
+            "sdf:jsonPointer": "#/sdfObject/Positioner/sdfProperty/Max_Measured_Value",
+            "title": "Max Measured Value",
+            "description": "The maximum value measured by the sensor since power ON or reset.",
+            "type": "number"
+        },
+        "Positioner_Min_Limit": {
+            "sdf:jsonPointer": "#/sdfObject/Positioner/sdfProperty/Min_Limit",
+            "title": "Min Limit",
+            "description": "The minimum value that can be measured by the sensor.",
+            "type": "number"
+        },
+        "Positioner_Max_Limit": {
+            "sdf:jsonPointer": "#/sdfObject/Positioner/sdfProperty/Max_Limit",
+            "title": "Max Limit",
+            "description": "The maximum value that can be measured by the sensor.",
+            "type": "number"
+        },
+        "Positioner_Application_Type": {
+            "sdf:jsonPointer": "#/sdfObject/Positioner/sdfProperty/Application_Type",
+            "title": "Application Type",
+            "description": "The application type of the sensor or actuator as a string depending on the use case.",
+            "type": "string"
+        },
+        "Positioner_Timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/Positioner/sdfProperty/Timestamp",
+            "title": "Timestamp",
+            "description": "The timestamp of when the measurement was performed.",
+            "type": "number"
+        },
+        "Positioner_Fractional_Timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/Positioner/sdfProperty/Fractional_Timestamp",
+            "title": "Fractional Timestamp",
+            "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "type": "number",
+            "unit": "s",
+            "minimum": 0,
+            "maximum": 1
+        }
+    },
+    "tm:required": [
+        "#/properties/Positioner_Current_Position"
+    ]
+}

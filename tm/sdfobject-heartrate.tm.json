@@ -1,0 +1,39 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-03-04"
+    },
+    "properties": {
+        "heartrate_heartrate": {
+            "sdf:jsonPointer": "#/sdfObject/heartrate/sdfProperty/heartrate",
+            "description": "This Property describes the heart rate in bpm.",
+            "type": "integer",
+            "minimum": 0
+        },
+        "heartrate_range": {
+            "sdf:jsonPointer": "#/sdfObject/heartrate/sdfProperty/range",
+            "description": "The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+                "type": "integer"
+            }
+        },
+        "heartrate_step": {
+            "sdf:jsonPointer": "#/sdfObject/heartrate/sdfProperty/step",
+            "description": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.",
+            "type": "integer"
+        }
+    },
+    "tm:required": [
+        "#/properties/heartrate_heartrate"
+    ]
+}

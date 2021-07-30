@@ -1,0 +1,28 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-02-15"
+    },
+    "properties": {
+        "sensor.threeaxis_orientation": {
+            "sdf:jsonPointer": "#/sdfObject/sensor.threeaxis/sdfProperty/orientation",
+            "description": "The array containing x-plane, y-plane and z-plane orientation in 'g'.",
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+                "type": "number"
+            }
+        }
+    },
+    "tm:required": [
+        "#/properties/sensor.threeaxis_orientation"
+    ]
+}

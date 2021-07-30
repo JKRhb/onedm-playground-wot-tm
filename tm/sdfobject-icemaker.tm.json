@@ -1,0 +1,28 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-02-15"
+    },
+    "properties": {
+        "icemaker_status": {
+            "sdf:jsonPointer": "#/sdfObject/icemaker/sdfProperty/status",
+            "description": "The status of the Ice Maker.",
+            "type": "string",
+            "enum": [
+                "on",
+                "off",
+                "full"
+            ]
+        }
+    },
+    "tm:required": [
+        "#/properties/icemaker_status"
+    ]
+}

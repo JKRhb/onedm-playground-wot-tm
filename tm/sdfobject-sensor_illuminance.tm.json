@@ -1,0 +1,33 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "version": {
+        "instance": "2019-08-08"
+    },
+    "properties": {
+        "sensor.illuminance_illuminance": {
+            "sdf:jsonPointer": "#/sdfObject/sensor.illuminance/sdfProperty/illuminance",
+            "description": "The sensed luminous flux per unit area in lux.",
+            "type": "number"
+        },
+        "sensor.illuminance_range": {
+            "sdf:jsonPointer": "#/sdfObject/sensor.illuminance/sdfProperty/range",
+            "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+                "type": "number"
+            }
+        }
+    },
+    "tm:required": [
+        "#/properties/sensor.illuminance_illuminance"
+    ]
+}

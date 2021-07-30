@@ -15,6 +15,7 @@
             "sdf:jsonPointer": "#/sdfObject/ecomode/sdfProperty/modes",
             "description": "The array of the currently active mode(s).",
             "type": "array",
+            "uniqueItems": true,
             "items": {
                 "type": "string",
                 "enum": [

@@ -15,6 +15,7 @@
             "sdf:jsonPointer": "#/sdfObject/automaticdocumentfeeder/sdfProperty/adfStates",
             "description": "The array of the possible adf states.",
             "type": "array",
+            "uniqueItems": true,
             "items": {
                 "type": "string"
             }

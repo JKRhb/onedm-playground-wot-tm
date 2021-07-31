@@ -6,7 +6,14 @@
         }
     ],
     "@type": "tm:ThingModel",
+    "title": "OMA LwM2M Addressable Text Display (Object ID 3341)",
     "description": "Copyright (c) 2018-2020 IPSO",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
     "version": {
         "instance": "2021-02-11"
     },

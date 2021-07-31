@@ -21,6 +21,7 @@
         "glucose.samplelocation_samplelocation": {
             "sdf:jsonPointer": "#/sdfObject/glucose.samplelocation/sdfProperty/samplelocation",
             "description": "The possible blood locations where the blood sample may be taken.",
+            "readOnly": true,
             "type": "string",
             "enum": [
                 "finger",

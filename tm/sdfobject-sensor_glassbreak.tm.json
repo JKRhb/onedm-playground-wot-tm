@@ -21,6 +21,7 @@
         "sensor.glassbreak_value": {
             "sdf:jsonPointer": "#/sdfObject/sensor.glassbreak/sdfProperty/value",
             "description": "The glassbreak indication, true = glass break sensed, false = glass break not sensed.",
+            "readOnly": true,
             "type": "boolean"
         }
     },

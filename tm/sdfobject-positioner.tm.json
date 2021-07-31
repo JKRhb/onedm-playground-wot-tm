@@ -45,6 +45,7 @@
             "sdf:jsonPointer": "#/sdfObject/Positioner/sdfProperty/Remaining_Time",
             "title": "Remaining Time",
             "description": "The time remaining in an operation.",
+            "readOnly": true,
             "type": "number",
             "unit": "s"
         },
@@ -52,24 +53,28 @@
             "sdf:jsonPointer": "#/sdfObject/Positioner/sdfProperty/Min_Measured_Value",
             "title": "Min Measured Value",
             "description": "The minimum value measured by the sensor since power ON or reset.",
+            "readOnly": true,
             "type": "number"
         },
         "Positioner_Max_Measured_Value": {
             "sdf:jsonPointer": "#/sdfObject/Positioner/sdfProperty/Max_Measured_Value",
             "title": "Max Measured Value",
             "description": "The maximum value measured by the sensor since power ON or reset.",
+            "readOnly": true,
             "type": "number"
         },
         "Positioner_Min_Limit": {
             "sdf:jsonPointer": "#/sdfObject/Positioner/sdfProperty/Min_Limit",
             "title": "Min Limit",
             "description": "The minimum value that can be measured by the sensor.",
+            "readOnly": true,
             "type": "number"
         },
         "Positioner_Max_Limit": {
             "sdf:jsonPointer": "#/sdfObject/Positioner/sdfProperty/Max_Limit",
             "title": "Max Limit",
             "description": "The maximum value that can be measured by the sensor.",
+            "readOnly": true,
             "type": "number"
         },
         "Positioner_Application_Type": {
@@ -82,12 +87,14 @@
             "sdf:jsonPointer": "#/sdfObject/Positioner/sdfProperty/Timestamp",
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
+            "readOnly": true,
             "type": "number"
         },
         "Positioner_Fractional_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Positioner/sdfProperty/Fractional_Timestamp",
             "title": "Fractional Timestamp",
             "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "readOnly": true,
             "type": "number",
             "unit": "s",
             "minimum": 0,

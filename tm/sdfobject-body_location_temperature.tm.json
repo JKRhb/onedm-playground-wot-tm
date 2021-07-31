@@ -21,6 +21,7 @@
         "body.location.temperature_bloc": {
             "sdf:jsonPointer": "#/sdfObject/body.location.temperature/sdfProperty/bloc",
             "description": "A list specific to temperature site",
+            "readOnly": true,
             "type": "string",
             "enum": [
                 "axillary",

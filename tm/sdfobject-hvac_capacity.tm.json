@@ -21,6 +21,7 @@
         "hvac.capacity_capacity": {
             "sdf:jsonPointer": "#/sdfObject/hvac.capacity/sdfProperty/capacity",
             "description": "The rated capacity for the Device.",
+            "readOnly": true,
             "type": "number",
             "minimum": 0,
             "exclusiveMinimum": true

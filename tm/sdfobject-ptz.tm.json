@@ -21,6 +21,7 @@
         "ptz_tilt_range": {
             "sdf:jsonPointer": "#/sdfObject/ptz/sdfProperty/tilt_range",
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "readOnly": true,
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
@@ -41,11 +42,13 @@
         "ptz_precision": {
             "sdf:jsonPointer": "#/sdfObject/ptz/sdfProperty/precision",
             "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
+            "readOnly": true,
             "type": "number"
         },
         "ptz_pan_range": {
             "sdf:jsonPointer": "#/sdfObject/ptz/sdfProperty/pan_range",
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "readOnly": true,
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
@@ -56,6 +59,7 @@
         "ptz_zoomFactorRange": {
             "sdf:jsonPointer": "#/sdfObject/ptz/sdfProperty/zoomFactorRange",
             "description": "The allowed Zoom Factor values. Linear equates to a 1-100 min/max.",
+            "readOnly": true,
             "type": "string",
             "enum": [
                 "linear",

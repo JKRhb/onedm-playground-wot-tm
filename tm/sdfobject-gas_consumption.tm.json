@@ -21,17 +21,20 @@
         "gas.consumption_gas": {
             "sdf:jsonPointer": "#/sdfObject/gas.consumption/sdfProperty/gas",
             "description": "gas energy consumed in kWh",
+            "readOnly": true,
             "type": "number",
             "minimum": 0
         },
         "gas.consumption_precision": {
             "sdf:jsonPointer": "#/sdfObject/gas.consumption/sdfProperty/precision",
             "description": "Accuracy granularity of the exposed value",
+            "readOnly": true,
             "type": "number"
         },
         "gas.consumption_volume": {
             "sdf:jsonPointer": "#/sdfObject/gas.consumption/sdfProperty/volume",
             "description": "gas volume consumed in m3 (metres cubed)",
+            "readOnly": true,
             "type": "number",
             "minimum": 0
         }

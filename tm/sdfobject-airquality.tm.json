@@ -21,6 +21,7 @@
         "airquality_contaminanttype": {
             "sdf:jsonPointer": "#/sdfObject/airquality/sdfProperty/contaminanttype",
             "description": "The contaminant being measured.",
+            "readOnly": true,
             "type": "string",
             "enum": [
                 "CH2O",
@@ -38,6 +39,7 @@
         "airquality_valuetype": {
             "sdf:jsonPointer": "#/sdfObject/airquality/sdfProperty/valuetype",
             "description": "The property that indicates whether the provided value is qualitative or measured.",
+            "readOnly": true,
             "type": "string",
             "enum": [
                 "Qualitative",
@@ -47,11 +49,13 @@
         "airquality_contaminantvalue": {
             "sdf:jsonPointer": "#/sdfObject/airquality/sdfProperty/contaminantvalue",
             "description": "The measured or qualitative value for the contaminant.",
+            "readOnly": true,
             "type": "integer"
         },
         "airquality_range": {
             "sdf:jsonPointer": "#/sdfObject/airquality/sdfProperty/range",
             "description": "The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "readOnly": true,
             "type": "array",
             "minItems": 2,
             "maxItems": 2,

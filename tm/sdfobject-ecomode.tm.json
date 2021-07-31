@@ -35,6 +35,7 @@
         "ecomode_supportedModes": {
             "sdf:jsonPointer": "#/sdfObject/ecomode/sdfProperty/supportedModes",
             "description": "The array of possible modes the device supports.",
+            "readOnly": true,
             "type": "array",
             "items": {
                 "type": "string",
@@ -48,6 +49,7 @@
         "ecomode_adminforced": {
             "sdf:jsonPointer": "#/sdfObject/ecomode/sdfProperty/adminforced",
             "description": "The indicator that the current mode of operation has been forced by admin action.",
+            "readOnly": true,
             "type": "boolean"
         }
     },

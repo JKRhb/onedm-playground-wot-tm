@@ -21,6 +21,7 @@
         "glucose.tester_tester": {
             "sdf:jsonPointer": "#/sdfObject/glucose.tester/sdfProperty/tester",
             "description": "The possible cases of testers who may perform the blood sugar measurement.",
+            "readOnly": true,
             "type": "string",
             "enum": [
                 "self",

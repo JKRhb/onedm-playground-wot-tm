@@ -34,6 +34,7 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfProperty/Instantaneous_active_power",
             "title": "Instantaneous active power",
             "description": "The current active power.",
+            "readOnly": true,
             "type": "number",
             "unit": "W"
         },
@@ -41,6 +42,7 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfProperty/Min_Measured_active_power",
             "title": "Min Measured active power",
             "description": "The minimum active power measured by the sensor since it is ON.",
+            "readOnly": true,
             "type": "number",
             "unit": "W"
         },
@@ -48,6 +50,7 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfProperty/Max_Measured_active_power",
             "title": "Max Measured active power",
             "description": "The maximum active power measured by the sensor since it is ON.",
+            "readOnly": true,
             "type": "number",
             "unit": "W"
         },
@@ -55,6 +58,7 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfProperty/Min_Range_active_power",
             "title": "Min Range active power",
             "description": "The minimum active power that can be measured by the sensor.",
+            "readOnly": true,
             "type": "number",
             "unit": "W"
         },
@@ -62,6 +66,7 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfProperty/Max_Range_active_power",
             "title": "Max Range active power",
             "description": "The maximum active power that can be measured by the sensor.",
+            "readOnly": true,
             "type": "number",
             "unit": "W"
         },
@@ -69,6 +74,7 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfProperty/Cumulative_active_power",
             "title": "Cumulative active power",
             "description": "The cumulative active power since the last cumulative energy reset or device start.",
+            "readOnly": true,
             "type": "number",
             "unit": "Wh"
         },
@@ -84,6 +90,7 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfProperty/Instantaneous_reactive_power",
             "title": "Instantaneous reactive power",
             "description": "The current reactive power.",
+            "readOnly": true,
             "type": "number",
             "unit": "var"
         },
@@ -91,6 +98,7 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfProperty/Min_Measured_reactive_power",
             "title": "Min Measured reactive power",
             "description": "The minimum reactive power measured by the sensor since it is ON.",
+            "readOnly": true,
             "type": "number",
             "unit": "var"
         },
@@ -98,6 +106,7 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfProperty/Max_Measured_reactive_power",
             "title": "Max Measured reactive power",
             "description": "The maximum reactive power measured by the sensor since it is ON.",
+            "readOnly": true,
             "type": "number",
             "unit": "var"
         },
@@ -105,6 +114,7 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfProperty/Min_Range_reactive_power",
             "title": "Min Range reactive power",
             "description": "The minimum active power that can be measured by the sensor.",
+            "readOnly": true,
             "type": "number",
             "unit": "var"
         },
@@ -112,6 +122,7 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfProperty/Max_Range_reactive_power",
             "title": "Max Range reactive power",
             "description": "The maximum reactive power that can be measured by the sensor.",
+            "readOnly": true,
             "type": "number",
             "unit": "var"
         },
@@ -119,6 +130,7 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfProperty/Cumulative_reactive_power",
             "title": "Cumulative reactive power",
             "description": "The cumulative reactive power since the last cumulative energy reset or device start.",
+            "readOnly": true,
             "type": "number",
             "unit": "varh"
         },
@@ -134,6 +146,7 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfProperty/Power_factor",
             "title": "Power factor",
             "description": "If applicable, the power factor of the current consumption.",
+            "readOnly": true,
             "type": "number"
         },
         "Power_Measurement_Current_Calibration": {
@@ -152,12 +165,14 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfProperty/Timestamp",
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
+            "readOnly": true,
             "type": "number"
         },
         "Power_Measurement_Fractional_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfProperty/Fractional_Timestamp",
             "title": "Fractional Timestamp",
             "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "readOnly": true,
             "type": "number",
             "unit": "s",
             "minimum": 0,
@@ -167,6 +182,7 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfProperty/Measurement_Quality_Indicator",
             "title": "Measurement Quality Indicator",
             "description": "Measurement quality indicator reported by a smart sensor. 0: UNCHECKED No quality checks were done because they do not exist or can not be applied. 1: REJECTED WITH CERTAINTY The measured value is invalid. 2: REJECTED WITH PROBABILITY The measured value is likely invalid. 3: ACCEPTED BUT SUSPICIOUS The measured value is likely OK. 4: ACCEPTED The measured value is OK. 5-15: Reserved for future extensions. 16-23: Vendor specific measurement quality.",
+            "readOnly": true,
             "type": "integer",
             "minimum": 0,
             "maximum": 23
@@ -175,6 +191,7 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfProperty/Measurement_Quality_Level",
             "title": "Measurement Quality Level",
             "description": "Measurement quality level reported by a smart sensor. Quality level 100 means that the measurement has fully passed quality check algorithms. Smaller quality levels mean that quality has decreased and the measurement has only partially passed quality check algorithms. The smaller the quality level, the more caution should be used by the application when using the measurement. When the quality level is 0 it means that the measurement should certainly be rejected.",
+            "readOnly": true,
             "type": "integer",
             "minimum": 0,
             "maximum": 100

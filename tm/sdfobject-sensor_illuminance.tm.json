@@ -21,11 +21,13 @@
         "sensor.illuminance_illuminance": {
             "sdf:jsonPointer": "#/sdfObject/sensor.illuminance/sdfProperty/illuminance",
             "description": "The sensed luminous flux per unit area in lux.",
+            "readOnly": true,
             "type": "number"
         },
         "sensor.illuminance_range": {
             "sdf:jsonPointer": "#/sdfObject/sensor.illuminance/sdfProperty/range",
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "readOnly": true,
             "type": "array",
             "minItems": 2,
             "maxItems": 2,

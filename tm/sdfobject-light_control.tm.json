@@ -44,6 +44,7 @@
             "sdf:jsonPointer": "#/sdfObject/Light_Control/sdfProperty/Cumulative_active_power",
             "title": "Cumulative active power",
             "description": "The cumulative active power since the last cumulative energy reset or device start.",
+            "readOnly": true,
             "type": "number",
             "unit": "Wh"
         },
@@ -51,6 +52,7 @@
             "sdf:jsonPointer": "#/sdfObject/Light_Control/sdfProperty/Power_factor",
             "title": "Power factor",
             "description": "If applicable, the power factor of the current consumption.",
+            "readOnly": true,
             "type": "number"
         },
         "Light_Control_Colour": {
@@ -63,6 +65,7 @@
             "sdf:jsonPointer": "#/sdfObject/Light_Control/sdfProperty/Sensor_Units",
             "title": "Sensor Units",
             "description": "Measurement Units Definition.",
+            "readOnly": true,
             "type": "string"
         },
         "Light_Control_Application_Type": {

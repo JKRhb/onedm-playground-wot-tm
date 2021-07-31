@@ -21,11 +21,13 @@
         "calorificvalue_precision": {
             "sdf:jsonPointer": "#/sdfObject/calorificvalue/sdfProperty/precision",
             "description": "Accuracy granularity of the exposed value",
+            "readOnly": true,
             "type": "number"
         },
         "calorificvalue_calorific": {
             "sdf:jsonPointer": "#/sdfObject/calorificvalue/sdfProperty/calorific",
             "description": "Calorific value of fuel",
+            "readOnly": true,
             "type": "number",
             "minimum": 0,
             "exclusiveMinimum": true

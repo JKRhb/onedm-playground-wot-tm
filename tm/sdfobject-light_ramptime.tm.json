@@ -26,6 +26,7 @@
         "light.ramptime_range": {
             "sdf:jsonPointer": "#/sdfObject/light.ramptime/sdfProperty/range",
             "description": "The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "readOnly": true,
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
@@ -36,11 +37,13 @@
         "light.ramptime_step": {
             "sdf:jsonPointer": "#/sdfObject/light.ramptime/sdfProperty/step",
             "description": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.",
+            "readOnly": true,
             "type": "integer"
         },
         "light.ramptime_precision": {
             "sdf:jsonPointer": "#/sdfObject/light.ramptime/sdfProperty/precision",
             "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
+            "readOnly": true,
             "type": "number"
         }
     },

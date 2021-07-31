@@ -40,6 +40,7 @@
         "powersource_sourcefault": {
             "sdf:jsonPointer": "#/sdfObject/powersource/sdfProperty/sourcefault",
             "description": "Fault detected in currently active power source. True = fault detected",
+            "readOnly": true,
             "type": "boolean"
         }
     },

@@ -21,6 +21,7 @@
         "time.stamp_timestamp": {
             "sdf:jsonPointer": "#/sdfObject/time.stamp/sdfProperty/timestamp",
             "description": "An RFC3339 formated time indicating when the data was observed (e.g.: 2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00).",
+            "readOnly": true,
             "type": "string",
             "format": "date-time"
         }

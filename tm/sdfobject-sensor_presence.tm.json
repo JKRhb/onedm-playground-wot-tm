@@ -21,6 +21,7 @@
         "sensor.presence_value": {
             "sdf:jsonPointer": "#/sdfObject/sensor.presence/sdfProperty/value",
             "description": "The presences sensor, true = precense sensed, false = precensenot sensed.",
+            "readOnly": true,
             "type": "boolean"
         }
     },

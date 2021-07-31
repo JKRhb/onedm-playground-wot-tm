@@ -26,6 +26,7 @@
         "selectablelevels_availablelevels": {
             "sdf:jsonPointer": "#/sdfObject/selectablelevels/sdfProperty/availablelevels",
             "description": "The set of levels to select from.",
+            "readOnly": true,
             "type": "array",
             "items": {
                 "type": "number"

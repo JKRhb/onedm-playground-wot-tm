@@ -21,6 +21,7 @@
         "sensor.magneticfielddirection_value": {
             "sdf:jsonPointer": "#/sdfObject/sensor.magneticfielddirection/sdfProperty/value",
             "description": "The array containing Hx, Hy, Hz.",
+            "readOnly": true,
             "type": "array",
             "minItems": 3,
             "maxItems": 3,

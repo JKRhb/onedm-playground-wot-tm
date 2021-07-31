@@ -21,6 +21,7 @@
         "conversionfactor_conversion": {
             "sdf:jsonPointer": "#/sdfObject/conversionfactor/sdfProperty/conversion",
             "description": "Conversion factor to convert a volume of a fuel to energy consumption",
+            "readOnly": true,
             "type": "number",
             "minimum": 0,
             "exclusiveMinimum": true
@@ -28,6 +29,7 @@
         "conversionfactor_precision": {
             "sdf:jsonPointer": "#/sdfObject/conversionfactor/sdfProperty/precision",
             "description": "Accuracy granularity of the exposed value",
+            "readOnly": true,
             "type": "number"
         }
     },

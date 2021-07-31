@@ -31,6 +31,7 @@
         "operational.state_machineStates": {
             "sdf:jsonPointer": "#/sdfObject/operational.state/sdfProperty/machineStates",
             "description": "The array of the possible operational states.",
+            "readOnly": true,
             "type": "array",
             "items": {
                 "type": "string"
@@ -51,6 +52,7 @@
         "operational.state_progressPercentage": {
             "sdf:jsonPointer": "#/sdfObject/operational.state/sdfProperty/progressPercentage",
             "description": "The percentage completeness of the current jobState.",
+            "readOnly": true,
             "type": "integer",
             "minimum": 0,
             "maximum": 100
@@ -58,6 +60,7 @@
         "operational.state_jobStates": {
             "sdf:jsonPointer": "#/sdfObject/operational.state/sdfProperty/jobStates",
             "description": "The Array of the possible job states.",
+            "readOnly": true,
             "type": "array",
             "items": {
                 "type": "string"

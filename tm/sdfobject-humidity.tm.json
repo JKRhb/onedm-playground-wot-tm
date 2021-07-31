@@ -28,6 +28,7 @@
         "humidity_humidity": {
             "sdf:jsonPointer": "#/sdfObject/humidity/sdfProperty/humidity",
             "description": "The current sensed value for humidity.",
+            "readOnly": true,
             "type": "integer",
             "minimum": 0,
             "maximum": 100

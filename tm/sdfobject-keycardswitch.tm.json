@@ -21,6 +21,7 @@
         "keycardswitch_stateofcard": {
             "sdf:jsonPointer": "#/sdfObject/keycardswitch/sdfProperty/stateofcard",
             "description": "The status of the keycardswitch. \"validCardInserted\" means that a keycard was inserted and passed validation check. \"validCardNotInserted\" means that a keycard is not inserted or it was inserted but failed to pass validation check.",
+            "readOnly": true,
             "type": "string",
             "enum": [
                 "validCardInserted",

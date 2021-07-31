@@ -22,30 +22,35 @@
             "sdf:jsonPointer": "#/sdfObject/Multiple_Axis_Joystick/sdfProperty/Digital_Input_State",
             "title": "Digital Input State",
             "description": "The current state of a digital input.",
+            "readOnly": true,
             "type": "boolean"
         },
         "Multiple_Axis_Joystick_Digital_Input_Counter": {
             "sdf:jsonPointer": "#/sdfObject/Multiple_Axis_Joystick/sdfProperty/Digital_Input_Counter",
             "title": "Digital Input Counter",
             "description": "The cumulative value of active state detected.",
+            "readOnly": true,
             "type": "integer"
         },
         "Multiple_Axis_Joystick_X_Value": {
             "sdf:jsonPointer": "#/sdfObject/Multiple_Axis_Joystick/sdfProperty/X_Value",
             "title": "X Value",
             "description": "The measured value along the X axis.",
+            "readOnly": true,
             "type": "number"
         },
         "Multiple_Axis_Joystick_Y_Value": {
             "sdf:jsonPointer": "#/sdfObject/Multiple_Axis_Joystick/sdfProperty/Y_Value",
             "title": "Y Value",
             "description": "The measured value along the Y axis.",
+            "readOnly": true,
             "type": "number"
         },
         "Multiple_Axis_Joystick_Z_Value": {
             "sdf:jsonPointer": "#/sdfObject/Multiple_Axis_Joystick/sdfProperty/Z_Value",
             "title": "Z Value",
             "description": "The measured value along the Z axis.",
+            "readOnly": true,
             "type": "number"
         },
         "Multiple_Axis_Joystick_Application_Type": {

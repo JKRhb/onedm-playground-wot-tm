@@ -21,6 +21,7 @@
         "energy.generation_energygenerated": {
             "sdf:jsonPointer": "#/sdfObject/energy.generation/sdfProperty/energygenerated",
             "description": "The energy generated in Watt-hour(Wh).",
+            "readOnly": true,
             "type": "number"
         }
     },

@@ -21,6 +21,7 @@
         "speech.tts_supportedLanguages": {
             "sdf:jsonPointer": "#/sdfObject/speech.tts/sdfProperty/supportedLanguages",
             "description": "The array of supported language tags.",
+            "readOnly": true,
             "type": "array",
             "items": {
                 "type": "string"
@@ -29,6 +30,7 @@
         "speech.tts_supportedVoices": {
             "sdf:jsonPointer": "#/sdfObject/speech.tts/sdfProperty/supportedVoices",
             "description": "The SSML document fragment indicating supported voices.",
+            "readOnly": true,
             "type": "string",
             "maxLength": 1024
         },

@@ -36,6 +36,7 @@
             "sdf:jsonPointer": "#/sdfObject/Timer/sdfProperty/Remaining_Time",
             "title": "Remaining Time",
             "description": "The time remaining in an operation.",
+            "readOnly": true,
             "type": "number",
             "unit": "s"
         },
@@ -56,6 +57,7 @@
             "sdf:jsonPointer": "#/sdfObject/Timer/sdfProperty/Digital_Input_Counter",
             "title": "Digital Input Counter",
             "description": "The cumulative value of active state detected.",
+            "readOnly": true,
             "type": "integer"
         },
         "Timer_Cumulative_Time": {
@@ -69,6 +71,7 @@
             "sdf:jsonPointer": "#/sdfObject/Timer/sdfProperty/Digital_State",
             "title": "Digital State",
             "description": "The current state of the timer output.",
+            "readOnly": true,
             "type": "boolean"
         },
         "Timer_Counter": {

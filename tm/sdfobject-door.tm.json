@@ -27,6 +27,7 @@
         "door_openState": {
             "sdf:jsonPointer": "#/sdfObject/door/sdfProperty/openState",
             "description": "The state of the door (open or closed).",
+            "readOnly": true,
             "type": "string",
             "enum": [
                 "Open",

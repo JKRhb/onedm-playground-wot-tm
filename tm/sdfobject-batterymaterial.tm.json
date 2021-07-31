@@ -21,6 +21,7 @@
         "batterymaterial_material": {
             "sdf:jsonPointer": "#/sdfObject/batterymaterial/sdfProperty/material",
             "description": "The battery construction material (type).",
+            "readOnly": true,
             "type": "string",
             "enum": [
                 "Alkaline",

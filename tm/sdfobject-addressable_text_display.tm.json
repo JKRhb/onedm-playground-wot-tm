@@ -47,12 +47,14 @@
             "sdf:jsonPointer": "#/sdfObject/Addressable_Text_Display/sdfProperty/Max_X_Coordinate",
             "title": "Max X Coordinate",
             "description": "The highest X coordinate the display supports before wrapping to the next line.",
+            "readOnly": true,
             "type": "integer"
         },
         "Addressable_Text_Display_Max_Y_Coordinate": {
             "sdf:jsonPointer": "#/sdfObject/Addressable_Text_Display/sdfProperty/Max_Y_Coordinate",
             "title": "Max Y Coordinate",
             "description": "The highest Y coordinate the display supports before wrapping to the next line.",
+            "readOnly": true,
             "type": "integer"
         },
         "Addressable_Text_Display_Level": {

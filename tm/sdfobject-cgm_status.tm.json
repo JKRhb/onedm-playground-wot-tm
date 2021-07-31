@@ -21,6 +21,7 @@
         "cgm.status_cgmtype": {
             "sdf:jsonPointer": "#/sdfObject/cgm.status/sdfProperty/cgmtype",
             "description": "This Property describes the CGM measurement type.",
+            "readOnly": true,
             "type": "string",
             "enum": [
                 "Capillary Whole blood",
@@ -36,22 +37,26 @@
         "cgm.status_cgmstatus": {
             "sdf:jsonPointer": "#/sdfObject/cgm.status/sdfProperty/cgmstatus",
             "description": "This Property describes the specific notifications given by the CGM device including, but not limited to, warnings, errors, and handling events.",
+            "readOnly": true,
             "type": "string"
         },
         "cgm.status_gtrend": {
             "sdf:jsonPointer": "#/sdfObject/cgm.status/sdfProperty/gtrend",
             "description": "This Property describes the rate of change in glucose measurements at a time instant.",
+            "readOnly": true,
             "type": "number",
             "minimum": 0.0
         },
         "cgm.status_malfunction": {
             "sdf:jsonPointer": "#/sdfObject/cgm.status/sdfProperty/malfunction",
             "description": "This Property describes the sensor malfunction detection check.",
+            "readOnly": true,
             "type": "boolean"
         },
         "cgm.status_range": {
             "sdf:jsonPointer": "#/sdfObject/cgm.status/sdfProperty/range",
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "readOnly": true,
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
@@ -62,11 +67,13 @@
         "cgm.status_step": {
             "sdf:jsonPointer": "#/sdfObject/cgm.status/sdfProperty/step",
             "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
+            "readOnly": true,
             "type": "number"
         },
         "cgm.status_precision": {
             "sdf:jsonPointer": "#/sdfObject/cgm.status/sdfProperty/precision",
             "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
+            "readOnly": true,
             "type": "number"
         }
     },

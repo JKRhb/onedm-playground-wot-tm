@@ -61,6 +61,7 @@
         "time.period_state": {
             "sdf:jsonPointer": "#/sdfObject/time.period/sdfProperty/state",
             "description": "The current state of the time interval",
+            "readOnly": true,
             "type": "string",
             "enum": [
                 "preInterval",

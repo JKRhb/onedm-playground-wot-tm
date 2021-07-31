@@ -29,6 +29,7 @@
         "mode_supportedModes": {
             "sdf:jsonPointer": "#/sdfObject/mode/sdfProperty/supportedModes",
             "description": "The array of possible modes the device supports.",
+            "readOnly": true,
             "type": "array",
             "items": {
                 "type": "string"

@@ -21,6 +21,7 @@
         "consumable_remaining": {
             "sdf:jsonPointer": "#/sdfObject/consumable/sdfProperty/remaining",
             "description": "The percentage remaining lifespan.",
+            "readOnly": true,
             "type": "integer",
             "minimum": 0,
             "maximum": 100
@@ -28,17 +29,20 @@
         "consumable_typeofconsumable": {
             "sdf:jsonPointer": "#/sdfObject/consumable/sdfProperty/typeofconsumable",
             "description": "The thing that is being consumed.",
+            "readOnly": true,
             "type": "string"
         },
         "consumable_url": {
             "sdf:jsonPointer": "#/sdfObject/consumable/sdfProperty/url",
             "description": "The URL at which additional ordering information may be found.",
+            "readOnly": true,
             "type": "string",
             "format": "uri"
         },
         "consumable_orderpercentage": {
             "sdf:jsonPointer": "#/sdfObject/consumable/sdfProperty/orderpercentage",
             "description": "The percentage at which re-ordering is recommended by the manufacturer.",
+            "readOnly": true,
             "type": "integer",
             "minimum": 0,
             "maximum": 100

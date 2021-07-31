@@ -21,6 +21,7 @@
         "glucose.health_health": {
             "sdf:jsonPointer": "#/sdfObject/glucose.health/sdfProperty/health",
             "description": "The various levels of health a person feels when taking a glucose.",
+            "readOnly": true,
             "type": "string",
             "enum": [
                 "minor",

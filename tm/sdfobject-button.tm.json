@@ -21,6 +21,7 @@
         "button_value": {
             "sdf:jsonPointer": "#/sdfObject/button/sdfProperty/value",
             "description": "The status of the button",
+            "readOnly": true,
             "type": "boolean"
         }
     },

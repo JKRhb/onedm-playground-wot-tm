@@ -21,11 +21,13 @@
         "energy.consumption_power": {
             "sdf:jsonPointer": "#/sdfObject/energy.consumption/sdfProperty/power",
             "description": "The instantaneous Power.",
+            "readOnly": true,
             "type": "number"
         },
         "energy.consumption_energy": {
             "sdf:jsonPointer": "#/sdfObject/energy.consumption/sdfProperty/energy",
             "description": "The energy consumed.",
+            "readOnly": true,
             "type": "number"
         }
     },

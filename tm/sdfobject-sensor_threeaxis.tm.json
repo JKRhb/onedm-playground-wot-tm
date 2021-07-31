@@ -21,6 +21,7 @@
         "sensor.threeaxis_orientation": {
             "sdf:jsonPointer": "#/sdfObject/sensor.threeaxis/sdfProperty/orientation",
             "description": "The array containing x-plane, y-plane and z-plane orientation in 'g'.",
+            "readOnly": true,
             "type": "array",
             "minItems": 3,
             "maxItems": 3,

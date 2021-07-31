@@ -26,6 +26,7 @@
         "mediasource_sourceType": {
             "sdf:jsonPointer": "#/sdfObject/mediasource/sdfProperty/sourceType",
             "description": "Specifies the type of the source.",
+            "readOnly": true,
             "type": "string",
             "enum": [
                 "audioOnly",

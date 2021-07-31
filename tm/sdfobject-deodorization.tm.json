@@ -31,6 +31,7 @@
         "deodorization_currentstate": {
             "sdf:jsonPointer": "#/sdfObject/deodorization/sdfProperty/currentstate",
             "description": "The current state of the Deodorization function.",
+            "readOnly": true,
             "type": "string",
             "enum": [
                 "off",

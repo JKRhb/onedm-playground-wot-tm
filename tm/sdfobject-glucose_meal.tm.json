@@ -21,6 +21,7 @@
         "glucose.meal_meal": {
             "sdf:jsonPointer": "#/sdfObject/glucose.meal/sdfProperty/meal",
             "description": "Time of day when the measurement is taken.",
+            "readOnly": true,
             "type": "string",
             "enum": [
                 "preprandial",

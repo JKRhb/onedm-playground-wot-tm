@@ -56,12 +56,14 @@
             "sdf:jsonPointer": "#/sdfObject/Actuation/sdfProperty/Timestamp",
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
+            "readOnly": true,
             "type": "number"
         },
         "Actuation_Fractional_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Actuation/sdfProperty/Fractional_Timestamp",
             "title": "Fractional Timestamp",
             "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "readOnly": true,
             "type": "number",
             "unit": "s",
             "minimum": 0,

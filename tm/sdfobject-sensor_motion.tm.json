@@ -21,6 +21,7 @@
         "sensor.motion_value": {
             "sdf:jsonPointer": "#/sdfObject/sensor.motion/sdfProperty/value",
             "description": "The motion sensor, true = motion sensed, false = motion not sensed.",
+            "readOnly": true,
             "type": "boolean"
         }
     },

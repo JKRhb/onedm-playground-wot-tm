@@ -36,24 +36,28 @@
             "sdf:jsonPointer": "#/sdfObject/Analog_Output/sdfProperty/Min_Range_Value",
             "title": "Min Range Value",
             "description": "The minimum value that can be measured by the sensor.",
+            "readOnly": true,
             "type": "number"
         },
         "Analog_Output_Max_Range_Value": {
             "sdf:jsonPointer": "#/sdfObject/Analog_Output/sdfProperty/Max_Range_Value",
             "title": "Max Range Value",
             "description": "The maximum value that can be measured by the sensor.",
+            "readOnly": true,
             "type": "number"
         },
         "Analog_Output_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Analog_Output/sdfProperty/Timestamp",
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
+            "readOnly": true,
             "type": "number"
         },
         "Analog_Output_Fractional_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Analog_Output/sdfProperty/Fractional_Timestamp",
             "title": "Fractional Timestamp",
             "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "readOnly": true,
             "type": "number",
             "unit": "s",
             "minimum": 0,

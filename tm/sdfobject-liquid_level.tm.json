@@ -21,6 +21,7 @@
         "liquid.level_currentlevel": {
             "sdf:jsonPointer": "#/sdfObject/liquid.level/sdfProperty/currentlevel",
             "description": "The current level of the liquid in percentage.",
+            "readOnly": true,
             "type": "integer",
             "minimum": 0,
             "maximum": 100
@@ -35,6 +36,7 @@
         "liquid.level_step": {
             "sdf:jsonPointer": "#/sdfObject/liquid.level/sdfProperty/step",
             "description": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.",
+            "readOnly": true,
             "type": "integer"
         }
     },

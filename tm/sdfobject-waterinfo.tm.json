@@ -21,6 +21,7 @@
         "waterinfo_supportedwatertypes": {
             "sdf:jsonPointer": "#/sdfObject/waterinfo/sdfProperty/supportedwatertypes",
             "description": "The array of the possible water types.",
+            "readOnly": true,
             "type": "array",
             "items": {
                 "type": "string"
@@ -29,6 +30,7 @@
         "waterinfo_supportedadditivetypes": {
             "sdf:jsonPointer": "#/sdfObject/waterinfo/sdfProperty/supportedadditivetypes",
             "description": "The array of the possible additive types.",
+            "readOnly": true,
             "type": "array",
             "items": {
                 "type": "string"

@@ -28,6 +28,7 @@
             "sdf:jsonPointer": "#/sdfObject/Colour/sdfProperty/Sensor_Units",
             "title": "Sensor Units",
             "description": "Measurement Units Definition.",
+            "readOnly": true,
             "type": "string"
         },
         "Colour_Application_Type": {
@@ -40,12 +41,14 @@
             "sdf:jsonPointer": "#/sdfObject/Colour/sdfProperty/Timestamp",
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
+            "readOnly": true,
             "type": "number"
         },
         "Colour_Fractional_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Colour/sdfProperty/Fractional_Timestamp",
             "title": "Fractional Timestamp",
             "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "readOnly": true,
             "type": "number",
             "unit": "s",
             "minimum": 0,
@@ -55,6 +58,7 @@
             "sdf:jsonPointer": "#/sdfObject/Colour/sdfProperty/Measurement_Quality_Indicator",
             "title": "Measurement Quality Indicator",
             "description": "Measurement quality indicator reported by a smart sensor. 0: UNCHECKED No quality checks were done because they do not exist or can not be applied. 1: REJECTED WITH CERTAINTY The measured value is invalid. 2: REJECTED WITH PROBABILITY The measured value is likely invalid. 3: ACCEPTED BUT SUSPICIOUS The measured value is likely OK. 4: ACCEPTED The measured value is OK. 5-15: Reserved for future extensions. 16-23: Vendor specific measurement quality.",
+            "readOnly": true,
             "type": "integer",
             "minimum": 0,
             "maximum": 23
@@ -63,6 +67,7 @@
             "sdf:jsonPointer": "#/sdfObject/Colour/sdfProperty/Measurement_Quality_Level",
             "title": "Measurement Quality Level",
             "description": "Measurement quality level reported by a smart sensor. Quality level 100 means that the measurement has fully passed quality check algorithms. Smaller quality levels mean that quality has decreased and the measurement has only partially passed quality check algorithms. The smaller the quality level, the more caution should be used by the application when using the measurement. When the quality level is 0 it means that the measurement should certainly be rejected.",
+            "readOnly": true,
             "type": "integer",
             "minimum": 0,
             "maximum": 100

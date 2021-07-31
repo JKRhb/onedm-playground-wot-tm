@@ -22,24 +22,28 @@
             "sdf:jsonPointer": "#/sdfObject/Location/sdfProperty/Latitude",
             "title": "Latitude",
             "description": "The decimal notation of latitude, e.g. -43.5723 (World Geodetic System 1984).",
+            "readOnly": true,
             "type": "string"
         },
         "Location_Longitude": {
             "sdf:jsonPointer": "#/sdfObject/Location/sdfProperty/Longitude",
             "title": "Longitude",
             "description": "The decimal notation of longitude, e.g. 153.21760 (World Geodetic System 1984).",
+            "readOnly": true,
             "type": "string"
         },
         "Location_Uncertainty": {
             "sdf:jsonPointer": "#/sdfObject/Location/sdfProperty/Uncertainty",
             "title": "Uncertainty",
             "description": "The accuracy of the position in meters.",
+            "readOnly": true,
             "type": "string"
         },
         "Location_Compass_Direction": {
             "sdf:jsonPointer": "#/sdfObject/Location/sdfProperty/Compass_Direction",
             "title": "Compass Direction",
             "description": "The measured compass direction.",
+            "readOnly": true,
             "type": "number",
             "unit": "deg",
             "minimum": 0,
@@ -49,12 +53,14 @@
             "sdf:jsonPointer": "#/sdfObject/Location/sdfProperty/Velocity",
             "title": "Velocity",
             "description": "The velocity of the device as defined in 3GPP 23.032 GAD specification. This set of values may not be available if the device is static.",
+            "readOnly": true,
             "type": "string"
         },
         "Location_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Location/sdfProperty/Timestamp",
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
+            "readOnly": true,
             "type": "number"
         },
         "Location_Application_Type": {
@@ -67,6 +73,7 @@
             "sdf:jsonPointer": "#/sdfObject/Location/sdfProperty/Fractional_Timestamp",
             "title": "Fractional Timestamp",
             "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "readOnly": true,
             "type": "number",
             "unit": "s",
             "minimum": 0,
@@ -76,6 +83,7 @@
             "sdf:jsonPointer": "#/sdfObject/Location/sdfProperty/Measurement_Quality_Indicator",
             "title": "Measurement Quality Indicator",
             "description": "Measurement quality indicator reported by a smart sensor. 0: UNCHECKED No quality checks were done because they do not exist or can not be applied. 1: REJECTED WITH CERTAINTY The measured value is invalid. 2: REJECTED WITH PROBABILITY The measured value is likely invalid. 3: ACCEPTED BUT SUSPICIOUS The measured value is likely OK. 4: ACCEPTED The measured value is OK. 5-15: Reserved for future extensions. 16-23: Vendor specific measurement quality.",
+            "readOnly": true,
             "type": "integer",
             "minimum": 0,
             "maximum": 23
@@ -84,6 +92,7 @@
             "sdf:jsonPointer": "#/sdfObject/Location/sdfProperty/Measurement_Quality_Level",
             "title": "Measurement Quality Level",
             "description": "Measurement quality level reported by a smart sensor. Quality level 100 means that the measurement has fully passed quality check algorithms. Smaller quality levels mean that quality has decreased and the measurement has only partially passed quality check algorithms. The smaller the quality level, the more caution should be used by the application when using the measurement. When the quality level is 0 it means that the measurement should certainly be rejected.",
+            "readOnly": true,
             "type": "integer",
             "minimum": 0,
             "maximum": 100

@@ -21,11 +21,13 @@
         "orfid.tag_tagid": {
             "sdf:jsonPointer": "#/sdfObject/orfid.tag/sdfProperty/tagid",
             "description": "The tag read by the RFID reader.",
+            "readOnly": true,
             "type": "integer"
         },
         "orfid.tag_reading": {
             "sdf:jsonPointer": "#/sdfObject/orfid.tag/sdfProperty/reading",
             "description": "The reading indication. true: the tagid is read e.g. being valid. false: the tagid is invalid.",
+            "readOnly": true,
             "type": "boolean"
         }
     },

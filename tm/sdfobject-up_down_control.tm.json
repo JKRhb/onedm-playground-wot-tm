@@ -22,12 +22,14 @@
             "sdf:jsonPointer": "#/sdfObject/Up_Down_Control/sdfProperty/Increase_Input_State",
             "title": "Increase Input State",
             "description": "Indicates an increase control action.",
+            "readOnly": true,
             "type": "boolean"
         },
         "Up_Down_Control_Decrease_Input_State": {
             "sdf:jsonPointer": "#/sdfObject/Up_Down_Control/sdfProperty/Decrease_Input_State",
             "title": "Decrease Input State",
             "description": "Indicates a decrease control action.",
+            "readOnly": true,
             "type": "boolean"
         },
         "Up_Down_Control_Up_Counter": {

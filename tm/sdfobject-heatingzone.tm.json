@@ -21,11 +21,13 @@
         "heatingzone_heatinglevel": {
             "sdf:jsonPointer": "#/sdfObject/heatingzone/sdfProperty/heatinglevel",
             "description": "The current heating level for the zone.",
+            "readOnly": true,
             "type": "integer"
         },
         "heatingzone_maxheatinglevel": {
             "sdf:jsonPointer": "#/sdfObject/heatingzone/sdfProperty/maxheatinglevel",
             "description": "The maximum heating level for the zone.",
+            "readOnly": true,
             "type": "integer"
         }
     },

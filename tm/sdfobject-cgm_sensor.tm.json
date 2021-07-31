@@ -21,17 +21,20 @@
         "cgm.sensor_starttime": {
             "sdf:jsonPointer": "#/sdfObject/cgm.sensor/sdfProperty/starttime",
             "description": "This Property describes the Sensor start time using ISO 8601 datetime format (e.g: 2007-04-05T14:30Z, 2007-04-05T14:30+09:00)",
+            "readOnly": true,
             "type": "string"
         },
         "cgm.sensor_runtime": {
             "sdf:jsonPointer": "#/sdfObject/cgm.sensor/sdfProperty/runtime",
             "description": "This Property describes the recommended runtime days using CGM",
+            "readOnly": true,
             "type": "number",
             "minimum": 0.0
         },
         "cgm.sensor_range": {
             "sdf:jsonPointer": "#/sdfObject/cgm.sensor/sdfProperty/range",
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "readOnly": true,
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
@@ -42,11 +45,13 @@
         "cgm.sensor_step": {
             "sdf:jsonPointer": "#/sdfObject/cgm.sensor/sdfProperty/step",
             "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
+            "readOnly": true,
             "type": "number"
         },
         "cgm.sensor_precision": {
             "sdf:jsonPointer": "#/sdfObject/cgm.sensor/sdfProperty/precision",
             "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
+            "readOnly": true,
             "type": "number"
         }
     },

@@ -21,11 +21,13 @@
         "sensor.geolocation_longitude": {
             "sdf:jsonPointer": "#/sdfObject/sensor.geolocation/sdfProperty/longitude",
             "description": "The Device's Current Longitude coordinate (degrees).",
+            "readOnly": true,
             "type": "number"
         },
         "sensor.geolocation_heading": {
             "sdf:jsonPointer": "#/sdfObject/sensor.geolocation/sdfProperty/heading",
             "description": "The direction of travel of the Device (degree).",
+            "readOnly": true,
             "type": "number",
             "minimum": 0,
             "maximum": 360
@@ -33,28 +35,33 @@
         "sensor.geolocation_latitude": {
             "sdf:jsonPointer": "#/sdfObject/sensor.geolocation/sdfProperty/latitude",
             "description": "The Device's Current Latitude coordinate (degrees).",
+            "readOnly": true,
             "type": "number"
         },
         "sensor.geolocation_altitudeAccuracy": {
             "sdf:jsonPointer": "#/sdfObject/sensor.geolocation/sdfProperty/altitudeAccuracy",
             "description": "The accuracy level of the altitude coordinates (metres).",
+            "readOnly": true,
             "type": "number",
             "minimum": 0
         },
         "sensor.geolocation_alt": {
             "sdf:jsonPointer": "#/sdfObject/sensor.geolocation/sdfProperty/alt",
             "description": "The current distance (metres) above or below 'local' sea-level.",
+            "readOnly": true,
             "type": "number"
         },
         "sensor.geolocation_accuracy": {
             "sdf:jsonPointer": "#/sdfObject/sensor.geolocation/sdfProperty/accuracy",
             "description": "The accuracy level of the latitude and longitude coordinates (metres).",
+            "readOnly": true,
             "type": "number",
             "minimum": 0
         },
         "sensor.geolocation_speed": {
             "sdf:jsonPointer": "#/sdfObject/sensor.geolocation/sdfProperty/speed",
             "description": "The Device's current velocity (metres per second).",
+            "readOnly": true,
             "type": "number",
             "minimum": 0
         }

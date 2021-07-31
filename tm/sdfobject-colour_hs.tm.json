@@ -35,6 +35,7 @@
         "colour.hs_maximumsaturation": {
             "sdf:jsonPointer": "#/sdfObject/colour.hs/sdfProperty/maximumsaturation",
             "description": "The maximum supported value of \"saturation\" for this Device.",
+            "readOnly": true,
             "type": "integer",
             "minimum": 0,
             "maximum": 32767
@@ -42,6 +43,7 @@
         "colour.hs_precision": {
             "sdf:jsonPointer": "#/sdfObject/colour.hs/sdfProperty/precision",
             "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
+            "readOnly": true,
             "type": "number"
         }
     },

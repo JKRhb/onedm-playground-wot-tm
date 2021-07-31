@@ -21,6 +21,7 @@
         "sensor.touch_value": {
             "sdf:jsonPointer": "#/sdfObject/sensor.touch/sdfProperty/value",
             "description": "The touch sensor, true = sensed, false = not sensed.",
+            "readOnly": true,
             "type": "boolean"
         }
     },

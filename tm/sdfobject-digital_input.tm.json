@@ -29,12 +29,14 @@
             "sdf:jsonPointer": "#/sdfObject/Digital_Input/sdfProperty/Digital_Input_State",
             "title": "Digital Input State",
             "description": "The current state of a digital input.",
+            "readOnly": true,
             "type": "boolean"
         },
         "Digital_Input_Digital_Input_Counter": {
             "sdf:jsonPointer": "#/sdfObject/Digital_Input/sdfProperty/Digital_Input_Counter",
             "title": "Digital Input Counter",
             "description": "The cumulative value of active state detected.",
+            "readOnly": true,
             "type": "integer"
         },
         "Digital_Input_Digital_Input_Polarity": {
@@ -68,18 +70,21 @@
             "sdf:jsonPointer": "#/sdfObject/Digital_Input/sdfProperty/Sensor_Type",
             "title": "Sensor Type",
             "description": "The type of the sensor (for instance PIR type).",
+            "readOnly": true,
             "type": "string"
         },
         "Digital_Input_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Digital_Input/sdfProperty/Timestamp",
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
+            "readOnly": true,
             "type": "number"
         },
         "Digital_Input_Fractional_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Digital_Input/sdfProperty/Fractional_Timestamp",
             "title": "Fractional Timestamp",
             "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "readOnly": true,
             "type": "number",
             "unit": "s",
             "minimum": 0,

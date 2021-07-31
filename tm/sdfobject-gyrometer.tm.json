@@ -29,72 +29,84 @@
             "sdf:jsonPointer": "#/sdfObject/Gyrometer/sdfProperty/X_Value",
             "title": "X Value",
             "description": "The measured value along the X axis.",
+            "readOnly": true,
             "type": "number"
         },
         "Gyrometer_Y_Value": {
             "sdf:jsonPointer": "#/sdfObject/Gyrometer/sdfProperty/Y_Value",
             "title": "Y Value",
             "description": "The measured value along the Y axis.",
+            "readOnly": true,
             "type": "number"
         },
         "Gyrometer_Z_Value": {
             "sdf:jsonPointer": "#/sdfObject/Gyrometer/sdfProperty/Z_Value",
             "title": "Z Value",
             "description": "The measured value along the Z axis.",
+            "readOnly": true,
             "type": "number"
         },
         "Gyrometer_Sensor_Units": {
             "sdf:jsonPointer": "#/sdfObject/Gyrometer/sdfProperty/Sensor_Units",
             "title": "Sensor Units",
             "description": "Measurement Units Definition.",
+            "readOnly": true,
             "type": "string"
         },
         "Gyrometer_Min_X_Value": {
             "sdf:jsonPointer": "#/sdfObject/Gyrometer/sdfProperty/Min_X_Value",
             "title": "Min X Value",
             "description": "The minimum measured value along the X axis.",
+            "readOnly": true,
             "type": "number"
         },
         "Gyrometer_Max_X_Value": {
             "sdf:jsonPointer": "#/sdfObject/Gyrometer/sdfProperty/Max_X_Value",
             "title": "Max X Value",
             "description": "The maximum measured value along the X axis.",
+            "readOnly": true,
             "type": "number"
         },
         "Gyrometer_Min_Y_Value": {
             "sdf:jsonPointer": "#/sdfObject/Gyrometer/sdfProperty/Min_Y_Value",
             "title": "Min Y Value",
             "description": "The minimum measured value along the Y axis.",
+            "readOnly": true,
             "type": "number"
         },
         "Gyrometer_Max_Y_Value": {
             "sdf:jsonPointer": "#/sdfObject/Gyrometer/sdfProperty/Max_Y_Value",
             "title": "Max Y Value",
             "description": "The maximum measured value along the Y axis.",
+            "readOnly": true,
             "type": "number"
         },
         "Gyrometer_Min_Z_Value": {
             "sdf:jsonPointer": "#/sdfObject/Gyrometer/sdfProperty/Min_Z_Value",
             "title": "Min Z Value",
             "description": "The minimum measured value along the Z axis.",
+            "readOnly": true,
             "type": "number"
         },
         "Gyrometer_Max_Z_Value": {
             "sdf:jsonPointer": "#/sdfObject/Gyrometer/sdfProperty/Max_Z_Value",
             "title": "Max Z Value",
             "description": "The maximum measured value along the Z axis.",
+            "readOnly": true,
             "type": "number"
         },
         "Gyrometer_Min_Range_Value": {
             "sdf:jsonPointer": "#/sdfObject/Gyrometer/sdfProperty/Min_Range_Value",
             "title": "Min Range Value",
             "description": "The minimum value that can be measured by the sensor.",
+            "readOnly": true,
             "type": "number"
         },
         "Gyrometer_Max_Range_Value": {
             "sdf:jsonPointer": "#/sdfObject/Gyrometer/sdfProperty/Max_Range_Value",
             "title": "Max Range Value",
             "description": "The maximum value that can be measured by the sensor.",
+            "readOnly": true,
             "type": "number"
         },
         "Gyrometer_Application_Type": {
@@ -107,12 +119,14 @@
             "sdf:jsonPointer": "#/sdfObject/Gyrometer/sdfProperty/Timestamp",
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
+            "readOnly": true,
             "type": "number"
         },
         "Gyrometer_Fractional_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Gyrometer/sdfProperty/Fractional_Timestamp",
             "title": "Fractional Timestamp",
             "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "readOnly": true,
             "type": "number",
             "unit": "s",
             "minimum": 0,
@@ -122,6 +136,7 @@
             "sdf:jsonPointer": "#/sdfObject/Gyrometer/sdfProperty/Measurement_Quality_Indicator",
             "title": "Measurement Quality Indicator",
             "description": "Measurement quality indicator reported by a smart sensor. 0: UNCHECKED No quality checks were done because they do not exist or can not be applied. 1: REJECTED WITH CERTAINTY The measured value is invalid. 2: REJECTED WITH PROBABILITY The measured value is likely invalid. 3: ACCEPTED BUT SUSPICIOUS The measured value is likely OK. 4: ACCEPTED The measured value is OK. 5-15: Reserved for future extensions. 16-23: Vendor specific measurement quality.",
+            "readOnly": true,
             "type": "integer",
             "minimum": 0,
             "maximum": 23
@@ -130,6 +145,7 @@
             "sdf:jsonPointer": "#/sdfObject/Gyrometer/sdfProperty/Measurement_Quality_Level",
             "title": "Measurement Quality Level",
             "description": "Measurement quality level reported by a smart sensor. Quality level 100 means that the measurement has fully passed quality check algorithms. Smaller quality levels mean that quality has decreased and the measurement has only partially passed quality check algorithms. The smaller the quality level, the more caution should be used by the application when using the measurement. When the quality level is 0 it means that the measurement should certainly be rejected.",
+            "readOnly": true,
             "type": "integer",
             "minimum": 0,
             "maximum": 100

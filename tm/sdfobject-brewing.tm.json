@@ -30,6 +30,7 @@
         },
         "brewing_strengthrange": {
             "sdf:jsonPointer": "#/sdfObject/brewing/sdfProperty/strengthrange",
+            "readOnly": true,
             "type": "array",
             "minItems": 2,
             "maxItems": 2,

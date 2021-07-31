@@ -33,6 +33,7 @@
         "colour.csc_precision": {
             "sdf:jsonPointer": "#/sdfObject/colour.csc/sdfProperty/precision",
             "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
+            "readOnly": true,
             "type": "number"
         }
     },

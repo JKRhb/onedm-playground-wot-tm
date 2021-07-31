@@ -22,12 +22,14 @@
             "sdf:jsonPointer": "#/sdfObject/On_Off_switch/sdfProperty/Digital_Input_State",
             "title": "Digital Input State",
             "description": "The current state of a digital input.",
+            "readOnly": true,
             "type": "boolean"
         },
         "On_Off_switch_Digital_Input_Counter": {
             "sdf:jsonPointer": "#/sdfObject/On_Off_switch/sdfProperty/Digital_Input_Counter",
             "title": "Digital Input Counter",
             "description": "The cumulative value of active state detected.",
+            "readOnly": true,
             "type": "integer"
         },
         "On_Off_switch_On_time": {
@@ -54,12 +56,14 @@
             "sdf:jsonPointer": "#/sdfObject/On_Off_switch/sdfProperty/Timestamp",
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
+            "readOnly": true,
             "type": "number"
         },
         "On_Off_switch_Fractional_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/On_Off_switch/sdfProperty/Fractional_Timestamp",
             "title": "Fractional Timestamp",
             "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "readOnly": true,
             "type": "number",
             "unit": "s",
             "minimum": 0,

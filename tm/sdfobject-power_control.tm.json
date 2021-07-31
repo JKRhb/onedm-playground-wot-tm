@@ -44,6 +44,7 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Control/sdfProperty/Cumulative_active_power",
             "title": "Cumulative active power",
             "description": "The cumulative active power since the last cumulative energy reset or device start.",
+            "readOnly": true,
             "type": "number",
             "unit": "Wh"
         },
@@ -51,6 +52,7 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Control/sdfProperty/Power_factor",
             "title": "Power factor",
             "description": "If applicable, the power factor of the current consumption.",
+            "readOnly": true,
             "type": "number"
         },
         "Power_Control_Application_Type": {
@@ -63,12 +65,14 @@
             "sdf:jsonPointer": "#/sdfObject/Power_Control/sdfProperty/Timestamp",
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
+            "readOnly": true,
             "type": "number"
         },
         "Power_Control_Fractional_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Power_Control/sdfProperty/Fractional_Timestamp",
             "title": "Fractional Timestamp",
             "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "readOnly": true,
             "type": "number",
             "unit": "s",
             "minimum": 0,

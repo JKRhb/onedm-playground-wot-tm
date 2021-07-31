@@ -21,6 +21,7 @@
         "userid_userid": {
             "sdf:jsonPointer": "#/sdfObject/userid/sdfProperty/userid",
             "description": "Id of a patient/user of healthcare devices",
+            "readOnly": true,
             "type": "string"
         }
     },

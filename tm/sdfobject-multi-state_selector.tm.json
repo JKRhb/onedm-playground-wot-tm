@@ -22,6 +22,7 @@
             "sdf:jsonPointer": "#/sdfObject/Multi-state_Selector/sdfProperty/Multi-state_Input",
             "title": "Multi-state Input",
             "description": "The current state of a Multi-state input or selector.",
+            "readOnly": true,
             "type": "integer"
         },
         "Multi-state_Selector_Application_Type": {
@@ -34,12 +35,14 @@
             "sdf:jsonPointer": "#/sdfObject/Multi-state_Selector/sdfProperty/Timestamp",
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
+            "readOnly": true,
             "type": "number"
         },
         "Multi-state_Selector_Fractional_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Multi-state_Selector/sdfProperty/Fractional_Timestamp",
             "title": "Fractional Timestamp",
             "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "readOnly": true,
             "type": "number",
             "unit": "s",
             "minimum": 0,

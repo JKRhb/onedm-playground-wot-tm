@@ -21,6 +21,7 @@
         "sensor.heart.zone_heartRateZone": {
             "sdf:jsonPointer": "#/sdfObject/sensor.heart.zone/sdfProperty/heartRateZone",
             "description": "Current heart rate zone based on the Zoladz system.",
+            "readOnly": true,
             "type": "string",
             "enum": [
                 "Zone1",

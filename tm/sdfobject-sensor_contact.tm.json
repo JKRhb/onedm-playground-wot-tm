@@ -21,6 +21,7 @@
         "sensor.contact_value": {
             "sdf:jsonPointer": "#/sdfObject/sensor.contact/sdfProperty/value",
             "description": "The contact indication, true = broken (open), false = in place (closed).",
+            "readOnly": true,
             "type": "boolean"
         }
     },

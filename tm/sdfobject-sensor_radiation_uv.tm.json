@@ -21,6 +21,7 @@
         "sensor.radiation.uv_measurement": {
             "sdf:jsonPointer": "#/sdfObject/sensor.radiation.uv/sdfProperty/measurement",
             "description": "The measured UV Index.",
+            "readOnly": true,
             "type": "number"
         }
     },

@@ -41,6 +41,7 @@
         "colour.chroma_maximumsaturation": {
             "sdf:jsonPointer": "#/sdfObject/colour.chroma/sdfProperty/maximumsaturation",
             "description": "The maximum supported value of \"saturation\" for this Device.",
+            "readOnly": true,
             "type": "integer",
             "minimum": 0,
             "maximum": 32767

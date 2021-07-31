@@ -21,6 +21,7 @@
         "sensor.sleep_value": {
             "sdf:jsonPointer": "#/sdfObject/sensor.sleep/sdfProperty/value",
             "description": "The sleep sensor, true = sleep sensed, false = sleep not sensed.",
+            "readOnly": true,
             "type": "boolean"
         }
     },

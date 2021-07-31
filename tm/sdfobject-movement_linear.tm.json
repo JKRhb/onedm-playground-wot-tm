@@ -21,6 +21,7 @@
         "movement.linear_movementSettings": {
             "sdf:jsonPointer": "#/sdfObject/movement.linear/sdfProperty/movementSettings",
             "description": "The array of possible movement values.",
+            "readOnly": true,
             "type": "array",
             "items": {
                 "type": "string"

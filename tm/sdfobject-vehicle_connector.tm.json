@@ -21,16 +21,19 @@
         "vehicle.connector_connected": {
             "sdf:jsonPointer": "#/sdfObject/vehicle.connector/sdfProperty/connected",
             "description": "The connection state.",
+            "readOnly": true,
             "type": "boolean"
         },
         "vehicle.connector_ratedchargingcapacity": {
             "sdf:jsonPointer": "#/sdfObject/vehicle.connector/sdfProperty/ratedchargingcapacity",
             "description": "The rated charging capacity in Amps (A).",
+            "readOnly": true,
             "type": "number"
         },
         "vehicle.connector_rateddischargingcapacity": {
             "sdf:jsonPointer": "#/sdfObject/vehicle.connector/sdfProperty/rateddischargingcapacity",
             "description": "The rated discharging capacity in Amps (A).",
+            "readOnly": true,
             "type": "number"
         }
     },

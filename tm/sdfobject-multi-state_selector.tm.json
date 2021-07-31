@@ -36,7 +36,8 @@
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
             "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "sdf:sdfType": "unix-time"
         },
         "Multi-state_Selector_Fractional_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Multi-state_Selector/sdfProperty/Fractional_Timestamp",

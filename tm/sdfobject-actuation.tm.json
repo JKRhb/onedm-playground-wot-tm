@@ -57,7 +57,8 @@
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
             "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "sdf:sdfType": "unix-time"
         },
         "Actuation_Fractional_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Actuation/sdfProperty/Fractional_Timestamp",

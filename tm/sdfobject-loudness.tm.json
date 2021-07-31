@@ -84,7 +84,8 @@
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
             "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "sdf:sdfType": "unix-time"
         },
         "Loudness_Fractional_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Loudness/sdfProperty/Fractional_Timestamp",

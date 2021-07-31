@@ -29,7 +29,8 @@
             "sdf:jsonPointer": "#/sdfObject/Audio_Clip/sdfProperty/Clip",
             "title": "Clip",
             "description": "Audio clip that is playable (e.g., a short audio recording indicating the floor in an elevator).",
-            "type": "string"
+            "type": "string",
+            "sdf:sdfType": "byte-string"
         },
         "Audio_Clip_Level": {
             "sdf:jsonPointer": "#/sdfObject/Audio_Clip/sdfProperty/Level",

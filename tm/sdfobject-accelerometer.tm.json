@@ -71,7 +71,8 @@
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
             "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "sdf:sdfType": "unix-time"
         },
         "Accelerometer_Fractional_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Accelerometer/sdfProperty/Fractional_Timestamp",

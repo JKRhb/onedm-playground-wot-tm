@@ -85,7 +85,8 @@
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
             "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "sdf:sdfType": "unix-time"
         },
         "Generic_Sensor_Fractional_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Generic_Sensor/sdfProperty/Fractional_Timestamp",

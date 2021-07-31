@@ -22,7 +22,8 @@
             "sdf:jsonPointer": "#/sdfObject/Time/sdfProperty/Current_Time",
             "title": "Current Time",
             "description": "Unix Time. A signed integer representing the number of seconds since Jan 1st, 1970 in the UTC time zone.",
-            "type": "number"
+            "type": "number",
+            "sdf:sdfType": "unix-time"
         },
         "Time_Fractional_Time": {
             "sdf:jsonPointer": "#/sdfObject/Time/sdfProperty/Fractional_Time",

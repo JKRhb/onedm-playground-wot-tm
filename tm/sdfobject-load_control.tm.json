@@ -28,7 +28,8 @@
             "sdf:jsonPointer": "#/sdfObject/Load_Control/sdfProperty/Start_Time",
             "title": "Start Time",
             "description": "Time when the event started.",
-            "type": "number"
+            "type": "number",
+            "sdf:sdfType": "unix-time"
         },
         "Load_Control_Duration_In_Min": {
             "sdf:jsonPointer": "#/sdfObject/Load_Control/sdfProperty/Duration_In_Min",
@@ -74,7 +75,8 @@
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
             "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "sdf:sdfType": "unix-time"
         },
         "Load_Control_Fractional_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Load_Control/sdfProperty/Fractional_Timestamp",

@@ -166,7 +166,8 @@
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
             "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "sdf:sdfType": "unix-time"
         },
         "Power_Measurement_Fractional_Timestamp": {
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfProperty/Fractional_Timestamp",

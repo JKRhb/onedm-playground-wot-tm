@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-18"
     },
+    "tm:required": [
+        "#/properties/gas.consumption_gas"
+    ],
     "properties": {
         "gas.consumption_gas": {
             "sdf:jsonPointer": "#/sdfObject/gas.consumption/sdfProperty/gas",
@@ -38,8 +41,5 @@
             "type": "number",
             "minimum": 0
         }
-    },
-    "tm:required": [
-        "#/properties/gas.consumption_gas"
-    ]
+    }
 }

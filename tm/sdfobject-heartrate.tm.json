@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-04"
     },
+    "tm:required": [
+        "#/properties/heartrate_heartrate"
+    ],
     "properties": {
         "heartrate_heartrate": {
             "sdf:jsonPointer": "#/sdfObject/heartrate/sdfProperty/heartrate",
@@ -42,8 +45,5 @@
             "readOnly": true,
             "type": "integer"
         }
-    },
-    "tm:required": [
-        "#/properties/heartrate_heartrate"
-    ]
+    }
 }

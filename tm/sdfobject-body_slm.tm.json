@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-22"
     },
+    "tm:required": [
+        "#/properties/body.slm_slm"
+    ],
     "properties": {
         "body.slm_slm": {
             "sdf:jsonPointer": "#/sdfObject/body.slm/sdfProperty/slm",
@@ -60,8 +63,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/body.slm_slm"
-    ]
+    }
 }

@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Addressable_Text_Display_Text"
+    ],
     "actions": {
         "Addressable_Text_Display_Clear_Display": {
             "sdf:jsonPointer": "#/sdfObject/Addressable_Text_Display/sdfAction/Clear_Display",
@@ -81,8 +84,5 @@
             "description": "The application type of the sensor or actuator as a string depending on the use case.",
             "type": "string"
         }
-    },
-    "tm:required": [
-        "#/properties/Addressable_Text_Display_Text"
-    ]
+    }
 }

@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/energy.overload_value"
+    ],
     "properties": {
         "energy.overload_value": {
             "sdf:jsonPointer": "#/sdfObject/energy.overload/sdfProperty/value",
@@ -24,8 +27,5 @@
             "readOnly": true,
             "type": "boolean"
         }
-    },
-    "tm:required": [
-        "#/properties/energy.overload_value"
-    ]
+    }
 }

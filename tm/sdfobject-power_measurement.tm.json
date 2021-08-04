@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Power_Measurement_Instantaneous_active_power"
+    ],
     "actions": {
         "Power_Measurement_Reset_Cumulative_energy": {
             "sdf:jsonPointer": "#/sdfObject/Power_Measurement/sdfAction/Reset_Cumulative_energy",
@@ -197,8 +200,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "tm:required": [
-        "#/properties/Power_Measurement_Instantaneous_active_power"
-    ]
+    }
 }

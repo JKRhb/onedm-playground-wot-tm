@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/sensor.threeaxis_orientation"
+    ],
     "properties": {
         "sensor.threeaxis_orientation": {
             "sdf:jsonPointer": "#/sdfObject/sensor.threeaxis/sdfProperty/orientation",
@@ -29,8 +32,5 @@
                 "type": "number"
             }
         }
-    },
-    "tm:required": [
-        "#/properties/sensor.threeaxis_orientation"
-    ]
+    }
 }

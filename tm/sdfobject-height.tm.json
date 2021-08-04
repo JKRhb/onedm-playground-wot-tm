@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-22"
     },
+    "tm:required": [
+        "#/properties/height_height"
+    ],
     "properties": {
         "height_height": {
             "sdf:jsonPointer": "#/sdfObject/height/sdfProperty/height",
@@ -60,8 +63,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/height_height"
-    ]
+    }
 }

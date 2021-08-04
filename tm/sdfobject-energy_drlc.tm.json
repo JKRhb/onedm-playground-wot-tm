@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-07-09"
     },
+    "tm:required": [
+        "#/properties/energy.drlc_DRType"
+    ],
     "properties": {
         "energy.drlc_start": {
             "sdf:jsonPointer": "#/sdfObject/energy.drlc/sdfProperty/start",
@@ -52,8 +55,5 @@
             "description": "Whether overriding the DR request by the consumer is allowed",
             "type": "boolean"
         }
-    },
-    "tm:required": [
-        "#/properties/energy.drlc_DRType"
-    ]
+    }
 }

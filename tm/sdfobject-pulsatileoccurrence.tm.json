@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-04"
     },
+    "tm:required": [
+        "#/properties/pulsatileoccurrence_occurrence"
+    ],
     "properties": {
         "pulsatileoccurrence_occurrence": {
             "sdf:jsonPointer": "#/sdfObject/pulsatileoccurrence/sdfProperty/occurrence",
@@ -30,8 +33,5 @@
             ],
             "default": "NOS"
         }
-    },
-    "tm:required": [
-        "#/properties/pulsatileoccurrence_occurrence"
-    ]
+    }
 }

@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-11-14"
     },
+    "tm:required": [
+        "#/properties/switch.fault_state"
+    ],
     "properties": {
         "switch.fault_state": {
             "sdf:jsonPointer": "#/sdfObject/switch.fault/sdfProperty/state",
@@ -28,8 +31,5 @@
                 "faulted"
             ]
         }
-    },
-    "tm:required": [
-        "#/properties/switch.fault_state"
-    ]
+    }
 }

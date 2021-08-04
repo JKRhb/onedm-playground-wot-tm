@@ -17,6 +17,10 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/orfid.tag_tagid",
+        "#/properties/orfid.tag_reading"
+    ],
     "properties": {
         "orfid.tag_tagid": {
             "sdf:jsonPointer": "#/sdfObject/orfid.tag/sdfProperty/tagid",
@@ -30,9 +34,5 @@
             "readOnly": true,
             "type": "boolean"
         }
-    },
-    "tm:required": [
-        "#/properties/orfid.tag_tagid",
-        "#/properties/orfid.tag_reading"
-    ]
+    }
 }

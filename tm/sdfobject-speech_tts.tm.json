@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/speech.tts_utterance"
+    ],
     "properties": {
         "speech.tts_supportedLanguages": {
             "sdf:jsonPointer": "#/sdfObject/speech.tts/sdfProperty/supportedLanguages",
@@ -40,8 +43,5 @@
             "type": "string",
             "maxLength": 1024
         }
-    },
-    "tm:required": [
-        "#/properties/speech.tts_utterance"
-    ]
+    }
 }

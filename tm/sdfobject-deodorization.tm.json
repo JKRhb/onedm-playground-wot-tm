@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-08-20"
     },
+    "tm:required": [
+        "#/properties/deodorization_mode"
+    ],
     "properties": {
         "deodorization_mode": {
             "sdf:jsonPointer": "#/sdfObject/deodorization/sdfProperty/mode",
@@ -38,8 +41,5 @@
                 "on"
             ]
         }
-    },
-    "tm:required": [
-        "#/properties/deodorization_mode"
-    ]
+    }
 }

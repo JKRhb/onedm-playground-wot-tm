@@ -17,6 +17,9 @@
     "version": {
         "instance": "2018-12-12"
     },
+    "tm:required": [
+        "#/properties/keypadchar_keyvalue"
+    ],
     "properties": {
         "keypadchar_keyvalue": {
             "sdf:jsonPointer": "#/sdfObject/keypadchar/sdfProperty/keyvalue",
@@ -37,8 +40,5 @@
                 "#"
             ]
         }
-    },
-    "tm:required": [
-        "#/properties/keypadchar_keyvalue"
-    ]
+    }
 }

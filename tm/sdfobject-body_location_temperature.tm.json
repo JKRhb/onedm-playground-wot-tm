@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-22"
     },
+    "tm:required": [
+        "#/properties/body.location.temperature_bloc"
+    ],
     "properties": {
         "body.location.temperature_bloc": {
             "sdf:jsonPointer": "#/sdfObject/body.location.temperature/sdfProperty/bloc",
@@ -35,8 +38,5 @@
                 "tympanum"
             ]
         }
-    },
-    "tm:required": [
-        "#/properties/body.location.temperature_bloc"
-    ]
+    }
 }

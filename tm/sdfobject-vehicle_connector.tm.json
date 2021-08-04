@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/vehicle.connector_connected"
+    ],
     "properties": {
         "vehicle.connector_connected": {
             "sdf:jsonPointer": "#/sdfObject/vehicle.connector/sdfProperty/connected",
@@ -36,8 +39,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/vehicle.connector_connected"
-    ]
+    }
 }

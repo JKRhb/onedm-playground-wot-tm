@@ -17,6 +17,10 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/consumable_typeofconsumable",
+        "#/properties/consumable_remaining"
+    ],
     "properties": {
         "consumable_remaining": {
             "sdf:jsonPointer": "#/sdfObject/consumable/sdfProperty/remaining",
@@ -47,9 +51,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "tm:required": [
-        "#/properties/consumable_remaining",
-        "#/properties/consumable_typeofconsumable"
-    ]
+    }
 }

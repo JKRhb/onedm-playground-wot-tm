@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-06-13"
     },
+    "tm:required": [
+        "#/properties/waterinfo_currentwatertype"
+    ],
     "properties": {
         "waterinfo_supportedwatertypes": {
             "sdf:jsonPointer": "#/sdfObject/waterinfo/sdfProperty/supportedwatertypes",
@@ -50,8 +53,5 @@
                 "type": "string"
             }
         }
-    },
-    "tm:required": [
-        "#/properties/waterinfo_currentwatertype"
-    ]
+    }
 }

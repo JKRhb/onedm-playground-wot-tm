@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-18"
     },
+    "tm:required": [
+        "#/properties/conversionfactor_conversion"
+    ],
     "properties": {
         "conversionfactor_conversion": {
             "sdf:jsonPointer": "#/sdfObject/conversionfactor/sdfProperty/conversion",
@@ -32,8 +35,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/conversionfactor_conversion"
-    ]
+    }
 }

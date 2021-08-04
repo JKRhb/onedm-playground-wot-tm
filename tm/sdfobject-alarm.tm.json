@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-04"
     },
+    "tm:required": [
+        "#/properties/alarm_status"
+    ],
     "properties": {
         "alarm_status": {
             "sdf:jsonPointer": "#/sdfObject/alarm/sdfProperty/status",
@@ -73,8 +76,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/alarm_status"
-    ]
+    }
 }

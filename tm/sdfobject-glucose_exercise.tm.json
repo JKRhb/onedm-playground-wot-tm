@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-22"
     },
+    "tm:required": [
+        "#/properties/glucose.exercise_exercise"
+    ],
     "properties": {
         "glucose.exercise_exercise": {
             "sdf:jsonPointer": "#/sdfObject/glucose.exercise/sdfProperty/exercise",
@@ -49,8 +52,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/glucose.exercise_exercise"
-    ]
+    }
 }

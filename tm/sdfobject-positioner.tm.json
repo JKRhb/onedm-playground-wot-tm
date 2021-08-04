@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Positioner_Current_Position"
+    ],
     "actions": {
         "Positioner_Reset_Min_and_Max_Measured_Values": {
             "sdf:jsonPointer": "#/sdfObject/Positioner/sdfAction/Reset_Min_and_Max_Measured_Values",
@@ -101,8 +104,5 @@
             "minimum": 0,
             "maximum": 1
         }
-    },
-    "tm:required": [
-        "#/properties/Positioner_Current_Position"
-    ]
+    }
 }

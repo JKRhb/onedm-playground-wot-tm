@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-08-08"
     },
+    "tm:required": [
+        "#/properties/sensor.illuminance_illuminance"
+    ],
     "properties": {
         "sensor.illuminance_illuminance": {
             "sdf:jsonPointer": "#/sdfObject/sensor.illuminance/sdfProperty/illuminance",
@@ -35,8 +38,5 @@
                 "type": "number"
             }
         }
-    },
-    "tm:required": [
-        "#/properties/sensor.illuminance_illuminance"
-    ]
+    }
 }

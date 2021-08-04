@@ -17,6 +17,13 @@
     "version": {
         "instance": "2019-06-13"
     },
+    "tm:required": [
+        "#/properties/circuitbreaker_status",
+        "#/properties/circuitbreaker_ratedcurrent",
+        "#/properties/circuitbreaker_ratedbreakingcurrent",
+        "#/properties/circuitbreaker_ratedvoltage",
+        "#/properties/circuitbreaker_timestamp"
+    ],
     "properties": {
         "circuitbreaker_status": {
             "sdf:jsonPointer": "#/sdfObject/circuitbreaker/sdfProperty/status",
@@ -66,12 +73,5 @@
             "type": "string",
             "format": "date-time"
         }
-    },
-    "tm:required": [
-        "#/properties/circuitbreaker_status",
-        "#/properties/circuitbreaker_ratedcurrent",
-        "#/properties/circuitbreaker_ratedbreakingcurrent",
-        "#/properties/circuitbreaker_ratedvoltage",
-        "#/properties/circuitbreaker_timestamp"
-    ]
+    }
 }

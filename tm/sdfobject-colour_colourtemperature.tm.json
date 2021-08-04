@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/colour.colourtemperature_ct"
+    ],
     "properties": {
         "colour.colourtemperature_ct": {
             "sdf:jsonPointer": "#/sdfObject/colour.colourtemperature/sdfProperty/ct",
@@ -41,8 +44,5 @@
             "readOnly": true,
             "type": "integer"
         }
-    },
-    "tm:required": [
-        "#/properties/colour.colourtemperature_ct"
-    ]
+    }
 }

@@ -17,6 +17,10 @@
     "version": {
         "instance": "2019-02-22"
     },
+    "tm:required": [
+        "#/properties/automaticdocumentfeeder_adfStates",
+        "#/properties/automaticdocumentfeeder_currentAdfState"
+    ],
     "properties": {
         "automaticdocumentfeeder_adfStates": {
             "sdf:jsonPointer": "#/sdfObject/automaticdocumentfeeder/sdfProperty/adfStates",
@@ -34,9 +38,5 @@
             "readOnly": true,
             "type": "string"
         }
-    },
-    "tm:required": [
-        "#/properties/automaticdocumentfeeder_adfStates",
-        "#/properties/automaticdocumentfeeder_currentAdfState"
-    ]
+    }
 }

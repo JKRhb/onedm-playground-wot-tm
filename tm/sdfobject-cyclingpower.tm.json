@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-06-11"
     },
+    "tm:required": [
+        "#/properties/cyclingpower_power"
+    ],
     "properties": {
         "cyclingpower_power": {
             "sdf:jsonPointer": "#/sdfObject/cyclingpower/sdfProperty/power",
@@ -56,8 +59,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/cyclingpower_power"
-    ]
+    }
 }

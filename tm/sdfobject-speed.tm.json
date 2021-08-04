@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-05-13"
     },
+    "tm:required": [
+        "#/properties/speed_speed"
+    ],
     "properties": {
         "speed_speed": {
             "sdf:jsonPointer": "#/sdfObject/speed/sdfProperty/speed",
@@ -42,8 +45,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/speed_speed"
-    ]
+    }
 }

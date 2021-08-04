@@ -17,14 +17,14 @@
     "version": {
         "instance": "2019-02-22"
     },
+    "tm:required": [
+        "#/properties/switch.binary_value"
+    ],
     "properties": {
         "switch.binary_value": {
             "sdf:jsonPointer": "#/sdfObject/switch.binary/sdfProperty/value",
             "description": "The status of the switch.",
             "type": "boolean"
         }
-    },
-    "tm:required": [
-        "#/properties/switch.binary_value"
-    ]
+    }
 }

@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/grinder_coarseness"
+    ],
     "properties": {
         "grinder_coarseness": {
             "sdf:jsonPointer": "#/sdfObject/grinder/sdfProperty/coarseness",
@@ -48,8 +51,5 @@
             "readOnly": true,
             "type": "integer"
         }
-    },
-    "tm:required": [
-        "#/properties/grinder_coarseness"
-    ]
+    }
 }

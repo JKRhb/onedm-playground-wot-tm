@@ -17,14 +17,14 @@
     "version": {
         "instance": "2019-02-22"
     },
+    "tm:required": [
+        "#/properties/colour.autowhitebalance_autoWhiteBalance"
+    ],
     "properties": {
         "colour.autowhitebalance_autoWhiteBalance": {
             "sdf:jsonPointer": "#/sdfObject/colour.autowhitebalance/sdfProperty/autoWhiteBalance",
             "description": "The status of the Auto White balance feature.",
             "type": "boolean"
         }
-    },
-    "tm:required": [
-        "#/properties/colour.autowhitebalance_autoWhiteBalance"
-    ]
+    }
 }

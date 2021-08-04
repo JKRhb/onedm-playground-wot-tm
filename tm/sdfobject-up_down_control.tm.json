@@ -17,6 +17,10 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Up_Down_Control_Increase_Input_State",
+        "#/properties/Up_Down_Control_Decrease_Input_State"
+    ],
     "properties": {
         "Up_Down_Control_Increase_Input_State": {
             "sdf:jsonPointer": "#/sdfObject/Up_Down_Control/sdfProperty/Increase_Input_State",
@@ -50,9 +54,5 @@
             "description": "The application type of the sensor or actuator as a string depending on the use case.",
             "type": "string"
         }
-    },
-    "tm:required": [
-        "#/properties/Up_Down_Control_Increase_Input_State",
-        "#/properties/Up_Down_Control_Decrease_Input_State"
-    ]
+    }
 }

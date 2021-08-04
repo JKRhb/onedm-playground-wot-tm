@@ -17,14 +17,14 @@
     "version": {
         "instance": "2019-11-19"
     },
+    "tm:required": [
+        "#/properties/switch.restricted_state"
+    ],
     "properties": {
         "switch.restricted_state": {
             "sdf:jsonPointer": "#/sdfObject/switch.restricted/sdfProperty/state",
             "description": "The status of the restricted switch.",
             "type": "boolean"
         }
-    },
-    "tm:required": [
-        "#/properties/switch.restricted_state"
-    ]
+    }
 }

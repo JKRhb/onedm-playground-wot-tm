@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/colour.saturation_colourSaturation"
+    ],
     "properties": {
         "colour.saturation_colourSaturation": {
             "sdf:jsonPointer": "#/sdfObject/colour.saturation/sdfProperty/colourSaturation",
@@ -25,8 +28,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "tm:required": [
-        "#/properties/colour.saturation_colourSaturation"
-    ]
+    }
 }

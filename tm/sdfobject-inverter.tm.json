@@ -17,6 +17,16 @@
     "version": {
         "instance": "2019-06-13"
     },
+    "tm:required": [
+        "#/properties/inverter_status",
+        "#/properties/inverter_ratedpower",
+        "#/properties/inverter_minvoltmppt",
+        "#/properties/inverter_maxvoltmppt",
+        "#/properties/inverter_inputvoltage",
+        "#/properties/inverter_inputcurrent",
+        "#/properties/inverter_outputpower",
+        "#/properties/inverter_timestamp"
+    ],
     "properties": {
         "inverter_status": {
             "sdf:jsonPointer": "#/sdfObject/inverter/sdfProperty/status",
@@ -72,15 +82,5 @@
             "type": "string",
             "format": "date-time"
         }
-    },
-    "tm:required": [
-        "#/properties/inverter_status",
-        "#/properties/inverter_ratedpower",
-        "#/properties/inverter_minvoltmppt",
-        "#/properties/inverter_maxvoltmppt",
-        "#/properties/inverter_inputvoltage",
-        "#/properties/inverter_inputcurrent",
-        "#/properties/inverter_outputpower",
-        "#/properties/inverter_timestamp"
-    ]
+    }
 }

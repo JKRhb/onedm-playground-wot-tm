@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Analog_Input_Analog_Input_Current_Value"
+    ],
     "actions": {
         "Analog_Input_Reset_Min_and_Max_Measured_Values": {
             "sdf:jsonPointer": "#/sdfObject/Analog_Input/sdfAction/Reset_Min_and_Max_Measured_Values",
@@ -109,8 +112,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "tm:required": [
-        "#/properties/Analog_Input_Analog_Input_Current_Value"
-    ]
+    }
 }

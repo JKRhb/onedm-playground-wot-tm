@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/airflow_speed"
+    ],
     "properties": {
         "airflow_speed": {
             "sdf:jsonPointer": "#/sdfObject/airflow/sdfProperty/speed",
@@ -65,8 +68,5 @@
             "readOnly": true,
             "type": "integer"
         }
-    },
-    "tm:required": [
-        "#/properties/airflow_speed"
-    ]
+    }
 }

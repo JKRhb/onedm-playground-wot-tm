@@ -17,6 +17,13 @@
     "version": {
         "instance": "2019-06-13"
     },
+    "tm:required": [
+        "#/properties/pvconnectionterminal_ratedarrayvoltage",
+        "#/properties/pvconnectionterminal_ratedarraycurrent",
+        "#/properties/pvconnectionterminal_arrayvoltage",
+        "#/properties/pvconnectionterminal_arraycurrent",
+        "#/properties/pvconnectionterminal_timestamp"
+    ],
     "properties": {
         "pvconnectionterminal_ratedarrayvoltage": {
             "sdf:jsonPointer": "#/sdfObject/pvconnectionterminal/sdfProperty/ratedarrayvoltage",
@@ -61,12 +68,5 @@
             "type": "string",
             "format": "date-time"
         }
-    },
-    "tm:required": [
-        "#/properties/pvconnectionterminal_ratedarrayvoltage",
-        "#/properties/pvconnectionterminal_ratedarraycurrent",
-        "#/properties/pvconnectionterminal_arrayvoltage",
-        "#/properties/pvconnectionterminal_arraycurrent",
-        "#/properties/pvconnectionterminal_timestamp"
-    ]
+    }
 }

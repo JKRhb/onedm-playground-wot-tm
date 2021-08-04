@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-04"
     },
+    "tm:required": [
+        "#/properties/spo2_spo2"
+    ],
     "properties": {
         "spo2_spo2": {
             "sdf:jsonPointer": "#/sdfObject/spo2/sdfProperty/spo2",
@@ -79,8 +82,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/spo2_spo2"
-    ]
+    }
 }

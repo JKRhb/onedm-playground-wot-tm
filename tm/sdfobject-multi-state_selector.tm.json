@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Multi-state_Selector_Multi-state_Input"
+    ],
     "properties": {
         "Multi-state_Selector_Multi-state_Input": {
             "sdf:jsonPointer": "#/sdfObject/Multi-state_Selector/sdfProperty/Multi-state_Input",
@@ -49,8 +52,5 @@
             "minimum": 0,
             "maximum": 1
         }
-    },
-    "tm:required": [
-        "#/properties/Multi-state_Selector_Multi-state_Input"
-    ]
+    }
 }

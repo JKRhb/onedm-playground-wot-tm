@@ -17,6 +17,11 @@
     "version": {
         "instance": "2018-12-12"
     },
+    "tm:required": [
+        "#/properties/opaquedata_payload",
+        "#/properties/opaquedata_encoding",
+        "#/properties/opaquedata_system"
+    ],
     "properties": {
         "opaquedata_payload": {
             "sdf:jsonPointer": "#/sdfObject/opaquedata/sdfProperty/payload",
@@ -48,10 +53,5 @@
             "description": "The eco system that is using the payload.",
             "type": "string"
         }
-    },
-    "tm:required": [
-        "#/properties/opaquedata_payload",
-        "#/properties/opaquedata_encoding",
-        "#/properties/opaquedata_system"
-    ]
+    }
 }

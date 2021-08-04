@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Illuminance_Sensor_Value"
+    ],
     "actions": {
         "Illuminance_Reset_Min_and_Max_Measured_Values": {
             "sdf:jsonPointer": "#/sdfObject/Illuminance/sdfAction/Reset_Min_and_Max_Measured_Values",
@@ -109,8 +112,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "tm:required": [
-        "#/properties/Illuminance_Sensor_Value"
-    ]
+    }
 }

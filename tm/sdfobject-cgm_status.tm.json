@@ -17,6 +17,12 @@
     "version": {
         "instance": "2019-03-04"
     },
+    "tm:required": [
+        "#/properties/cgm.status_cgmtype",
+        "#/properties/cgm.status_cgmstatus",
+        "#/properties/cgm.status_gtrend",
+        "#/properties/cgm.status_malfunction"
+    ],
     "properties": {
         "cgm.status_cgmtype": {
             "sdf:jsonPointer": "#/sdfObject/cgm.status/sdfProperty/cgmtype",
@@ -76,11 +82,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/cgm.status_cgmtype",
-        "#/properties/cgm.status_cgmstatus",
-        "#/properties/cgm.status_gtrend",
-        "#/properties/cgm.status_malfunction"
-    ]
+    }
 }

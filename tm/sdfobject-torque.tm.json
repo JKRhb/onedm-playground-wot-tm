@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-09-25"
     },
+    "tm:required": [
+        "#/properties/torque_torque"
+    ],
     "properties": {
         "torque_torque": {
             "sdf:jsonPointer": "#/sdfObject/torque/sdfProperty/torque",
@@ -42,8 +45,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/torque_torque"
-    ]
+    }
 }

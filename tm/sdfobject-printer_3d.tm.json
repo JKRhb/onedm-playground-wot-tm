@@ -17,6 +17,14 @@
     "version": {
         "instance": "2019-02-22"
     },
+    "tm:required": [
+        "#/properties/printer.3d_3dprinttype",
+        "#/properties/printer.3d_printsizex",
+        "#/properties/printer.3d_printsizey",
+        "#/properties/printer.3d_printsizez",
+        "#/properties/printer.3d_wanconnected",
+        "#/properties/printer.3d_memorysize"
+    ],
     "properties": {
         "printer.3d_printsizey": {
             "sdf:jsonPointer": "#/sdfObject/printer.3d/sdfProperty/printsizey",
@@ -65,13 +73,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/printer.3d_printsizey",
-        "#/properties/printer.3d_memorysize",
-        "#/properties/printer.3d_3dprinttype",
-        "#/properties/printer.3d_wanconnected",
-        "#/properties/printer.3d_printsizex",
-        "#/properties/printer.3d_printsizez"
-    ]
+    }
 }

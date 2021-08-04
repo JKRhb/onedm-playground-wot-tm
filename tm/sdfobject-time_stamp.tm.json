@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-27"
     },
+    "tm:required": [
+        "#/properties/time.stamp_timestamp"
+    ],
     "properties": {
         "time.stamp_timestamp": {
             "sdf:jsonPointer": "#/sdfObject/time.stamp/sdfProperty/timestamp",
@@ -25,8 +28,5 @@
             "type": "string",
             "format": "date-time"
         }
-    },
-    "tm:required": [
-        "#/properties/time.stamp_timestamp"
-    ]
+    }
 }

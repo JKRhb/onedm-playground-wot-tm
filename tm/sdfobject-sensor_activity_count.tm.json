@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-22"
     },
+    "tm:required": [
+        "#/properties/sensor.activity.count_count"
+    ],
     "properties": {
         "sensor.activity.count_count": {
             "sdf:jsonPointer": "#/sdfObject/sensor.activity.count/sdfProperty/count",
@@ -40,8 +43,5 @@
             "readOnly": true,
             "type": "integer"
         }
-    },
-    "tm:required": [
-        "#/properties/sensor.activity.count_count"
-    ]
+    }
 }

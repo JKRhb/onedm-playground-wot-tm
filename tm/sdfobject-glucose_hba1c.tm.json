@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-22"
     },
+    "tm:required": [
+        "#/properties/glucose.hba1c_hba1c"
+    ],
     "properties": {
         "glucose.hba1c_hba1c": {
             "sdf:jsonPointer": "#/sdfObject/glucose.hba1c/sdfProperty/hba1c",
@@ -49,8 +52,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/glucose.hba1c_hba1c"
-    ]
+    }
 }

@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-22"
     },
+    "tm:required": [
+        "#/properties/batterymaterial_material"
+    ],
     "properties": {
         "batterymaterial_material": {
             "sdf:jsonPointer": "#/sdfObject/batterymaterial/sdfProperty/material",
@@ -104,8 +107,5 @@
                 "Unknown"
             ]
         }
-    },
-    "tm:required": [
-        "#/properties/batterymaterial_material"
-    ]
+    }
 }

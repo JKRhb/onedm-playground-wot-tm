@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Push_button_Digital_Input_State"
+    ],
     "properties": {
         "Push_button_Digital_Input_State": {
             "sdf:jsonPointer": "#/sdfObject/Push_button/sdfProperty/Digital_Input_State",
@@ -56,8 +59,5 @@
             "minimum": 0,
             "maximum": 1
         }
-    },
-    "tm:required": [
-        "#/properties/Push_button_Digital_Input_State"
-    ]
+    }
 }

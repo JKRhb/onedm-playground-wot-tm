@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/selectablelevels_targetlevel"
+    ],
     "properties": {
         "selectablelevels_targetlevel": {
             "sdf:jsonPointer": "#/sdfObject/selectablelevels/sdfProperty/targetlevel",
@@ -32,8 +35,5 @@
                 "type": "number"
             }
         }
-    },
-    "tm:required": [
-        "#/properties/selectablelevels_targetlevel"
-    ]
+    }
 }

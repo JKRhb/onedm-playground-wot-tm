@@ -17,6 +17,10 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/colour.hs_hue",
+        "#/properties/colour.hs_saturation"
+    ],
     "properties": {
         "colour.hs_hue": {
             "sdf:jsonPointer": "#/sdfObject/colour.hs/sdfProperty/hue",
@@ -46,9 +50,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/colour.hs_hue",
-        "#/properties/colour.hs_saturation"
-    ]
+    }
 }

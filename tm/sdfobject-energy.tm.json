@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Energy_Sensor_Value"
+    ],
     "actions": {
         "Energy_Reset_Cumulative_energy": {
             "sdf:jsonPointer": "#/sdfObject/Energy/sdfAction/Reset_Cumulative_energy",
@@ -81,8 +84,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "tm:required": [
-        "#/properties/Energy_Sensor_Value"
-    ]
+    }
 }

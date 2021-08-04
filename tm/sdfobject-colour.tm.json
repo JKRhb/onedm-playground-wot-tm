@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Colour_Colour"
+    ],
     "properties": {
         "Colour_Colour": {
             "sdf:jsonPointer": "#/sdfObject/Colour/sdfProperty/Colour",
@@ -73,8 +76,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "tm:required": [
-        "#/properties/Colour_Colour"
-    ]
+    }
 }

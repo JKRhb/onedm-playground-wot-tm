@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/ecomode_modes"
+    ],
     "properties": {
         "ecomode_modes": {
             "sdf:jsonPointer": "#/sdfObject/ecomode/sdfProperty/modes",
@@ -52,8 +55,5 @@
             "readOnly": true,
             "type": "boolean"
         }
-    },
-    "tm:required": [
-        "#/properties/ecomode_modes"
-    ]
+    }
 }

@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/sensor.acceleration_acceleration"
+    ],
     "properties": {
         "sensor.acceleration_acceleration": {
             "sdf:jsonPointer": "#/sdfObject/sensor.acceleration/sdfProperty/acceleration",
@@ -47,8 +50,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/sensor.acceleration_acceleration"
-    ]
+    }
 }

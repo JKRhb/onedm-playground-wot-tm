@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-27"
     },
+    "tm:required": [
+        "#/properties/clock_datetime"
+    ],
     "properties": {
         "clock_countdown": {
             "sdf:jsonPointer": "#/sdfObject/clock/sdfProperty/countdown",
@@ -30,8 +33,5 @@
             "type": "string",
             "format": "date-time"
         }
-    },
-    "tm:required": [
-        "#/properties/clock_datetime"
-    ]
+    }
 }

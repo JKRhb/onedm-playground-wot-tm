@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/liquid.level_desiredlevel"
+    ],
     "properties": {
         "liquid.level_currentlevel": {
             "sdf:jsonPointer": "#/sdfObject/liquid.level/sdfProperty/currentlevel",
@@ -39,8 +42,5 @@
             "readOnly": true,
             "type": "integer"
         }
-    },
-    "tm:required": [
-        "#/properties/liquid.level_desiredlevel"
-    ]
+    }
 }

@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/sensor.contact_value"
+    ],
     "properties": {
         "sensor.contact_value": {
             "sdf:jsonPointer": "#/sdfObject/sensor.contact/sdfProperty/value",
@@ -24,8 +27,5 @@
             "readOnly": true,
             "type": "boolean"
         }
-    },
-    "tm:required": [
-        "#/properties/sensor.contact_value"
-    ]
+    }
 }

@@ -17,6 +17,11 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/ptz_pan",
+        "#/properties/ptz_tilt",
+        "#/properties/ptz_zoomFactor"
+    ],
     "properties": {
         "ptz_tilt_range": {
             "sdf:jsonPointer": "#/sdfObject/ptz/sdfProperty/tilt_range",
@@ -76,10 +81,5 @@
             "description": "The horizontal pan in degrees.",
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/ptz_zoomFactor",
-        "#/properties/ptz_tilt",
-        "#/properties/ptz_pan"
-    ]
+    }
 }

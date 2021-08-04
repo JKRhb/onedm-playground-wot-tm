@@ -17,6 +17,10 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Location_Latitude",
+        "#/properties/Location_Longitude"
+    ],
     "properties": {
         "Location_Latitude": {
             "sdf:jsonPointer": "#/sdfObject/Location/sdfProperty/Latitude",
@@ -99,9 +103,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "tm:required": [
-        "#/properties/Location_Latitude",
-        "#/properties/Location_Longitude"
-    ]
+    }
 }

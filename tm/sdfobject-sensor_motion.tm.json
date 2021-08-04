@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/sensor.motion_value"
+    ],
     "properties": {
         "sensor.motion_value": {
             "sdf:jsonPointer": "#/sdfObject/sensor.motion/sdfProperty/value",
@@ -24,8 +27,5 @@
             "readOnly": true,
             "type": "boolean"
         }
-    },
-    "tm:required": [
-        "#/properties/sensor.motion_value"
-    ]
+    }
 }

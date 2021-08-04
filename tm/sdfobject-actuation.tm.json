@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Actuation_On_Off"
+    ],
     "properties": {
         "Actuation_On_Off": {
             "sdf:jsonPointer": "#/sdfObject/Actuation/sdfProperty/On_Off",
@@ -70,8 +73,5 @@
             "minimum": 0,
             "maximum": 1
         }
-    },
-    "tm:required": [
-        "#/properties/Actuation_On_Off"
-    ]
+    }
 }

@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Gyrometer_X_Value"
+    ],
     "actions": {
         "Gyrometer_Reset_Min_and_Max_Measured_Values": {
             "sdf:jsonPointer": "#/sdfObject/Gyrometer/sdfAction/Reset_Min_and_Max_Measured_Values",
@@ -151,8 +154,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "tm:required": [
-        "#/properties/Gyrometer_X_Value"
-    ]
+    }
 }

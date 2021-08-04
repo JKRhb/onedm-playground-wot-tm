@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-22"
     },
+    "tm:required": [
+        "#/properties/glucose.medication_medication"
+    ],
     "properties": {
         "glucose.medication_regimen": {
             "sdf:jsonPointer": "#/sdfObject/glucose.medication/sdfProperty/regimen",
@@ -72,8 +75,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/glucose.medication_medication"
-    ]
+    }
 }

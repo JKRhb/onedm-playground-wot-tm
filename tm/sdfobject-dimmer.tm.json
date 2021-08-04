@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Dimmer_Level"
+    ],
     "properties": {
         "Dimmer_Level": {
             "sdf:jsonPointer": "#/sdfObject/Dimmer/sdfProperty/Level",
@@ -47,8 +50,5 @@
             "description": "The application type of the sensor or actuator as a string depending on the use case.",
             "type": "string"
         }
-    },
-    "tm:required": [
-        "#/properties/Dimmer_Level"
-    ]
+    }
 }

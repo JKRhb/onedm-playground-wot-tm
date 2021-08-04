@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/icemaker_status"
+    ],
     "properties": {
         "icemaker_status": {
             "sdf:jsonPointer": "#/sdfObject/icemaker/sdfProperty/status",
@@ -28,8 +31,5 @@
                 "full"
             ]
         }
-    },
-    "tm:required": [
-        "#/properties/icemaker_status"
-    ]
+    }
 }

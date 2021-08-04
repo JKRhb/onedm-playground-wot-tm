@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/lock.status_lockState"
+    ],
     "properties": {
         "lock.status_lockState": {
             "sdf:jsonPointer": "#/sdfObject/lock.status/sdfProperty/lockState",
@@ -27,8 +30,5 @@
                 "Unlocked"
             ]
         }
-    },
-    "tm:required": [
-        "#/properties/lock.status_lockState"
-    ]
+    }
 }

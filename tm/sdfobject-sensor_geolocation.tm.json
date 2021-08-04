@@ -17,6 +17,11 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/sensor.geolocation_latitude",
+        "#/properties/sensor.geolocation_longitude",
+        "#/properties/sensor.geolocation_alt"
+    ],
     "properties": {
         "sensor.geolocation_longitude": {
             "sdf:jsonPointer": "#/sdfObject/sensor.geolocation/sdfProperty/longitude",
@@ -65,10 +70,5 @@
             "type": "number",
             "minimum": 0
         }
-    },
-    "tm:required": [
-        "#/properties/sensor.geolocation_longitude",
-        "#/properties/sensor.geolocation_latitude",
-        "#/properties/sensor.geolocation_alt"
-    ]
+    }
 }

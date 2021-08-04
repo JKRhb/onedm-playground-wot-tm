@@ -17,6 +17,10 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/heatingzone_maxheatinglevel",
+        "#/properties/heatingzone_heatinglevel"
+    ],
     "properties": {
         "heatingzone_heatinglevel": {
             "sdf:jsonPointer": "#/sdfObject/heatingzone/sdfProperty/heatinglevel",
@@ -30,9 +34,5 @@
             "readOnly": true,
             "type": "integer"
         }
-    },
-    "tm:required": [
-        "#/properties/heatingzone_heatinglevel",
-        "#/properties/heatingzone_maxheatinglevel"
-    ]
+    }
 }

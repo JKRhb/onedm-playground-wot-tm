@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Digital_Output_Digital_Output_State"
+    ],
     "properties": {
         "Digital_Output_Digital_Output_State": {
             "sdf:jsonPointer": "#/sdfObject/Digital_Output/sdfProperty/Digital_Output_State",
@@ -54,8 +57,5 @@
             "minimum": 0,
             "maximum": 1
         }
-    },
-    "tm:required": [
-        "#/properties/Digital_Output_Digital_Output_State"
-    ]
+    }
 }

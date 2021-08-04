@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-22"
     },
+    "tm:required": [
+        "#/properties/brewing_amountrequested"
+    ],
     "properties": {
         "brewing_strength": {
             "sdf:jsonPointer": "#/sdfObject/brewing/sdfProperty/strength",
@@ -38,8 +41,5 @@
                 "type": "integer"
             }
         }
-    },
-    "tm:required": [
-        "#/properties/brewing_amountrequested"
-    ]
+    }
 }

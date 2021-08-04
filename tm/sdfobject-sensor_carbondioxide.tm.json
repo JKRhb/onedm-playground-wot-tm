@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-11-18"
     },
+    "tm:required": [
+        "#/properties/sensor.carbondioxide_value"
+    ],
     "properties": {
         "sensor.carbondioxide_value": {
             "sdf:jsonPointer": "#/sdfObject/sensor.carbondioxide/sdfProperty/value",
@@ -53,8 +56,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/sensor.carbondioxide_value"
-    ]
+    }
 }

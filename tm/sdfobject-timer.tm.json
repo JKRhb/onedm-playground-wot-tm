@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Timer_Delay_Duration"
+    ],
     "actions": {
         "Timer_Trigger": {
             "sdf:jsonPointer": "#/sdfObject/Timer/sdfAction/Trigger",
@@ -94,8 +97,5 @@
             "description": "The application type of the sensor or actuator as a string depending on the use case.",
             "type": "string"
         }
-    },
-    "tm:required": [
-        "#/properties/Timer_Delay_Duration"
-    ]
+    }
 }

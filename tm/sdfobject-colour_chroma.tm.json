@@ -17,6 +17,11 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/colour.chroma_hue",
+        "#/properties/colour.chroma_saturation",
+        "#/properties/colour.chroma_csc"
+    ],
     "properties": {
         "colour.chroma_ct": {
             "sdf:jsonPointer": "#/sdfObject/colour.chroma/sdfProperty/ct",
@@ -58,10 +63,5 @@
                 "maximum": 1
             }
         }
-    },
-    "tm:required": [
-        "#/properties/colour.chroma_hue",
-        "#/properties/colour.chroma_saturation",
-        "#/properties/colour.chroma_csc"
-    ]
+    }
 }

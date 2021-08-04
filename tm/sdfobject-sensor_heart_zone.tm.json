@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-28"
     },
+    "tm:required": [
+        "#/properties/sensor.heart.zone_heartRateZone"
+    ],
     "properties": {
         "sensor.heart.zone_heartRateZone": {
             "sdf:jsonPointer": "#/sdfObject/sensor.heart.zone/sdfProperty/heartRateZone",
@@ -31,8 +34,5 @@
                 "Zone5"
             ]
         }
-    },
-    "tm:required": [
-        "#/properties/sensor.heart.zone_heartRateZone"
-    ]
+    }
 }

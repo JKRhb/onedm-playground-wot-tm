@@ -17,6 +17,11 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Load_Control_Event_Identifier",
+        "#/properties/Load_Control_Start_Time",
+        "#/properties/Load_Control_Duration_In_Min"
+    ],
     "properties": {
         "Load_Control_Event_Identifier": {
             "sdf:jsonPointer": "#/sdfObject/Load_Control/sdfProperty/Event_Identifier",
@@ -88,10 +93,5 @@
             "minimum": 0,
             "maximum": 1
         }
-    },
-    "tm:required": [
-        "#/properties/Load_Control_Event_Identifier",
-        "#/properties/Load_Control_Start_Time",
-        "#/properties/Load_Control_Duration_In_Min"
-    ]
+    }
 }

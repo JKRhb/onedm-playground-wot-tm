@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-06-11"
     },
+    "tm:required": [
+        "#/properties/cadence_cadence"
+    ],
     "properties": {
         "cadence_cadence": {
             "sdf:jsonPointer": "#/sdfObject/cadence/sdfProperty/cadence",
@@ -42,8 +45,5 @@
             "readOnly": true,
             "type": "integer"
         }
-    },
-    "tm:required": [
-        "#/properties/cadence_cadence"
-    ]
+    }
 }

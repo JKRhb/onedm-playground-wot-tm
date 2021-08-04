@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-04"
     },
+    "tm:required": [
+        "#/properties/cgm.samplinginterval_interval"
+    ],
     "properties": {
         "cgm.samplinginterval_interval": {
             "sdf:jsonPointer": "#/sdfObject/cgm.samplinginterval/sdfProperty/interval",
@@ -48,8 +51,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/cgm.samplinginterval_interval"
-    ]
+    }
 }

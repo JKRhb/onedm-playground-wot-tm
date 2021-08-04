@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Digital_Input_Digital_Input_State"
+    ],
     "actions": {
         "Digital_Input_Digital_Input_Counter_Reset": {
             "sdf:jsonPointer": "#/sdfObject/Digital_Input/sdfAction/Digital_Input_Counter_Reset",
@@ -91,8 +94,5 @@
             "minimum": 0,
             "maximum": 1
         }
-    },
-    "tm:required": [
-        "#/properties/Digital_Input_Digital_Input_State"
-    ]
+    }
 }

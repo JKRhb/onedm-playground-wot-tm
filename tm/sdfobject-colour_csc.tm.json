@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/colour.csc_csc"
+    ],
     "properties": {
         "colour.csc_csc": {
             "sdf:jsonPointer": "#/sdfObject/colour.csc/sdfProperty/csc",
@@ -36,8 +39,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/colour.csc_csc"
-    ]
+    }
 }

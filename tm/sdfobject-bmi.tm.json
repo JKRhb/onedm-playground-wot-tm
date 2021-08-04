@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-22"
     },
+    "tm:required": [
+        "#/properties/bmi_bmi"
+    ],
     "properties": {
         "bmi_bmi": {
             "sdf:jsonPointer": "#/sdfObject/bmi/sdfProperty/bmi",
@@ -48,8 +51,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/bmi_bmi"
-    ]
+    }
 }

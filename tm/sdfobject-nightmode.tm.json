@@ -17,14 +17,14 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/nightmode_nightMode"
+    ],
     "properties": {
         "nightmode_nightMode": {
             "sdf:jsonPointer": "#/sdfObject/nightmode/sdfProperty/nightMode",
             "description": "The status of the Night Mode.",
             "type": "boolean"
         }
-    },
-    "tm:required": [
-        "#/properties/nightmode_nightMode"
-    ]
+    }
 }

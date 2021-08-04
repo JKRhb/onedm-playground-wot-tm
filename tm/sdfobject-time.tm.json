@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Time_Current_Time"
+    ],
     "properties": {
         "Time_Current_Time": {
             "sdf:jsonPointer": "#/sdfObject/Time/sdfProperty/Current_Time",
@@ -58,8 +61,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "tm:required": [
-        "#/properties/Time_Current_Time"
-    ]
+    }
 }

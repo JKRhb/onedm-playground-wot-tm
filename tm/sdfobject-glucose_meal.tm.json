@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-22"
     },
+    "tm:required": [
+        "#/properties/glucose.meal_meal"
+    ],
     "properties": {
         "glucose.meal_meal": {
             "sdf:jsonPointer": "#/sdfObject/glucose.meal/sdfProperty/meal",
@@ -31,8 +34,5 @@
                 "casual"
             ]
         }
-    },
-    "tm:required": [
-        "#/properties/glucose.meal_meal"
-    ]
+    }
 }

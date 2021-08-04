@@ -17,6 +17,13 @@
     "version": {
         "instance": "2018-07-12"
     },
+    "tm:required": [
+        "#/properties/sleep_awake",
+        "#/properties/sleep_nrem1",
+        "#/properties/sleep_nrem2",
+        "#/properties/sleep_nrem3",
+        "#/properties/sleep_rem"
+    ],
     "properties": {
         "sleep_awake": {
             "sdf:jsonPointer": "#/sdfObject/sleep/sdfProperty/awake",
@@ -121,12 +128,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/sleep_awake",
-        "#/properties/sleep_nrem1",
-        "#/properties/sleep_nrem2",
-        "#/properties/sleep_nrem3",
-        "#/properties/sleep_rem"
-    ]
+    }
 }

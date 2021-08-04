@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/openlevel_openLevel"
+    ],
     "properties": {
         "openlevel_openLevel": {
             "sdf:jsonPointer": "#/sdfObject/openlevel/sdfProperty/openLevel",
@@ -40,8 +43,5 @@
             "readOnly": true,
             "type": "integer"
         }
-    },
-    "tm:required": [
-        "#/properties/openlevel_openLevel"
-    ]
+    }
 }

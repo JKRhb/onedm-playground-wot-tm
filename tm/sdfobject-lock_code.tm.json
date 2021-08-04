@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/lock.code_lockCodeList"
+    ],
     "properties": {
         "lock.code_lockCodeList": {
             "sdf:jsonPointer": "#/sdfObject/lock.code/sdfProperty/lockCodeList",
@@ -26,8 +29,5 @@
                 "type": "string"
             }
         }
-    },
-    "tm:required": [
-        "#/properties/lock.code_lockCodeList"
-    ]
+    }
 }

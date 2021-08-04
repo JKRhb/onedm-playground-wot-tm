@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Accelerometer_X_Value"
+    ],
     "properties": {
         "Accelerometer_X_Value": {
             "sdf:jsonPointer": "#/sdfObject/Accelerometer/sdfProperty/X_Value",
@@ -102,8 +105,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "tm:required": [
-        "#/properties/Accelerometer_X_Value"
-    ]
+    }
 }

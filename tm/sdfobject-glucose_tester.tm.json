@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-22"
     },
+    "tm:required": [
+        "#/properties/glucose.tester_tester"
+    ],
     "properties": {
         "glucose.tester_tester": {
             "sdf:jsonPointer": "#/sdfObject/glucose.tester/sdfProperty/tester",
@@ -29,8 +32,5 @@
                 "lab"
             ]
         }
-    },
-    "tm:required": [
-        "#/properties/glucose.tester_tester"
-    ]
+    }
 }

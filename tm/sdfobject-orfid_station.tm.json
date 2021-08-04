@@ -17,6 +17,10 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/orfid.station_event",
+        "#/properties/orfid.station_actionrequest"
+    ],
     "properties": {
         "orfid.station_process": {
             "sdf:jsonPointer": "#/sdfObject/orfid.station/sdfProperty/process",
@@ -34,9 +38,5 @@
             "description": "The Event indicator, when True, the action request should be applied to the product identified by the tagid.",
             "type": "boolean"
         }
-    },
-    "tm:required": [
-        "#/properties/orfid.station_actionrequest",
-        "#/properties/orfid.station_event"
-    ]
+    }
 }

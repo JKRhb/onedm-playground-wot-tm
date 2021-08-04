@@ -17,6 +17,14 @@
     "version": {
         "instance": "2019-03-04"
     },
+    "tm:required": [
+        "#/properties/cgm.threshold_plow",
+        "#/properties/cgm.threshold_phigh",
+        "#/properties/cgm.threshold_dhypo",
+        "#/properties/cgm.threshold_dhyper",
+        "#/properties/cgm.threshold_gir",
+        "#/properties/cgm.threshold_gdr"
+    ],
     "properties": {
         "cgm.threshold_plow": {
             "sdf:jsonPointer": "#/sdfObject/cgm.threshold/sdfProperty/plow",
@@ -83,13 +91,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/cgm.threshold_plow",
-        "#/properties/cgm.threshold_phigh",
-        "#/properties/cgm.threshold_dhypo",
-        "#/properties/cgm.threshold_dhyper",
-        "#/properties/cgm.threshold_gir",
-        "#/properties/cgm.threshold_gdr"
-    ]
+    }
 }

@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Power_Control_On_Off"
+    ],
     "properties": {
         "Power_Control_On_Off": {
             "sdf:jsonPointer": "#/sdfObject/Power_Control/sdfProperty/On_Off",
@@ -79,8 +82,5 @@
             "minimum": 0,
             "maximum": 1
         }
-    },
-    "tm:required": [
-        "#/properties/Power_Control_On_Off"
-    ]
+    }
 }

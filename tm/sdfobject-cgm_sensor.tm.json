@@ -17,6 +17,10 @@
     "version": {
         "instance": "2019-03-04"
     },
+    "tm:required": [
+        "#/properties/cgm.sensor_starttime",
+        "#/properties/cgm.sensor_runtime"
+    ],
     "properties": {
         "cgm.sensor_starttime": {
             "sdf:jsonPointer": "#/sdfObject/cgm.sensor/sdfProperty/starttime",
@@ -54,9 +58,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/cgm.sensor_starttime",
-        "#/properties/cgm.sensor_runtime"
-    ]
+    }
 }

@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-08-07"
     },
+    "tm:required": [
+        "#/properties/keycardswitch_stateofcard"
+    ],
     "properties": {
         "keycardswitch_stateofcard": {
             "sdf:jsonPointer": "#/sdfObject/keycardswitch/sdfProperty/stateofcard",
@@ -28,8 +31,5 @@
                 "validCardNotInserted"
             ]
         }
-    },
-    "tm:required": [
-        "#/properties/keycardswitch_stateofcard"
-    ]
+    }
 }

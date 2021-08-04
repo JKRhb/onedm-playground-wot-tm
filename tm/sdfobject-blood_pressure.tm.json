@@ -17,6 +17,10 @@
     "version": {
         "instance": "2019-03-22"
     },
+    "tm:required": [
+        "#/properties/blood.pressure_systolic",
+        "#/properties/blood.pressure_diastolic"
+    ],
     "properties": {
         "blood.pressure_map": {
             "sdf:jsonPointer": "#/sdfObject/blood.pressure/sdfProperty/map",
@@ -73,9 +77,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/blood.pressure_systolic",
-        "#/properties/blood.pressure_diastolic"
-    ]
+    }
 }

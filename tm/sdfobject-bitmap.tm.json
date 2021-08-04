@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Bitmap_Bitmap_Input"
+    ],
     "actions": {
         "Bitmap_Bitmap_Input_Reset": {
             "sdf:jsonPointer": "#/sdfObject/Bitmap/sdfAction/Bitmap_Input_Reset",
@@ -65,8 +68,5 @@
             "minimum": 0,
             "maximum": 1
         }
-    },
-    "tm:required": [
-        "#/properties/Bitmap_Bitmap_Input"
-    ]
+    }
 }

@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/door_openAlarm"
+    ],
     "properties": {
         "door_openDuration": {
             "sdf:jsonPointer": "#/sdfObject/door/sdfProperty/openDuration",
@@ -39,8 +42,5 @@
             "description": "The state of the door open alarm.",
             "type": "boolean"
         }
-    },
-    "tm:required": [
-        "#/properties/door_openAlarm"
-    ]
+    }
 }

@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/mode_modes"
+    ],
     "properties": {
         "mode_modes": {
             "sdf:jsonPointer": "#/sdfObject/mode/sdfProperty/modes",
@@ -35,8 +38,5 @@
                 "type": "string"
             }
         }
-    },
-    "tm:required": [
-        "#/properties/mode_modes"
-    ]
+    }
 }

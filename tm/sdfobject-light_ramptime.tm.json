@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/light.ramptime_rampTime"
+    ],
     "properties": {
         "light.ramptime_rampTime": {
             "sdf:jsonPointer": "#/sdfObject/light.ramptime/sdfProperty/rampTime",
@@ -46,8 +49,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/light.ramptime_rampTime"
-    ]
+    }
 }

@@ -17,6 +17,10 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/movement.linear_movementSettings",
+        "#/properties/movement.linear_movement"
+    ],
     "properties": {
         "movement.linear_movementSettings": {
             "sdf:jsonPointer": "#/sdfObject/movement.linear/sdfProperty/movementSettings",
@@ -37,9 +41,5 @@
             "description": "The current movement value.",
             "type": "string"
         }
-    },
-    "tm:required": [
-        "#/properties/movement.linear_movementSettings",
-        "#/properties/movement.linear_movement"
-    ]
+    }
 }

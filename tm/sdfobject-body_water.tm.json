@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-22"
     },
+    "tm:required": [
+        "#/properties/body.water_bwater"
+    ],
     "properties": {
         "body.water_bwater": {
             "sdf:jsonPointer": "#/sdfObject/body.water/sdfProperty/bwater",
@@ -59,8 +62,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/body.water_bwater"
-    ]
+    }
 }

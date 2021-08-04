@@ -17,6 +17,10 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/energy.consumption_power",
+        "#/properties/energy.consumption_energy"
+    ],
     "properties": {
         "energy.consumption_power": {
             "sdf:jsonPointer": "#/sdfObject/energy.consumption/sdfProperty/power",
@@ -30,9 +34,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/energy.consumption_power",
-        "#/properties/energy.consumption_energy"
-    ]
+    }
 }

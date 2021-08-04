@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-18"
     },
+    "tm:required": [
+        "#/properties/calorificvalue_calorific"
+    ],
     "properties": {
         "calorificvalue_precision": {
             "sdf:jsonPointer": "#/sdfObject/calorificvalue/sdfProperty/precision",
@@ -32,8 +35,5 @@
             "minimum": 0,
             "exclusiveMinimum": true
         }
-    },
-    "tm:required": [
-        "#/properties/calorificvalue_calorific"
-    ]
+    }
 }

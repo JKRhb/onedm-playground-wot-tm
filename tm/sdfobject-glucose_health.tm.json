@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-22"
     },
+    "tm:required": [
+        "#/properties/glucose.health_health"
+    ],
     "properties": {
         "glucose.health_health": {
             "sdf:jsonPointer": "#/sdfObject/glucose.health/sdfProperty/health",
@@ -31,8 +34,5 @@
                 "none"
             ]
         }
-    },
-    "tm:required": [
-        "#/properties/glucose.health_health"
-    ]
+    }
 }

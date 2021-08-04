@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-22"
     },
+    "tm:required": [
+        "#/properties/glucose.samplelocation_samplelocation"
+    ],
     "properties": {
         "glucose.samplelocation_samplelocation": {
             "sdf:jsonPointer": "#/sdfObject/glucose.samplelocation/sdfProperty/samplelocation",
@@ -30,8 +33,5 @@
                 "ctrlsolution"
             ]
         }
-    },
-    "tm:required": [
-        "#/properties/glucose.samplelocation_samplelocation"
-    ]
+    }
 }

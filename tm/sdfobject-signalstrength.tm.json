@@ -17,6 +17,10 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/signalstrength_lqi",
+        "#/properties/signalstrength_rssi"
+    ],
     "properties": {
         "signalstrength_lqi": {
             "sdf:jsonPointer": "#/sdfObject/signalstrength/sdfProperty/lqi",
@@ -30,9 +34,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/signalstrength_lqi",
-        "#/properties/signalstrength_rssi"
-    ]
+    }
 }

@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Audio_Clip_Clip"
+    ],
     "actions": {
         "Audio_Clip_Trigger": {
             "sdf:jsonPointer": "#/sdfObject/Audio_Clip/sdfAction/Trigger",
@@ -54,8 +57,5 @@
             "description": "The application type of the sensor or actuator as a string depending on the use case.",
             "type": "string"
         }
-    },
-    "tm:required": [
-        "#/properties/Audio_Clip_Clip"
-    ]
+    }
 }

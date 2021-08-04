@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/colour.rgb_rgbValue"
+    ],
     "properties": {
         "colour.rgb_rgbValue": {
             "sdf:jsonPointer": "#/sdfObject/colour.rgb/sdfProperty/rgbValue",
@@ -45,8 +48,5 @@
             "readOnly": true,
             "type": "integer"
         }
-    },
-    "tm:required": [
-        "#/properties/colour.rgb_rgbValue"
-    ]
+    }
 }

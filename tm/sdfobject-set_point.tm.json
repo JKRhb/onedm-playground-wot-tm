@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Set_Point_Set_Point_Value"
+    ],
     "properties": {
         "Set_Point_Set_Point_Value": {
             "sdf:jsonPointer": "#/sdfObject/Set_Point/sdfProperty/Set_Point_Value",
@@ -61,8 +64,5 @@
             "minimum": 0,
             "maximum": 1
         }
-    },
-    "tm:required": [
-        "#/properties/Set_Point_Set_Point_Value"
-    ]
+    }
 }

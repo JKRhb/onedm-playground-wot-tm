@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-25"
     },
+    "tm:required": [
+        "#/properties/sensor.atmosphericpressure_atmosphericPressure"
+    ],
     "properties": {
         "sensor.atmosphericpressure_atmosphericPressure": {
             "sdf:jsonPointer": "#/sdfObject/sensor.atmosphericpressure/sdfProperty/atmosphericPressure",
@@ -47,8 +50,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/sensor.atmosphericpressure_atmosphericPressure"
-    ]
+    }
 }

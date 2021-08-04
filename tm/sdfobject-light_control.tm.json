@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Light_Control_On_Off"
+    ],
     "properties": {
         "Light_Control_On_Off": {
             "sdf:jsonPointer": "#/sdfObject/Light_Control/sdfProperty/On_Off",
@@ -74,8 +77,5 @@
             "description": "The application type of the sensor or actuator as a string depending on the use case.",
             "type": "string"
         }
-    },
-    "tm:required": [
-        "#/properties/Light_Control_On_Off"
-    ]
+    }
 }

@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-22"
     },
+    "tm:required": [
+        "#/properties/pulserate_pulserate"
+    ],
     "properties": {
         "pulserate_pulserate": {
             "sdf:jsonPointer": "#/sdfObject/pulserate/sdfProperty/pulserate",
@@ -42,8 +45,5 @@
             "readOnly": true,
             "type": "integer"
         }
-    },
-    "tm:required": [
-        "#/properties/pulserate_pulserate"
-    ]
+    }
 }

@@ -17,6 +17,10 @@
     "version": {
         "instance": "2019-03-22"
     },
+    "tm:required": [
+        "#/properties/glucose.carb_carb",
+        "#/properties/glucose.carb_meal"
+    ],
     "properties": {
         "glucose.carb_carb": {
             "sdf:jsonPointer": "#/sdfObject/glucose.carb/sdfProperty/carb",
@@ -67,9 +71,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/glucose.carb_carb",
-        "#/properties/glucose.carb_meal"
-    ]
+    }
 }

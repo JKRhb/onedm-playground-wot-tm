@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Stopwatch_Cumulative_Time"
+    ],
     "properties": {
         "Stopwatch_Cumulative_Time": {
             "sdf:jsonPointer": "#/sdfObject/Stopwatch/sdfProperty/Cumulative_Time",
@@ -80,8 +83,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "tm:required": [
-        "#/properties/Stopwatch_Cumulative_Time"
-    ]
+    }
 }

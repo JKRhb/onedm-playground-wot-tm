@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-22"
     },
+    "tm:required": [
+        "#/properties/userid_userid"
+    ],
     "properties": {
         "userid_userid": {
             "sdf:jsonPointer": "#/sdfObject/userid/sdfProperty/userid",
@@ -24,8 +27,5 @@
             "readOnly": true,
             "type": "string"
         }
-    },
-    "tm:required": [
-        "#/properties/userid_userid"
-    ]
+    }
 }

@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/On_Off_switch_Digital_Input_State"
+    ],
     "properties": {
         "On_Off_switch_Digital_Input_State": {
             "sdf:jsonPointer": "#/sdfObject/On_Off_switch/sdfProperty/Digital_Input_State",
@@ -70,8 +73,5 @@
             "minimum": 0,
             "maximum": 1
         }
-    },
-    "tm:required": [
-        "#/properties/On_Off_switch_Digital_Input_State"
-    ]
+    }
 }

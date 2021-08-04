@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/sensor.presence_value"
+    ],
     "properties": {
         "sensor.presence_value": {
             "sdf:jsonPointer": "#/sdfObject/sensor.presence/sdfProperty/value",
@@ -24,8 +27,5 @@
             "readOnly": true,
             "type": "boolean"
         }
-    },
-    "tm:required": [
-        "#/properties/sensor.presence_value"
-    ]
+    }
 }

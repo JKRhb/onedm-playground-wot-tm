@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Analog_Output_Analog_Output_Current_Value"
+    ],
     "properties": {
         "Analog_Output_Analog_Output_Current_Value": {
             "sdf:jsonPointer": "#/sdfObject/Analog_Output/sdfProperty/Analog_Output_Current_Value",
@@ -64,8 +67,5 @@
             "minimum": 0,
             "maximum": 1
         }
-    },
-    "tm:required": [
-        "#/properties/Analog_Output_Analog_Output_Current_Value"
-    ]
+    }
 }

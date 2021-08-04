@@ -17,6 +17,10 @@
     "version": {
         "instance": "2019-03-04"
     },
+    "tm:required": [
+        "#/properties/cgm.calibrate_Cvalue",
+        "#/properties/cgm.calibrate_Cstatus"
+    ],
     "properties": {
         "cgm.calibrate_Cvalue": {
             "sdf:jsonPointer": "#/sdfObject/cgm.calibrate/sdfProperty/Cvalue",
@@ -54,9 +58,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/cgm.calibrate_Cvalue",
-        "#/properties/cgm.calibrate_Cstatus"
-    ]
+    }
 }

@@ -17,6 +17,10 @@
     "version": {
         "instance": "2019-03-22"
     },
+    "tm:required": [
+        "#/properties/weight_weight",
+        "#/properties/weight_units"
+    ],
     "properties": {
         "weight_weight": {
             "sdf:jsonPointer": "#/sdfObject/weight/sdfProperty/weight",
@@ -60,9 +64,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/weight_weight",
-        "#/properties/weight_units"
-    ]
+    }
 }

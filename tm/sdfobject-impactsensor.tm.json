@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-21"
     },
+    "tm:required": [
+        "#/properties/impactsensor_impactstatus"
+    ],
     "properties": {
         "impactsensor_impactstatus": {
             "sdf:jsonPointer": "#/sdfObject/impactsensor/sdfProperty/impactstatus",
@@ -46,8 +49,5 @@
             "minimum": 0,
             "maximum": 360
         }
-    },
-    "tm:required": [
-        "#/properties/impactsensor_impactstatus"
-    ]
+    }
 }

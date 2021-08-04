@@ -17,6 +17,10 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/mediasource_sourceName",
+        "#/properties/mediasource_status"
+    ],
     "properties": {
         "mediasource_status": {
             "sdf:jsonPointer": "#/sdfObject/mediasource/sdfProperty/status",
@@ -44,9 +48,5 @@
             "description": "Label to specify the instance.",
             "type": "string"
         }
-    },
-    "tm:required": [
-        "#/properties/mediasource_status",
-        "#/properties/mediasource_sourceName"
-    ]
+    }
 }

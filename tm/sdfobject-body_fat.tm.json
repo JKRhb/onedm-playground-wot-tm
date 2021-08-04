@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-03-22"
     },
+    "tm:required": [
+        "#/properties/body.fat_bodyfat"
+    ],
     "properties": {
         "body.fat_bodyfat": {
             "sdf:jsonPointer": "#/sdfObject/body.fat/sdfProperty/bodyfat",
@@ -60,8 +63,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/body.fat_bodyfat"
-    ]
+    }
 }

@@ -17,6 +17,9 @@
     "version": {
         "instance": "2020-02-04"
     },
+    "tm:required": [
+        "#/properties/time.period_startTime"
+    ],
     "properties": {
         "time.period_interval": {
             "sdf:jsonPointer": "#/sdfObject/time.period/sdfProperty/interval",
@@ -69,8 +72,5 @@
                 "postInterval"
             ]
         }
-    },
-    "tm:required": [
-        "#/properties/time.period_startTime"
-    ]
+    }
 }

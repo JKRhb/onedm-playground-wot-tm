@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-25"
     },
+    "tm:required": [
+        "#/properties/altimeter_alt"
+    ],
     "properties": {
         "altimeter_alt": {
             "sdf:jsonPointer": "#/sdfObject/altimeter/sdfProperty/alt",
@@ -47,8 +50,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/altimeter_alt"
-    ]
+    }
 }

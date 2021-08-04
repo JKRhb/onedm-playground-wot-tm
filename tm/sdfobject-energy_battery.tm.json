@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-06-18"
     },
+    "tm:required": [
+        "#/properties/energy.battery_batterythreshold"
+    ],
     "properties": {
         "energy.battery_discharging": {
             "sdf:jsonPointer": "#/sdfObject/energy.battery/sdfProperty/discharging",
@@ -70,8 +73,5 @@
             "type": "string",
             "format": "date-time"
         }
-    },
-    "tm:required": [
-        "#/properties/energy.battery_batterythreshold"
-    ]
+    }
 }

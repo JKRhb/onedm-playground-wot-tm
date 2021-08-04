@@ -17,6 +17,9 @@
     "version": {
         "instance": "2019-02-15"
     },
+    "tm:required": [
+        "#/properties/energy.generation_energygenerated"
+    ],
     "properties": {
         "energy.generation_energygenerated": {
             "sdf:jsonPointer": "#/sdfObject/energy.generation/sdfProperty/energygenerated",
@@ -24,8 +27,5 @@
             "readOnly": true,
             "type": "number"
         }
-    },
-    "tm:required": [
-        "#/properties/energy.generation_energygenerated"
-    ]
+    }
 }

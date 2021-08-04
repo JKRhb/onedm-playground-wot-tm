@@ -17,6 +17,9 @@
     "version": {
         "instance": "2021-02-11"
     },
+    "tm:required": [
+        "#/properties/Presence_Digital_Input_State"
+    ],
     "actions": {
         "Presence_Digital_Input_Counter_Reset": {
             "sdf:jsonPointer": "#/sdfObject/Presence/sdfAction/Digital_Input_Counter_Reset",
@@ -102,8 +105,5 @@
             "minimum": 0,
             "maximum": 100
         }
-    },
-    "tm:required": [
-        "#/properties/Presence_Digital_Input_State"
-    ]
+    }
 }

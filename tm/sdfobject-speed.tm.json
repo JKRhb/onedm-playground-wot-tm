@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "instance": "2019-05-13"
+        "model": "2019-05-13"
     },
     "tm:required": [
         "#/properties/speed_speed"

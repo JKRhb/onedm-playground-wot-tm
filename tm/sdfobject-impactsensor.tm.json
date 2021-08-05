@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "instance": "2019-03-21"
+        "model": "2019-03-21"
     },
     "tm:required": [
         "#/properties/impactsensor_impactstatus"

@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "instance": "2020-02-04"
+        "model": "2020-02-04"
     },
     "tm:required": [
         "#/properties/time.period_startTime"

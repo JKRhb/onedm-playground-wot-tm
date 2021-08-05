@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "instance": "2021-02-11"
+        "model": "2021-02-11"
     },
     "tm:required": [
         "#/properties/Digital_Output_Digital_Output_State"

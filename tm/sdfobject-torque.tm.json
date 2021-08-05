@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "instance": "2019-09-25"
+        "model": "2019-09-25"
     },
     "tm:required": [
         "#/properties/torque_torque"

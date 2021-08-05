@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "instance": "2019-03-18"
+        "model": "2019-03-18"
     },
     "tm:required": [
         "#/properties/conversionfactor_conversion"

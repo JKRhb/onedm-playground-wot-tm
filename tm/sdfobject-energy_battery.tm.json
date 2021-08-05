@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "instance": "2019-06-18"
+        "model": "2019-06-18"
     },
     "tm:required": [
         "#/properties/energy.battery_batterythreshold"

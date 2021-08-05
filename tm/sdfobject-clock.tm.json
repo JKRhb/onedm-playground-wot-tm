@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "instance": "2019-03-27"
+        "model": "2019-03-27"
     },
     "tm:required": [
         "#/properties/clock_datetime"

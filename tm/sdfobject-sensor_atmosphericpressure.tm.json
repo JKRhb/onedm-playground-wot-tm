@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "instance": "2019-02-25"
+        "model": "2019-02-25"
     },
     "tm:required": [
         "#/properties/sensor.atmosphericpressure_atmosphericPressure"

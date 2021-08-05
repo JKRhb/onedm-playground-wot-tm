@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "instance": "2019-11-19"
+        "model": "2019-11-19"
     },
     "tm:required": [
         "#/properties/switch.restricted_state"

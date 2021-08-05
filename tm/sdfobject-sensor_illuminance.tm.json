@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "instance": "2019-08-08"
+        "model": "2019-08-08"
     },
     "tm:required": [
         "#/properties/sensor.illuminance_illuminance"

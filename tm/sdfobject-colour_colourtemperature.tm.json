@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "instance": "2019-02-15"
+        "model": "2019-02-15"
     },
     "tm:required": [
         "#/properties/colour.colourtemperature_ct"

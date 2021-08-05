@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "instance": "2019-08-20"
+        "model": "2019-08-20"
     },
     "tm:required": [
         "#/properties/muscleoxygensaturation_muscleoxygensaturation"

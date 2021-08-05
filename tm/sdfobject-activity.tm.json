@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "instance": "2019-03-04"
+        "model": "2019-03-04"
     },
     "tm:required": [
         "#/properties/activity_activity"

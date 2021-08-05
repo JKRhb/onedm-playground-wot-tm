@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "instance": "2018-12-12"
+        "model": "2018-12-12"
     },
     "tm:required": [
         "#/properties/opaquedata_payload",

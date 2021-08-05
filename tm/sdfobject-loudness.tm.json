@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "model": "2021-02-11"
+        "instance": "2021-02-11"
     },
     "tm:required": [
         "#/properties/Loudness_Sensor_Value"

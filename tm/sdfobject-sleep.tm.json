@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "model": "2018-07-12"
+        "instance": "2018-07-12"
     },
     "tm:required": [
         "#/properties/sleep_awake",

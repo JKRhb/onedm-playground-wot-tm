@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "model": "2019-02-15"
+        "instance": "2019-02-15"
     },
     "tm:required": [
         "#/properties/energy.generation_energygenerated"

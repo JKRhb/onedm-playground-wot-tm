@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "model": "2019-06-11"
+        "instance": "2019-06-11"
     },
     "tm:required": [
         "#/properties/cadence_cadence"

@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "model": "2018-12-12"
+        "instance": "2018-12-12"
     },
     "tm:required": [
         "#/properties/keypadchar_keyvalue"

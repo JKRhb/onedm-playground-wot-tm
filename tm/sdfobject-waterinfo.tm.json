@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "model": "2019-06-13"
+        "instance": "2019-06-13"
     },
     "tm:required": [
         "#/properties/waterinfo_currentwatertype"

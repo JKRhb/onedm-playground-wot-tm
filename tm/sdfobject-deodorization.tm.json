@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "model": "2019-08-20"
+        "instance": "2019-08-20"
     },
     "tm:required": [
         "#/properties/deodorization_mode"

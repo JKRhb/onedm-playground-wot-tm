@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "model": "2019-11-18"
+        "instance": "2019-11-18"
     },
     "tm:required": [
         "#/properties/sensor.smoke_value"

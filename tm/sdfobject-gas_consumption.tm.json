@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "model": "2019-03-18"
+        "instance": "2019-03-18"
     },
     "tm:required": [
         "#/properties/gas.consumption_gas"

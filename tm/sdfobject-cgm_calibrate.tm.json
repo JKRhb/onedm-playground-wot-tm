@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "model": "2019-03-04"
+        "instance": "2019-03-04"
     },
     "tm:required": [
         "#/properties/cgm.calibrate_Cvalue",

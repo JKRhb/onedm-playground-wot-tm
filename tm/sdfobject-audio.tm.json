@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "model": "2019-06-20"
+        "instance": "2019-06-20"
     },
     "properties": {
         "audio_mute": {

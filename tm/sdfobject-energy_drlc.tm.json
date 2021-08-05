@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "model": "2019-07-09"
+        "instance": "2019-07-09"
     },
     "tm:required": [
         "#/properties/energy.drlc_DRType"

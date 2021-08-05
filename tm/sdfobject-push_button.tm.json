@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "model": "2021-02-11"
+        "instance": "2021-02-11"
     },
     "tm:required": [
         "#/properties/Push_button_Digital_Input_State"

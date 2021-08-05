@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "model": "2019-07-24"
+        "instance": "2019-07-24"
     },
     "tm:required": [
         "#/properties/hvac.capacity_capacity"

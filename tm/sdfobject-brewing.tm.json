@@ -15,7 +15,7 @@
         }
     ],
     "version": {
-        "model": "2019-02-22"
+        "instance": "2019-02-22"
     },
     "tm:required": [
         "#/properties/brewing_amountrequested"

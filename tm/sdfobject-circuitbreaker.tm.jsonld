@@ -1,0 +1,77 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "Circuit Breaker (IEC 61850)",
+    "description": "copyright 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2019-06-13"
+    },
+    "tm:required": [
+        "#/properties/circuitbreaker_status",
+        "#/properties/circuitbreaker_ratedcurrent",
+        "#/properties/circuitbreaker_ratedbreakingcurrent",
+        "#/properties/circuitbreaker_ratedvoltage",
+        "#/properties/circuitbreaker_timestamp"
+    ],
+    "properties": {
+        "circuitbreaker_status": {
+            "sdf:jsonPointer": "#/sdfObject/circuitbreaker/sdfProperty/status",
+            "description": "The circuit breaker status. The status can only be reset out of bounds.",
+            "readOnly": true,
+            "type": "string",
+            "enum": [
+                "on",
+                "off",
+                "trip"
+            ]
+        },
+        "circuitbreaker_ratedcurrent": {
+            "sdf:jsonPointer": "#/sdfObject/circuitbreaker/sdfProperty/ratedcurrent",
+            "description": "The rated current in Ampere, defined at manufacturing time.",
+            "readOnly": true,
+            "type": "number"
+        },
+        "circuitbreaker_ratedbreakingcurrent": {
+            "sdf:jsonPointer": "#/sdfObject/circuitbreaker/sdfProperty/ratedbreakingcurrent",
+            "description": "The rated breaking current in Ampere, defined at manufacturing time.",
+            "readOnly": true,
+            "type": "number"
+        },
+        "circuitbreaker_ratedvoltage": {
+            "sdf:jsonPointer": "#/sdfObject/circuitbreaker/sdfProperty/ratedvoltage",
+            "description": "The rated voltage in Volts, defined at manufacturing time.",
+            "readOnly": true,
+            "type": "number"
+        },
+        "circuitbreaker_leakagecurrent": {
+            "sdf:jsonPointer": "#/sdfObject/circuitbreaker/sdfProperty/leakagecurrent",
+            "description": "The leakage current in mA.",
+            "readOnly": true,
+            "type": "number"
+        },
+        "circuitbreaker_insulationresistance": {
+            "sdf:jsonPointer": "#/sdfObject/circuitbreaker/sdfProperty/insulationresistance",
+            "description": "Insulation resistance of circuit breaker (M Ohm).",
+            "readOnly": true,
+            "type": "number"
+        },
+        "circuitbreaker_timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/circuitbreaker/sdfProperty/timestamp",
+            "description": "An RFC3339 formatted time indicating when the data was observed (e.g.: 2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00). Note that 1/100 time resolution should be used.",
+            "readOnly": true,
+            "type": "string",
+            "format": "date-time"
+        }
+    }
+}

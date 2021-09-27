@@ -1,0 +1,77 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "OMA LwM2M On/Off switch (Object ID 3342)",
+    "description": "Copyright (c) 2018-2020 IPSO",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2021-02-11"
+    },
+    "tm:required": [
+        "#/properties/On_Off_switch_Digital_Input_State"
+    ],
+    "properties": {
+        "On_Off_switch_Digital_Input_State": {
+            "sdf:jsonPointer": "#/sdfObject/On_Off_switch/sdfProperty/Digital_Input_State",
+            "title": "Digital Input State",
+            "description": "The current state of a digital input.",
+            "readOnly": true,
+            "type": "boolean"
+        },
+        "On_Off_switch_Digital_Input_Counter": {
+            "sdf:jsonPointer": "#/sdfObject/On_Off_switch/sdfProperty/Digital_Input_Counter",
+            "title": "Digital Input Counter",
+            "description": "The cumulative value of active state detected.",
+            "readOnly": true,
+            "type": "integer"
+        },
+        "On_Off_switch_On_time": {
+            "sdf:jsonPointer": "#/sdfObject/On_Off_switch/sdfProperty/On_time",
+            "title": "On time",
+            "description": "The time in seconds that the device has been on. Writing a value of 0 resets the counter.",
+            "type": "integer",
+            "unit": "s"
+        },
+        "On_Off_switch_Off_Time": {
+            "sdf:jsonPointer": "#/sdfObject/On_Off_switch/sdfProperty/Off_Time",
+            "title": "Off Time",
+            "description": "The time in seconds in the off state. Writing a value of 0 resets the counter.",
+            "type": "integer",
+            "unit": "s"
+        },
+        "On_Off_switch_Application_Type": {
+            "sdf:jsonPointer": "#/sdfObject/On_Off_switch/sdfProperty/Application_Type",
+            "title": "Application Type",
+            "description": "The application type of the sensor or actuator as a string depending on the use case.",
+            "type": "string"
+        },
+        "On_Off_switch_Timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/On_Off_switch/sdfProperty/Timestamp",
+            "title": "Timestamp",
+            "description": "The timestamp of when the measurement was performed.",
+            "readOnly": true,
+            "type": "number",
+            "sdf:sdfType": "unix-time"
+        },
+        "On_Off_switch_Fractional_Timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/On_Off_switch/sdfProperty/Fractional_Timestamp",
+            "title": "Fractional Timestamp",
+            "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "readOnly": true,
+            "type": "number",
+            "unit": "s",
+            "minimum": 0,
+            "maximum": 1
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "Colour Saturation",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2019-02-15"
+    },
+    "tm:required": [
+        "#/properties/colour.saturation_colourSaturation"
+    ],
+    "properties": {
+        "colour.saturation_colourSaturation": {
+            "sdf:jsonPointer": "#/sdfObject/colour.saturation/sdfProperty/colourSaturation",
+            "description": "The colour saturation value.",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+        }
+    }
+}

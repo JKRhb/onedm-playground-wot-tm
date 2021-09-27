@@ -1,0 +1,59 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "Sensor Properties",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2019-02-15"
+    },
+    "tm:required": [
+        "#/properties/sensor.props_silenttime",
+        "#/properties/sensor.props_sensitivity"
+    ],
+    "properties": {
+        "sensor.props_silenttime": {
+            "sdf:jsonPointer": "#/sdfObject/sensor.props/sdfProperty/silenttime",
+            "description": "The time in seconds from the previous report that the Sensor restrains from sending a state change. This is used to avoid repeated state change reports.",
+            "type": "integer"
+        },
+        "sensor.props_sensitivity": {
+            "sdf:jsonPointer": "#/sdfObject/sensor.props/sdfProperty/sensitivity",
+            "description": "The level of the detection accuracy of the Sensor. This is used to control the level at which the Sensor detects a state change. The \"range\" Property should be specified per manufacturer device capabilities.",
+            "type": "number"
+        },
+        "sensor.props_range": {
+            "sdf:jsonPointer": "#/sdfObject/sensor.props/sdfProperty/range",
+            "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "readOnly": true,
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+                "type": "number"
+            }
+        },
+        "sensor.props_step": {
+            "sdf:jsonPointer": "#/sdfObject/sensor.props/sdfProperty/step",
+            "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
+            "readOnly": true,
+            "type": "number"
+        },
+        "sensor.props_precision": {
+            "sdf:jsonPointer": "#/sdfObject/sensor.props/sdfProperty/precision",
+            "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
+            "readOnly": true,
+            "type": "number"
+        }
+    }
+}

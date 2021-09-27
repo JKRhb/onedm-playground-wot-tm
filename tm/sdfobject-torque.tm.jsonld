@@ -1,0 +1,49 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "Torque",
+    "description": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2019-09-25"
+    },
+    "tm:required": [
+        "#/properties/torque_torque"
+    ],
+    "properties": {
+        "torque_torque": {
+            "sdf:jsonPointer": "#/sdfObject/torque/sdfProperty/torque",
+            "description": "This Resource describes the torque, which is the rotational equivalent of linear force, in N*m (Newton metre).",
+            "readOnly": true,
+            "type": "number",
+            "minimum": 0.0
+        },
+        "torque_range": {
+            "sdf:jsonPointer": "#/sdfObject/torque/sdfProperty/range",
+            "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "readOnly": true,
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+                "type": "number"
+            }
+        },
+        "torque_step": {
+            "sdf:jsonPointer": "#/sdfObject/torque/sdfProperty/step",
+            "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
+            "readOnly": true,
+            "type": "number"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "Calorific Value",
+    "description": "Copyright 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2019-03-18"
+    },
+    "tm:required": [
+        "#/properties/calorificvalue_calorific"
+    ],
+    "properties": {
+        "calorificvalue_precision": {
+            "sdf:jsonPointer": "#/sdfObject/calorificvalue/sdfProperty/precision",
+            "description": "Accuracy granularity of the exposed value",
+            "readOnly": true,
+            "type": "number"
+        },
+        "calorificvalue_calorific": {
+            "sdf:jsonPointer": "#/sdfObject/calorificvalue/sdfProperty/calorific",
+            "description": "Calorific value of fuel",
+            "readOnly": true,
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMinimum": true
+        }
+    }
+}

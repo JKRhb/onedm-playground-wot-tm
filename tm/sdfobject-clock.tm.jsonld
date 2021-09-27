@@ -1,0 +1,37 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "Clock",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2019-03-27"
+    },
+    "tm:required": [
+        "#/properties/clock_datetime"
+    ],
+    "properties": {
+        "clock_countdown": {
+            "sdf:jsonPointer": "#/sdfObject/clock/sdfProperty/countdown",
+            "description": "The desired total seconds for countdown.",
+            "type": "number",
+            "minimum": 0
+        },
+        "clock_datetime": {
+            "sdf:jsonPointer": "#/sdfObject/clock/sdfProperty/datetime",
+            "description": "Rhe date time using RFC3339 datetime format (e.g: 2007-04-05T14:30:00Z, 2007-04-05T14:30:00+09:00).",
+            "type": "string",
+            "format": "date-time"
+        }
+    }
+}

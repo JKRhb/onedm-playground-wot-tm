@@ -1,0 +1,47 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "Dimming",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2019-02-15"
+    },
+    "tm:required": [
+        "#/properties/light.dimming_dimmingSetting"
+    ],
+    "properties": {
+        "light.dimming_dimmingSetting": {
+            "sdf:jsonPointer": "#/sdfObject/light.dimming/sdfProperty/dimmingSetting",
+            "description": "The current dimming value.",
+            "type": "integer"
+        },
+        "light.dimming_range": {
+            "sdf:jsonPointer": "#/sdfObject/light.dimming/sdfProperty/range",
+            "description": "The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "readOnly": true,
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+                "type": "integer"
+            }
+        },
+        "light.dimming_step": {
+            "sdf:jsonPointer": "#/sdfObject/light.dimming/sdfProperty/step",
+            "description": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.",
+            "readOnly": true,
+            "type": "integer"
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "Speech Synthesis-TTS",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2019-02-15"
+    },
+    "tm:required": [
+        "#/properties/speech.tts_utterance"
+    ],
+    "properties": {
+        "speech.tts_supportedLanguages": {
+            "sdf:jsonPointer": "#/sdfObject/speech.tts/sdfProperty/supportedLanguages",
+            "description": "The array of supported language tags.",
+            "readOnly": true,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "speech.tts_supportedVoices": {
+            "sdf:jsonPointer": "#/sdfObject/speech.tts/sdfProperty/supportedVoices",
+            "description": "The SSML document fragment indicating supported voices.",
+            "readOnly": true,
+            "type": "string",
+            "maxLength": 1024
+        },
+        "speech.tts_utterance": {
+            "sdf:jsonPointer": "#/sdfObject/speech.tts/sdfProperty/utterance",
+            "description": "The SSML document including the speech body.",
+            "type": "string",
+            "maxLength": 1024
+        }
+    }
+}

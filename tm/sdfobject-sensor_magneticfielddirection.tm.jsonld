@@ -1,0 +1,36 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "Magnetic Field Direction Sensor",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2019-02-15"
+    },
+    "tm:required": [
+        "#/properties/sensor.magneticfielddirection_value"
+    ],
+    "properties": {
+        "sensor.magneticfielddirection_value": {
+            "sdf:jsonPointer": "#/sdfObject/sensor.magneticfielddirection/sdfProperty/value",
+            "description": "The array containing Hx, Hy, Hz.",
+            "readOnly": true,
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+                "type": "number"
+            }
+        }
+    }
+}

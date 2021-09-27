@@ -1,0 +1,45 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "Deodorization",
+    "description": "copyright 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2019-08-20"
+    },
+    "tm:required": [
+        "#/properties/deodorization_mode"
+    ],
+    "properties": {
+        "deodorization_mode": {
+            "sdf:jsonPointer": "#/sdfObject/deodorization/sdfProperty/mode",
+            "description": "The modes of the Deodorization function.",
+            "type": "string",
+            "enum": [
+                "off",
+                "on",
+                "auto"
+            ]
+        },
+        "deodorization_currentstate": {
+            "sdf:jsonPointer": "#/sdfObject/deodorization/sdfProperty/currentstate",
+            "description": "The current state of the Deodorization function.",
+            "readOnly": true,
+            "type": "string",
+            "enum": [
+                "off",
+                "on"
+            ]
+        }
+    }
+}

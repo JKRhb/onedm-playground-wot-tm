@@ -1,0 +1,56 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "OMA LwM2M Multi-state Selector (Object ID 3348)",
+    "description": "Copyright (c) 2018-2020 IPSO",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2021-02-11"
+    },
+    "tm:required": [
+        "#/properties/Multi-state_Selector_Multi-state_Input"
+    ],
+    "properties": {
+        "Multi-state_Selector_Multi-state_Input": {
+            "sdf:jsonPointer": "#/sdfObject/Multi-state_Selector/sdfProperty/Multi-state_Input",
+            "title": "Multi-state Input",
+            "description": "The current state of a Multi-state input or selector.",
+            "readOnly": true,
+            "type": "integer"
+        },
+        "Multi-state_Selector_Application_Type": {
+            "sdf:jsonPointer": "#/sdfObject/Multi-state_Selector/sdfProperty/Application_Type",
+            "title": "Application Type",
+            "description": "The application type of the sensor or actuator as a string depending on the use case.",
+            "type": "string"
+        },
+        "Multi-state_Selector_Timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/Multi-state_Selector/sdfProperty/Timestamp",
+            "title": "Timestamp",
+            "description": "The timestamp of when the measurement was performed.",
+            "readOnly": true,
+            "type": "number",
+            "sdf:sdfType": "unix-time"
+        },
+        "Multi-state_Selector_Fractional_Timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/Multi-state_Selector/sdfProperty/Fractional_Timestamp",
+            "title": "Fractional Timestamp",
+            "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "readOnly": true,
+            "type": "number",
+            "unit": "s",
+            "minimum": 0,
+            "maximum": 1
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "Muscle Oxygen Saturation",
+    "description": "Copyright 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2019-08-20"
+    },
+    "tm:required": [
+        "#/properties/muscleoxygensaturation_muscleoxygensaturation"
+    ],
+    "properties": {
+        "muscleoxygensaturation_muscleoxygensaturation": {
+            "sdf:jsonPointer": "#/sdfObject/muscleoxygensaturation/sdfProperty/muscleoxygensaturation",
+            "description": "This Property describes the muscle oxygen saturation (SmO2), which is the percentage of hemoglobin that is saturated with oxygen in the capillaries of a muscle. The unit is percentage.",
+            "readOnly": true,
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        }
+    }
+}

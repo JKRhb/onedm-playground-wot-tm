@@ -1,0 +1,72 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "OMA LwM2M Bitmap (Object ID 3349)",
+    "description": "Copyright (c) 2018-2020 IPSO",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2021-02-11"
+    },
+    "tm:required": [
+        "#/properties/Bitmap_Bitmap_Input"
+    ],
+    "actions": {
+        "Bitmap_Bitmap_Input_Reset": {
+            "sdf:jsonPointer": "#/sdfObject/Bitmap/sdfAction/Bitmap_Input_Reset",
+            "title": "Bitmap Input Reset",
+            "description": "Reset the Bitmap Input value."
+        }
+    },
+    "properties": {
+        "Bitmap_Bitmap_Input": {
+            "sdf:jsonPointer": "#/sdfObject/Bitmap/sdfProperty/Bitmap_Input",
+            "title": "Bitmap Input",
+            "description": "Integer in which each of the bits are associated with specific digital input value. Represented as a binary signed integer in network byte order, and in two's complement representation. Using values in range 0-127 is recommended to avoid ambiguities with byte order and negative values.",
+            "readOnly": true,
+            "type": "integer"
+        },
+        "Bitmap_Element_Description": {
+            "sdf:jsonPointer": "#/sdfObject/Bitmap/sdfProperty/Element_Description",
+            "title": "Element Description",
+            "description": "The description of each bit as a string. First instance describes the least significant bit, second instance the second least significant bit.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "Bitmap_Application_Type": {
+            "sdf:jsonPointer": "#/sdfObject/Bitmap/sdfProperty/Application_Type",
+            "title": "Application Type",
+            "description": "The application type of the sensor or actuator as a string depending on the use case.",
+            "type": "string"
+        },
+        "Bitmap_Timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/Bitmap/sdfProperty/Timestamp",
+            "title": "Timestamp",
+            "description": "The timestamp of when the measurement was performed.",
+            "readOnly": true,
+            "type": "number",
+            "sdf:sdfType": "unix-time"
+        },
+        "Bitmap_Fractional_Timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/Bitmap/sdfProperty/Fractional_Timestamp",
+            "title": "Fractional Timestamp",
+            "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "readOnly": true,
+            "type": "number",
+            "unit": "s",
+            "minimum": 0,
+            "maximum": 1
+        }
+    }
+}

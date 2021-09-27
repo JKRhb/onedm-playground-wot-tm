@@ -1,0 +1,77 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "3D Printer",
+    "description": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2019-02-22"
+    },
+    "tm:required": [
+        "#/properties/printer.3d_3dprinttype",
+        "#/properties/printer.3d_printsizex",
+        "#/properties/printer.3d_printsizey",
+        "#/properties/printer.3d_printsizez",
+        "#/properties/printer.3d_wanconnected",
+        "#/properties/printer.3d_memorysize"
+    ],
+    "properties": {
+        "printer.3d_printsizey": {
+            "sdf:jsonPointer": "#/sdfObject/printer.3d/sdfProperty/printsizey",
+            "description": "This Property represents the maximum size of printing object in the direction of Y-axis. The unit is mm.",
+            "readOnly": true,
+            "type": "number"
+        },
+        "printer.3d_memorysize": {
+            "sdf:jsonPointer": "#/sdfObject/printer.3d/sdfProperty/memorysize",
+            "description": "This Property represents the total memory size of the printer. The unit is MB(Mega Bytes)",
+            "readOnly": true,
+            "type": "number"
+        },
+        "printer.3d_3dprinttype": {
+            "sdf:jsonPointer": "#/sdfObject/printer.3d/sdfProperty/3dprinttype",
+            "description": "The type of 3D printing technology.",
+            "readOnly": true,
+            "type": "string",
+            "enum": [
+                "Fused Filament Fabrication",
+                "Fused Deposition Modeling",
+                "Digital Light Processing",
+                "Powder Bed & inkjet head 3D Printing",
+                "Photopolymer Jetting Technology",
+                "Laminated Object Manufacturing",
+                "Stereolithography Apparatus",
+                "Selective Laser Sintering",
+                "Unknown"
+            ]
+        },
+        "printer.3d_wanconnected": {
+            "sdf:jsonPointer": "#/sdfObject/printer.3d/sdfProperty/wanconnected",
+            "description": "This Property indicates the connectivity capability of the 3D printer. If the value is false, the printer does not have network facility to Wide Area Network such as internet and GSM. If the value is true, the printer has network connectivity",
+            "readOnly": true,
+            "type": "boolean"
+        },
+        "printer.3d_printsizex": {
+            "sdf:jsonPointer": "#/sdfObject/printer.3d/sdfProperty/printsizex",
+            "description": "This Property represents the maximum size of printing object in the direction of X-axis. The unit is mm.",
+            "readOnly": true,
+            "type": "number"
+        },
+        "printer.3d_printsizez": {
+            "sdf:jsonPointer": "#/sdfObject/printer.3d/sdfProperty/printsizez",
+            "description": "This Property represents the maximum size of printing object in the direction of Z-axis. The unit is mm.",
+            "readOnly": true,
+            "type": "number"
+        }
+    }
+}

@@ -1,0 +1,122 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "OMA LwM2M Frequency (Object ID 3318)",
+    "description": "Copyright (c) 2018-2020 IPSO",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2021-02-11"
+    },
+    "tm:required": [
+        "#/properties/Frequency_Sensor_Value"
+    ],
+    "actions": {
+        "Frequency_Reset_Min_and_Max_Measured_Values": {
+            "sdf:jsonPointer": "#/sdfObject/Frequency/sdfAction/Reset_Min_and_Max_Measured_Values",
+            "title": "Reset Min and Max Measured Values",
+            "description": "Reset the Min and Max Measured Values to Current Value."
+        }
+    },
+    "properties": {
+        "Frequency_Sensor_Value": {
+            "sdf:jsonPointer": "#/sdfObject/Frequency/sdfProperty/Sensor_Value",
+            "title": "Sensor Value",
+            "description": "Last or Current Measured Value from the Sensor.",
+            "readOnly": true,
+            "type": "number"
+        },
+        "Frequency_Sensor_Units": {
+            "sdf:jsonPointer": "#/sdfObject/Frequency/sdfProperty/Sensor_Units",
+            "title": "Sensor Units",
+            "description": "Measurement Units Definition.",
+            "readOnly": true,
+            "type": "string"
+        },
+        "Frequency_Min_Measured_Value": {
+            "sdf:jsonPointer": "#/sdfObject/Frequency/sdfProperty/Min_Measured_Value",
+            "title": "Min Measured Value",
+            "description": "The minimum value measured by the sensor since power ON or reset.",
+            "readOnly": true,
+            "type": "number"
+        },
+        "Frequency_Max_Measured_Value": {
+            "sdf:jsonPointer": "#/sdfObject/Frequency/sdfProperty/Max_Measured_Value",
+            "title": "Max Measured Value",
+            "description": "The maximum value measured by the sensor since power ON or reset.",
+            "readOnly": true,
+            "type": "number"
+        },
+        "Frequency_Min_Range_Value": {
+            "sdf:jsonPointer": "#/sdfObject/Frequency/sdfProperty/Min_Range_Value",
+            "title": "Min Range Value",
+            "description": "The minimum value that can be measured by the sensor.",
+            "readOnly": true,
+            "type": "number"
+        },
+        "Frequency_Max_Range_Value": {
+            "sdf:jsonPointer": "#/sdfObject/Frequency/sdfProperty/Max_Range_Value",
+            "title": "Max Range Value",
+            "description": "The maximum value that can be measured by the sensor.",
+            "readOnly": true,
+            "type": "number"
+        },
+        "Frequency_Current_Calibration": {
+            "sdf:jsonPointer": "#/sdfObject/Frequency/sdfProperty/Current_Calibration",
+            "title": "Current Calibration",
+            "description": "Read or Write the current calibration coefficient.",
+            "type": "number"
+        },
+        "Frequency_Application_Type": {
+            "sdf:jsonPointer": "#/sdfObject/Frequency/sdfProperty/Application_Type",
+            "title": "Application Type",
+            "description": "The application type of the sensor or actuator as a string depending on the use case.",
+            "type": "string"
+        },
+        "Frequency_Timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/Frequency/sdfProperty/Timestamp",
+            "title": "Timestamp",
+            "description": "The timestamp of when the measurement was performed.",
+            "readOnly": true,
+            "type": "number",
+            "sdf:sdfType": "unix-time"
+        },
+        "Frequency_Fractional_Timestamp": {
+            "sdf:jsonPointer": "#/sdfObject/Frequency/sdfProperty/Fractional_Timestamp",
+            "title": "Fractional Timestamp",
+            "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
+            "readOnly": true,
+            "type": "number",
+            "unit": "s",
+            "minimum": 0,
+            "maximum": 1
+        },
+        "Frequency_Measurement_Quality_Indicator": {
+            "sdf:jsonPointer": "#/sdfObject/Frequency/sdfProperty/Measurement_Quality_Indicator",
+            "title": "Measurement Quality Indicator",
+            "description": "Measurement quality indicator reported by a smart sensor. 0: UNCHECKED No quality checks were done because they do not exist or can not be applied. 1: REJECTED WITH CERTAINTY The measured value is invalid. 2: REJECTED WITH PROBABILITY The measured value is likely invalid. 3: ACCEPTED BUT SUSPICIOUS The measured value is likely OK. 4: ACCEPTED The measured value is OK. 5-15: Reserved for future extensions. 16-23: Vendor specific measurement quality.",
+            "readOnly": true,
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 23
+        },
+        "Frequency_Measurement_Quality_Level": {
+            "sdf:jsonPointer": "#/sdfObject/Frequency/sdfProperty/Measurement_Quality_Level",
+            "title": "Measurement Quality Level",
+            "description": "Measurement quality level reported by a smart sensor. Quality level 100 means that the measurement has fully passed quality check algorithms. Smaller quality levels mean that quality has decreased and the measurement has only partially passed quality check algorithms. The smaller the quality level, the more caution should be used by the application when using the measurement. When the quality level is 0 it means that the measurement should certainly be rejected.",
+            "readOnly": true,
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+        }
+    }
+}

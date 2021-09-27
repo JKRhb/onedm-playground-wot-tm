@@ -1,0 +1,43 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "Vehicle Connector",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2019-02-15"
+    },
+    "tm:required": [
+        "#/properties/vehicle.connector_connected"
+    ],
+    "properties": {
+        "vehicle.connector_connected": {
+            "sdf:jsonPointer": "#/sdfObject/vehicle.connector/sdfProperty/connected",
+            "description": "The connection state.",
+            "readOnly": true,
+            "type": "boolean"
+        },
+        "vehicle.connector_ratedchargingcapacity": {
+            "sdf:jsonPointer": "#/sdfObject/vehicle.connector/sdfProperty/ratedchargingcapacity",
+            "description": "The rated charging capacity in Amps (A).",
+            "readOnly": true,
+            "type": "number"
+        },
+        "vehicle.connector_rateddischargingcapacity": {
+            "sdf:jsonPointer": "#/sdfObject/vehicle.connector/sdfProperty/rateddischargingcapacity",
+            "description": "The rated discharging capacity in Amps (A).",
+            "readOnly": true,
+            "type": "number"
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "OMA LwM2M Up/Down Control (Object ID 3344)",
+    "description": "Copyright (c) 2018-2020 IPSO",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2021-02-11"
+    },
+    "tm:required": [
+        "#/properties/Up_Down_Control_Increase_Input_State",
+        "#/properties/Up_Down_Control_Decrease_Input_State"
+    ],
+    "properties": {
+        "Up_Down_Control_Increase_Input_State": {
+            "sdf:jsonPointer": "#/sdfObject/Up_Down_Control/sdfProperty/Increase_Input_State",
+            "title": "Increase Input State",
+            "description": "Indicates an increase control action.",
+            "readOnly": true,
+            "type": "boolean"
+        },
+        "Up_Down_Control_Decrease_Input_State": {
+            "sdf:jsonPointer": "#/sdfObject/Up_Down_Control/sdfProperty/Decrease_Input_State",
+            "title": "Decrease Input State",
+            "description": "Indicates a decrease control action.",
+            "readOnly": true,
+            "type": "boolean"
+        },
+        "Up_Down_Control_Up_Counter": {
+            "sdf:jsonPointer": "#/sdfObject/Up_Down_Control/sdfProperty/Up_Counter",
+            "title": "Up Counter",
+            "description": "Counts the number of times the increase control has been operated. Writing a 0 resets the counter.",
+            "type": "integer"
+        },
+        "Up_Down_Control_Down_Counter": {
+            "sdf:jsonPointer": "#/sdfObject/Up_Down_Control/sdfProperty/Down_Counter",
+            "title": "Down Counter",
+            "description": "Counts the times the decrease control has been operated. Writing a 0 resets the counter.",
+            "type": "integer"
+        },
+        "Up_Down_Control_Application_Type": {
+            "sdf:jsonPointer": "#/sdfObject/Up_Down_Control/sdfProperty/Application_Type",
+            "title": "Application Type",
+            "description": "The application type of the sensor or actuator as a string depending on the use case.",
+            "type": "string"
+        }
+    }
+}

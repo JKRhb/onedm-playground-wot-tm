@@ -1,0 +1,75 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "Context Carbohydrates for Glucose Meter",
+    "description": "Copyright 2016-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2019-03-22"
+    },
+    "tm:required": [
+        "#/properties/glucose.carb_carb",
+        "#/properties/glucose.carb_meal"
+    ],
+    "properties": {
+        "glucose.carb_carb": {
+            "sdf:jsonPointer": "#/sdfObject/glucose.carb/sdfProperty/carb",
+            "description": "The amount of carbohydrates undertaken in grams",
+            "readOnly": true,
+            "type": "number",
+            "minimum": 0.0
+        },
+        "glucose.carb_meal": {
+            "sdf:jsonPointer": "#/sdfObject/glucose.carb/sdfProperty/meal",
+            "description": "Recorded time of carbohydrates intake",
+            "readOnly": true,
+            "type": "string",
+            "enum": [
+                "breakfast",
+                "lunch",
+                "dinner",
+                "snack",
+                "drink",
+                "supper",
+                "brunch",
+                "undetermined",
+                "other",
+                "no_entry",
+                "no_ingestion"
+            ]
+        },
+        "glucose.carb_range": {
+            "sdf:jsonPointer": "#/sdfObject/glucose.carb/sdfProperty/range",
+            "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "readOnly": true,
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+                "type": "number"
+            }
+        },
+        "glucose.carb_step": {
+            "sdf:jsonPointer": "#/sdfObject/glucose.carb/sdfProperty/step",
+            "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
+            "readOnly": true,
+            "type": "number"
+        },
+        "glucose.carb_precision": {
+            "sdf:jsonPointer": "#/sdfObject/glucose.carb/sdfProperty/precision",
+            "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
+            "readOnly": true,
+            "type": "number"
+        }
+    }
+}

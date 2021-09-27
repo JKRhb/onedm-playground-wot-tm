@@ -1,0 +1,31 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "Energy Generation",
+    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2019-02-15"
+    },
+    "tm:required": [
+        "#/properties/energy.generation_energygenerated"
+    ],
+    "properties": {
+        "energy.generation_energygenerated": {
+            "sdf:jsonPointer": "#/sdfObject/energy.generation/sdfProperty/energygenerated",
+            "description": "The energy generated in Watt-hour(Wh).",
+            "readOnly": true,
+            "type": "number"
+        }
+    }
+}

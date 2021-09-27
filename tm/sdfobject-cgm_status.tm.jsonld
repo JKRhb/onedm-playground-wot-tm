@@ -1,0 +1,86 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "Status for Continuous Glucose Meter (CGM)",
+    "description": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2019-03-04"
+    },
+    "tm:required": [
+        "#/properties/cgm.status_cgmtype",
+        "#/properties/cgm.status_cgmstatus",
+        "#/properties/cgm.status_gtrend",
+        "#/properties/cgm.status_malfunction"
+    ],
+    "properties": {
+        "cgm.status_cgmtype": {
+            "sdf:jsonPointer": "#/sdfObject/cgm.status/sdfProperty/cgmtype",
+            "description": "This Property describes the CGM measurement type.",
+            "readOnly": true,
+            "type": "string",
+            "enum": [
+                "Capillary Whole blood",
+                "Capillary Plasma",
+                "Venous Plasma",
+                "Arterial Whole blood",
+                "Arterial Plasma",
+                "Undetermined Whole blood",
+                "Undetermined Plasma",
+                "Interstitial Fluid"
+            ]
+        },
+        "cgm.status_cgmstatus": {
+            "sdf:jsonPointer": "#/sdfObject/cgm.status/sdfProperty/cgmstatus",
+            "description": "This Property describes the specific notifications given by the CGM device including, but not limited to, warnings, errors, and handling events.",
+            "readOnly": true,
+            "type": "string"
+        },
+        "cgm.status_gtrend": {
+            "sdf:jsonPointer": "#/sdfObject/cgm.status/sdfProperty/gtrend",
+            "description": "This Property describes the rate of change in glucose measurements at a time instant.",
+            "readOnly": true,
+            "type": "number",
+            "minimum": 0.0
+        },
+        "cgm.status_malfunction": {
+            "sdf:jsonPointer": "#/sdfObject/cgm.status/sdfProperty/malfunction",
+            "description": "This Property describes the sensor malfunction detection check.",
+            "readOnly": true,
+            "type": "boolean"
+        },
+        "cgm.status_range": {
+            "sdf:jsonPointer": "#/sdfObject/cgm.status/sdfProperty/range",
+            "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+            "readOnly": true,
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+                "type": "number"
+            }
+        },
+        "cgm.status_step": {
+            "sdf:jsonPointer": "#/sdfObject/cgm.status/sdfProperty/step",
+            "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
+            "readOnly": true,
+            "type": "number"
+        },
+        "cgm.status_precision": {
+            "sdf:jsonPointer": "#/sdfObject/cgm.status/sdfProperty/precision",
+            "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
+            "readOnly": true,
+            "type": "number"
+        }
+    }
+}

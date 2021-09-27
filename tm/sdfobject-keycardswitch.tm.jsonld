@@ -1,0 +1,35 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/td",
+        {
+            "sdf": "https://example.com/sdf"
+        }
+    ],
+    "@type": "tm:ThingModel",
+    "title": "KeyCard Switch",
+    "description": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "links": [
+        {
+            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+            "rel": "license"
+        }
+    ],
+    "version": {
+        "model": "2019-08-07"
+    },
+    "tm:required": [
+        "#/properties/keycardswitch_stateofcard"
+    ],
+    "properties": {
+        "keycardswitch_stateofcard": {
+            "sdf:jsonPointer": "#/sdfObject/keycardswitch/sdfProperty/stateofcard",
+            "description": "The status of the keycardswitch. \"validCardInserted\" means that a keycard was inserted and passed validation check. \"validCardNotInserted\" means that a keycard is not inserted or it was inserted but failed to pass validation check.",
+            "readOnly": true,
+            "type": "string",
+            "enum": [
+                "validCardInserted",
+                "validCardNotInserted"
+            ]
+        }
+    }
+}

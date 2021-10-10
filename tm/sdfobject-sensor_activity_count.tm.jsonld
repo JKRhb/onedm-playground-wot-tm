@@ -12,6 +12,10 @@
         {
             "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
             "rel": "license"
+        },
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-sensor_activity_count.sdf.json",
+            "rel": "alternate"
         }
     ],
     "version": {

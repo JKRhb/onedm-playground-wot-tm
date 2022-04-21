@@ -50,5 +50,11 @@
             "readOnly": true,
             "type": "boolean"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-ecomode.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

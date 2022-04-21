@@ -38,5 +38,11 @@
             "description": "The state of the door open alarm.",
             "type": "boolean"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-door.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

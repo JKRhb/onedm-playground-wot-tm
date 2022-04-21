@@ -75,5 +75,11 @@
             "description": "The application type of the sensor or actuator as a string depending on the use case.",
             "type": "string"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-addressable_text_display.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

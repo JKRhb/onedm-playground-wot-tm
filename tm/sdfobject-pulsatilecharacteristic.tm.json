@@ -42,5 +42,11 @@
             "readOnly": true,
             "type": "integer"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-pulsatilecharacteristic.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

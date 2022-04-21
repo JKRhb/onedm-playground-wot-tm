@@ -52,5 +52,11 @@
             "readOnly": true,
             "type": "number"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-cgm_calibrate.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

@@ -56,5 +56,11 @@
             "readOnly": true,
             "type": "number"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-glucose.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

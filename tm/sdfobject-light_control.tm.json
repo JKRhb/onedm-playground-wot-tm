@@ -69,5 +69,11 @@
             "description": "The application type of the sensor or actuator as a string depending on the use case.",
             "type": "string"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-light_control.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

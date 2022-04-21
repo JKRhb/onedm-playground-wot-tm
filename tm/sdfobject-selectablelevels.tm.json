@@ -32,5 +32,11 @@
                 "type": "number"
             }
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-selectablelevels.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

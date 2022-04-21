@@ -73,5 +73,11 @@
             "readOnly": true,
             "type": "number"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-spo2.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

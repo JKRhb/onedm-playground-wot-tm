@@ -66,5 +66,11 @@
                 "type": "integer"
             }
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-airquality.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

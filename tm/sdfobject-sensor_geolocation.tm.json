@@ -62,5 +62,11 @@
             "type": "number",
             "minimum": 0
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-sensor_geolocation.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

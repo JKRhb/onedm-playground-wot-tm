@@ -30,5 +30,11 @@
                 "lab"
             ]
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-glucose_tester.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

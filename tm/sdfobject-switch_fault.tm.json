@@ -28,5 +28,11 @@
                 "off"
             ]
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-switch_fault.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

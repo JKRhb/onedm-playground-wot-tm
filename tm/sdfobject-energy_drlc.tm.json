@@ -48,5 +48,11 @@
             "description": "Whether overriding the DR request by the consumer is allowed",
             "type": "boolean"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-energy_drlc.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

@@ -34,5 +34,11 @@
             "description": "The Event indicator, when True, the action request should be applied to the product identified by the tagid.",
             "type": "boolean"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-orfid_station.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

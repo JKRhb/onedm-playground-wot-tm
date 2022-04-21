@@ -66,5 +66,11 @@
             "minimum": 0,
             "maximum": 1
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-actuation.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

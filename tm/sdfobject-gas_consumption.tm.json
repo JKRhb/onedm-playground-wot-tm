@@ -37,5 +37,11 @@
             "type": "number",
             "minimum": 0
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-gas_consumption.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

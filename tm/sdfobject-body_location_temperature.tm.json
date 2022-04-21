@@ -36,5 +36,11 @@
                 "tympanum"
             ]
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-body_location_temperature.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

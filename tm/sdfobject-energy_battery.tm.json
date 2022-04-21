@@ -64,5 +64,11 @@
             "type": "string",
             "format": "date-time"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-energy_battery.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

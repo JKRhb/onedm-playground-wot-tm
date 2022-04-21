@@ -66,5 +66,11 @@
             "readOnly": true,
             "type": "number"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-printer_3d.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

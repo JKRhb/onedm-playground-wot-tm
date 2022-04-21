@@ -27,5 +27,11 @@
                 "type": "string"
             }
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-lock_code.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

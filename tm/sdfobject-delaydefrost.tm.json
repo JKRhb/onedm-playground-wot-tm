@@ -41,5 +41,11 @@
             "type": "string",
             "format": "time"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-delaydefrost.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

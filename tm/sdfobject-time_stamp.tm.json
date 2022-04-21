@@ -26,5 +26,11 @@
             "type": "string",
             "format": "date-time"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-time_stamp.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

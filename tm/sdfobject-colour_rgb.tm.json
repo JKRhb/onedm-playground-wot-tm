@@ -44,5 +44,11 @@
             "readOnly": true,
             "type": "integer"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-colour_rgb.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

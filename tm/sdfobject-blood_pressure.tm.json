@@ -69,5 +69,11 @@
             "readOnly": true,
             "type": "number"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-blood_pressure.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

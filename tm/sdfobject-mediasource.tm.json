@@ -43,5 +43,11 @@
             "description": "Label to specify the instance.",
             "type": "string"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-mediasource.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

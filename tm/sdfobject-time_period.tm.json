@@ -64,5 +64,11 @@
                 "postInterval"
             ]
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-time_period.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

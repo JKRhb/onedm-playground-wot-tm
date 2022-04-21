@@ -32,5 +32,11 @@
                 "none"
             ]
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-glucose_health.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

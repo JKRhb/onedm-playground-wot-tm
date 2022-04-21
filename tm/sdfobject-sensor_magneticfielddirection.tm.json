@@ -30,5 +30,11 @@
                 "type": "number"
             }
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-sensor_magneticfielddirection.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

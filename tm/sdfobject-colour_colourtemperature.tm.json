@@ -40,5 +40,11 @@
             "readOnly": true,
             "type": "integer"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-colour_colourtemperature.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

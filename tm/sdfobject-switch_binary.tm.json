@@ -24,5 +24,11 @@
             "description": "The status of the switch.",
             "type": "boolean"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-switch_binary.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

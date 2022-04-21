@@ -28,5 +28,11 @@
                 "Unlocked"
             ]
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-lock_status.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

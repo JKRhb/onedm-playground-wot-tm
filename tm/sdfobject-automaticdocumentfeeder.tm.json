@@ -35,5 +35,11 @@
             "readOnly": true,
             "type": "string"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-automaticdocumentfeeder.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

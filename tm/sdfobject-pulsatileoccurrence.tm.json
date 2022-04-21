@@ -31,5 +31,11 @@
             ],
             "default": "NOS"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-pulsatileoccurrence.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

@@ -68,5 +68,11 @@
             "readOnly": true,
             "type": "number"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-glucose_medication.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

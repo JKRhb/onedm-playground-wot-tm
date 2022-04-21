@@ -53,5 +53,11 @@
             "readOnly": true,
             "type": "number"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-temperature.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

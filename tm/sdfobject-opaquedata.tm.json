@@ -46,5 +46,11 @@
             "description": "The eco system that is using the payload.",
             "type": "string"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-opaquedata.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

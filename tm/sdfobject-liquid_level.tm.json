@@ -38,5 +38,11 @@
             "readOnly": true,
             "type": "integer"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-liquid_level.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

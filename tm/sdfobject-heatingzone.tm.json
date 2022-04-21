@@ -31,5 +31,11 @@
             "readOnly": true,
             "type": "integer"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-heatingzone.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

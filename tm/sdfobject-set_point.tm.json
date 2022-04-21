@@ -58,5 +58,11 @@
             "minimum": 0,
             "maximum": 1
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-set_point.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

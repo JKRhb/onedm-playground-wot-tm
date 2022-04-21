@@ -73,5 +73,11 @@
             "description": "The horizontal pan in degrees.",
             "type": "number"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-ptz.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

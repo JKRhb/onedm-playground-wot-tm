@@ -31,5 +31,11 @@
             "readOnly": true,
             "type": "boolean"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-orfid_tag.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

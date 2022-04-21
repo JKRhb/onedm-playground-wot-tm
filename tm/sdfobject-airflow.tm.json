@@ -61,5 +61,11 @@
             "readOnly": true,
             "type": "integer"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-airflow.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

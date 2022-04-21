@@ -32,5 +32,11 @@
                 "casual"
             ]
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-glucose_meal.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

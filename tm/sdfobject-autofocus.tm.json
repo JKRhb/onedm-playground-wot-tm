@@ -24,5 +24,11 @@
             "description": "The status of the Auto Focus feature.",
             "type": "boolean"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-autofocus.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

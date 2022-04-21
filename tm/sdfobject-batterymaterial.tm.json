@@ -105,5 +105,11 @@
                 "Unknown"
             ]
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-batterymaterial.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

@@ -37,5 +37,11 @@
             "description": "The current movement value.",
             "type": "string"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-movement_linear.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

@@ -56,5 +56,11 @@
             "readOnly": true,
             "type": "number"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-body_water.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

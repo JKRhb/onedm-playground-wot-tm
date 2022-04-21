@@ -35,5 +35,11 @@
                 "type": "string"
             }
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-mode.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

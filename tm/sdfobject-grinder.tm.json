@@ -46,5 +46,11 @@
             "readOnly": true,
             "type": "integer"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-grinder.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

@@ -73,5 +73,11 @@
             "type": "string",
             "format": "date-time"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-inverter.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

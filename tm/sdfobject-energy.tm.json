@@ -76,5 +76,11 @@
             "minimum": 0,
             "maximum": 100
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-energy.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

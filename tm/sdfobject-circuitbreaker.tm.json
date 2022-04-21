@@ -65,5 +65,11 @@
             "type": "string",
             "format": "date-time"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-circuitbreaker.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

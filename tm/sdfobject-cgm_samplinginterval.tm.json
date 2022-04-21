@@ -46,5 +46,11 @@
             "readOnly": true,
             "type": "number"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-cgm_samplinginterval.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

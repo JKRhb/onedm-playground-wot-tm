@@ -31,5 +31,11 @@
                 "ctrlsolution"
             ]
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-glucose_samplelocation.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

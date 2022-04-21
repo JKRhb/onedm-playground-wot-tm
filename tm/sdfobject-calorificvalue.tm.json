@@ -32,5 +32,11 @@
             "minimum": 0,
             "exclusiveMinimum": true
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-calorificvalue.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

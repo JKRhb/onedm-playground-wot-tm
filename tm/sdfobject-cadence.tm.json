@@ -41,5 +41,11 @@
             "readOnly": true,
             "type": "integer"
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-cadence.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

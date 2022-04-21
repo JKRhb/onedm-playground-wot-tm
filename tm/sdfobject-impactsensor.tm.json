@@ -44,5 +44,11 @@
             "minimum": 0,
             "maximum": 360
         }
-    }
+    },
+    "links": [
+        {
+            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-impactsensor.sdf.json",
+            "rel": "alternate"
+        }
+    ]
 }

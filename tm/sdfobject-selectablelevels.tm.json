@@ -2,36 +2,29 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "Selectable Levels",
-    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-selectablelevels.sdf.json",
-            "rel": "alternate"
-        }
+    "sdf:objectKey": "selectablelevels",
+    "tm:required": [
+        "#/properties/targetlevel"
     ],
+    "sdf:title": "Selectable Levels",
+    "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-02-15"
     },
-    "tm:required": [
-        "#/properties/selectablelevels_targetlevel"
-    ],
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource provides a set of device defined levels that can be selected for an operation. For example where a humidifier has a discrete set that model different humidity levels that can be set. The Property \"availablelevels\" is an array of the levels that can be selected, these can be a number or an integer (as subset of integer). The Property \"targetlevel\" is the level that has currently been selected and is written to in order to select a new level. When retrieved the targetlevel provides the actual value that has been selected.",
     "properties": {
-        "selectablelevels_targetlevel": {
-            "sdf:jsonPointer": "#/sdfObject/selectablelevels/sdfProperty/targetlevel",
-            "description": "The target level from the available selectable set.",
+        "targetlevel": {
+            "description": "The target level from the available selectable set",
             "type": "number"
         },
-        "selectablelevels_availablelevels": {
-            "sdf:jsonPointer": "#/sdfObject/selectablelevels/sdfProperty/availablelevels",
+        "availablelevels": {
             "description": "The set of levels to select from.",
             "readOnly": true,
             "type": "array",

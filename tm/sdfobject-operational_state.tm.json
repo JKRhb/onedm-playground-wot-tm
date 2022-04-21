@@ -2,38 +2,30 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "Operational State",
-    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-operational_state.sdf.json",
-            "rel": "alternate"
-        }
-    ],
+    "sdf:objectKey": "operational.state",
+    "sdf:title": "Operational State",
+    "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-02-15"
     },
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource describes the operational and job states on a device. The states can be read or set, setting indicates a desired state. A device may reject an attempt to set a state that would result in adverse operational characteristics. The Property \"machineStates\" is an array of the possible operational states. The Property \"currentMachineState\" is the current state of operation of the device. The Property \"jobStates\" is an array of the possible job states. The Property \"currentJobState\" is the currently active jobState. The Property \"runningTime\" is the ISO8601 encoded elapsed time in the current operational state. The Property \"remainingTime\" is the ISO8601 encoded time till completion of the current operational state. The Property \"progressPercentage\" is the percentage completeness of the current jobState.",
     "properties": {
-        "operational.state_currentMachineState": {
-            "sdf:jsonPointer": "#/sdfObject/operational.state/sdfProperty/currentMachineState",
+        "currentMachineState": {
             "description": "The current state of operation of the device.",
             "type": "string"
         },
-        "operational.state_currentJobState": {
-            "sdf:jsonPointer": "#/sdfObject/operational.state/sdfProperty/currentJobState",
-            "description": "The currently active jobState.",
+        "currentJobState": {
+            "description": "THe currently active jobState.",
             "type": "string"
         },
-        "operational.state_machineStates": {
-            "sdf:jsonPointer": "#/sdfObject/operational.state/sdfProperty/machineStates",
+        "machineStates": {
             "description": "The array of the possible operational states.",
             "readOnly": true,
             "type": "array",
@@ -41,28 +33,24 @@
                 "type": "string"
             }
         },
-        "operational.state_runningTime": {
-            "sdf:jsonPointer": "#/sdfObject/operational.state/sdfProperty/runningTime",
+        "runningTime": {
             "description": "A string representing duration formatted as defined in ISO 8601. Allowable formats are: P[n]Y[n]M[n]DT[n]H[n]M[n]S, P[n]W, P[n]Y[n]-M[n]-DT[0-23]H[0-59]:M[0-59]:S, and P[n]W, P[n]Y[n]M[n]DT[0-23]H[0-59]M[0-59]S. P is mandatory, all other elements are optional, time elements must follow a T.",
             "type": "string",
             "pattern": "^(P(?!$)([0-9]+Y)?([0-9]+M)?([0-9]+W)?([0-9]+D)?((T(?=[0-9]+[HMS])([0-9]+H)?([0-9]+M)?([0-9]+S)?)?))$|^(P[0-9]+W)$|^(P[0-9]{4})-(1[0-2]|0[1-9])-(3[0-1]|2[0-9]|1[0-9]|0[1-9])T(2[0-3]|1[0-9]|0[1-9]):([0-5][0-9]):([0-5][0-9])$|^(P[0-9]{4})(1[0-2]|0[1-9])(3[0-1]|2[0-9]|1[0-9]|0[1-9])T(2[0-3]|1[0-9]|0[1-9])([0-5][0-9])([0-5][0-9])$"
         },
-        "operational.state_remainingTime": {
-            "sdf:jsonPointer": "#/sdfObject/operational.state/sdfProperty/remainingTime",
+        "remainingTime": {
             "description": "A string representing duration formatted as defined in ISO 8601. Allowable formats are: P[n]Y[n]M[n]DT[n]H[n]M[n]S, P[n]W, P[n]Y[n]-M[n]-DT[0-23]H[0-59]:M[0-59]:S, and P[n]W, P[n]Y[n]M[n]DT[0-23]H[0-59]M[0-59]S. P is mandatory, all other elements are optional, time elements must follow a T.",
             "type": "string",
             "pattern": "^(P(?!$)([0-9]+Y)?([0-9]+M)?([0-9]+W)?([0-9]+D)?((T(?=[0-9]+[HMS])([0-9]+H)?([0-9]+M)?([0-9]+S)?)?))$|^(P[0-9]+W)$|^(P[0-9]{4})-(1[0-2]|0[1-9])-(3[0-1]|2[0-9]|1[0-9]|0[1-9])T(2[0-3]|1[0-9]|0[1-9]):([0-5][0-9]):([0-5][0-9])$|^(P[0-9]{4})(1[0-2]|0[1-9])(3[0-1]|2[0-9]|1[0-9]|0[1-9])T(2[0-3]|1[0-9]|0[1-9])([0-5][0-9])([0-5][0-9])$"
         },
-        "operational.state_progressPercentage": {
-            "sdf:jsonPointer": "#/sdfObject/operational.state/sdfProperty/progressPercentage",
+        "progressPercentage": {
             "description": "The percentage completeness of the current jobState.",
             "readOnly": true,
             "type": "integer",
             "minimum": 0,
             "maximum": 100
         },
-        "operational.state_jobStates": {
-            "sdf:jsonPointer": "#/sdfObject/operational.state/sdfProperty/jobStates",
+        "jobStates": {
             "description": "The Array of the possible job states.",
             "readOnly": true,
             "type": "array",

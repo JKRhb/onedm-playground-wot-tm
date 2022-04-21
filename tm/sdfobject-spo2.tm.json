@@ -2,46 +2,38 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "SpO2 for Pulse Oximeter",
-    "description": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-spo2.sdf.json",
-            "rel": "alternate"
-        }
+    "sdf:objectKey": "spo2",
+    "tm:required": [
+        "#/properties/spo2"
     ],
+    "sdf:title": "SpO2 for Pulse Oximeter",
+    "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-03-04"
     },
-    "tm:required": [
-        "#/properties/spo2_spo2"
-    ],
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource describes the Properties associated with a person's blood oxygen saturation level. The spo2 and perfusion Properties are read-only value that is provided by the server. When range (from \"oic. r. baseresource\") is omitted the default is 0 to +MAXFLOAT.",
     "properties": {
-        "spo2_spo2": {
-            "sdf:jsonPointer": "#/sdfObject/spo2/sdfProperty/spo2",
+        "spo2": {
             "description": "This Property describes the estimation of the oxygen saturation level in percentage.",
             "readOnly": true,
             "type": "number",
             "minimum": 0.0,
             "maximum": 100.0
         },
-        "spo2_perfusion": {
-            "sdf:jsonPointer": "#/sdfObject/spo2/sdfProperty/perfusion",
+        "perfusion": {
             "description": "This Property describes the ratio of AC over DC of PPG.",
             "readOnly": true,
             "type": "number",
             "minimum": 0.0
         },
-        "spo2_spo2_range": {
-            "sdf:jsonPointer": "#/sdfObject/spo2/sdfProperty/spo2_range",
+        "spo2_range": {
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
             "readOnly": true,
             "type": "array",
@@ -51,8 +43,7 @@
                 "type": "number"
             }
         },
-        "spo2_perfusion_range": {
-            "sdf:jsonPointer": "#/sdfObject/spo2/sdfProperty/perfusion_range",
+        "perfusion_range": {
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
             "readOnly": true,
             "type": "array",
@@ -62,26 +53,22 @@
                 "type": "number"
             }
         },
-        "spo2_spo2_step": {
-            "sdf:jsonPointer": "#/sdfObject/spo2/sdfProperty/spo2_step",
+        "spo2_step": {
             "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
             "readOnly": true,
             "type": "number"
         },
-        "spo2_perfusion_step": {
-            "sdf:jsonPointer": "#/sdfObject/spo2/sdfProperty/perfusion_step",
+        "perfusion_step": {
             "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
             "readOnly": true,
             "type": "number"
         },
-        "spo2_spo2_precision": {
-            "sdf:jsonPointer": "#/sdfObject/spo2/sdfProperty/spo2_precision",
+        "spo2_precision": {
             "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
             "readOnly": true,
             "type": "number"
         },
-        "spo2_perfusion_precision": {
-            "sdf:jsonPointer": "#/sdfObject/spo2/sdfProperty/perfusion_precision",
+        "perfusion_precision": {
             "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
             "readOnly": true,
             "type": "number"

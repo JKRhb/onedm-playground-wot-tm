@@ -2,37 +2,31 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "oma": "https://onedm.org/ecosystem/oma",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "OMA LwM2M Power Control (Object ID 3312)",
-    "description": "Copyright (c) 2018-2020 IPSO",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-power_control.sdf.json",
-            "rel": "alternate"
-        }
-    ],
-    "version": {
-        "model": "2021-02-11"
-    },
+    "sdf:objectKey": "Power_Control",
     "tm:required": [
-        "#/properties/Power_Control_On_Off"
+        "#/properties/On_Off"
     ],
+    "sdf:title": "OMA LwM2M Power Control (Object ID 3312)",
+    "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
+    "sdf:license": "BSD-3-Clause",
+    "version": {
+        "model": "2022-02-21"
+    },
+    "sdf:defaultNamespace": "oma",
+    "title": "Power Control",
+    "description": "This Object is used to control a power source, such as a Smart Plug.  It allows a power relay to be turned on or off and its dimmer setting to be control as a % between 0 and 100.",
     "properties": {
-        "Power_Control_On_Off": {
-            "sdf:jsonPointer": "#/sdfObject/Power_Control/sdfProperty/On_Off",
+        "On_Off": {
             "title": "On/Off",
             "description": "On/off control. Boolean value where True is On and False is Off.",
             "type": "boolean"
         },
-        "Power_Control_Dimmer": {
-            "sdf:jsonPointer": "#/sdfObject/Power_Control/sdfProperty/Dimmer",
+        "Dimmer": {
             "title": "Dimmer",
             "description": "This resource represents a dimmer setting, which has an Integer value between 0 and 100 as a percentage.",
             "type": "integer",
@@ -40,44 +34,38 @@
             "minimum": 0,
             "maximum": 100
         },
-        "Power_Control_On_time": {
-            "sdf:jsonPointer": "#/sdfObject/Power_Control/sdfProperty/On_time",
+        "On_time": {
             "title": "On time",
             "description": "The time in seconds that the device has been on. Writing a value of 0 resets the counter.",
             "type": "integer",
             "unit": "s"
         },
-        "Power_Control_Cumulative_active_power": {
-            "sdf:jsonPointer": "#/sdfObject/Power_Control/sdfProperty/Cumulative_active_power",
+        "Cumulative_active_power": {
             "title": "Cumulative active power",
             "description": "The cumulative active power since the last cumulative energy reset or device start.",
             "readOnly": true,
             "type": "number",
             "unit": "Wh"
         },
-        "Power_Control_Power_factor": {
-            "sdf:jsonPointer": "#/sdfObject/Power_Control/sdfProperty/Power_factor",
+        "Power_factor": {
             "title": "Power factor",
             "description": "If applicable, the power factor of the current consumption.",
             "readOnly": true,
             "type": "number"
         },
-        "Power_Control_Application_Type": {
-            "sdf:jsonPointer": "#/sdfObject/Power_Control/sdfProperty/Application_Type",
+        "Application_Type": {
             "title": "Application Type",
             "description": "The application type of the sensor or actuator as a string depending on the use case.",
             "type": "string"
         },
-        "Power_Control_Timestamp": {
-            "sdf:jsonPointer": "#/sdfObject/Power_Control/sdfProperty/Timestamp",
+        "Timestamp": {
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
             "readOnly": true,
             "type": "number",
             "sdf:sdfType": "unix-time"
         },
-        "Power_Control_Fractional_Timestamp": {
-            "sdf:jsonPointer": "#/sdfObject/Power_Control/sdfProperty/Fractional_Timestamp",
+        "Fractional_Timestamp": {
             "title": "Fractional Timestamp",
             "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
             "readOnly": true,

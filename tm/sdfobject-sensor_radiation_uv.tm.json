@@ -2,31 +2,25 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "UV Radiation",
-    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-sensor_radiation_uv.sdf.json",
-            "rel": "alternate"
-        }
+    "sdf:objectKey": "sensor.radiation.uv",
+    "tm:required": [
+        "#/properties/measurement"
     ],
+    "sdf:title": "UV Radiation",
+    "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-02-15"
     },
-    "tm:required": [
-        "#/properties/sensor.radiation.uv_measurement"
-    ],
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource specifies UV radiation measurement. The Property \"measurement\" is the current measured UV Index",
     "properties": {
-        "sensor.radiation.uv_measurement": {
-            "sdf:jsonPointer": "#/sdfObject/sensor.radiation.uv/sdfProperty/measurement",
+        "measurement": {
             "description": "The measured UV Index.",
             "readOnly": true,
             "type": "number"

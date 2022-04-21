@@ -2,31 +2,25 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "Auto Focus",
-    "description": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-autofocus.sdf.json",
-            "rel": "alternate"
-        }
+    "sdf:objectKey": "autofocus",
+    "tm:required": [
+        "#/properties/autoFocus"
     ],
+    "sdf:title": "Auto Focus",
+    "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-02-22"
     },
-    "tm:required": [
-        "#/properties/autofocus_autoFocus"
-    ],
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource describes an auto focus on/off feature. The Property \"autoFocus\" is a boolean. An \"autoFocus\" value of 'true' means that the auto focus feature is on. An \"autoFocus\" value of 'false' means that the auto focus feature is off. Note that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.",
     "properties": {
-        "autofocus_autoFocus": {
-            "sdf:jsonPointer": "#/sdfObject/autofocus/sdfProperty/autoFocus",
+        "autoFocus": {
             "description": "The status of the Auto Focus feature.",
             "type": "boolean"
         }

@@ -2,76 +2,63 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "Battery",
-    "description": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-energy_battery.sdf.json",
-            "rel": "alternate"
-        }
+    "sdf:objectKey": "energy.battery",
+    "tm:required": [
+        "#/properties/batterythreshold"
     ],
+    "sdf:title": "Battery",
+    "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-06-18"
     },
-    "tm:required": [
-        "#/properties/energy.battery_batterythreshold"
-    ],
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource describes the attributes associated with a battery. The Property \"charge\" is an integer showing the current battery charge level as a percentage in the range 0 (fully discharged) to 100 (fully charged). The Property \"capacity\" represents the total capacity of battery in Amp Hours (Ah). The \"charging\" status and \"discharging\" status are represented by boolean values set to \"true\" indicating enabled and \"false\" indicating disabled. Low battery status is represented by a boolean value set to \"true\" indicating low charge level and \"false\" indicating otherwise, based upon the battery threshold represented as a percentage.",
     "properties": {
-        "energy.battery_discharging": {
-            "sdf:jsonPointer": "#/sdfObject/energy.battery/sdfProperty/discharging",
+        "discharging": {
             "description": "The status of discharging.",
             "readOnly": true,
             "type": "boolean"
         },
-        "energy.battery_lowbattery": {
-            "sdf:jsonPointer": "#/sdfObject/energy.battery/sdfProperty/lowbattery",
+        "lowbattery": {
             "description": "The status of the low battery warning based upon the defined threshold.",
             "readOnly": true,
             "type": "boolean"
         },
-        "energy.battery_capacity": {
-            "sdf:jsonPointer": "#/sdfObject/energy.battery/sdfProperty/capacity",
+        "capacity": {
             "description": "The total capacity in Amp-hours (Ah).",
             "readOnly": true,
             "type": "number"
         },
-        "energy.battery_batterythreshold": {
-            "sdf:jsonPointer": "#/sdfObject/energy.battery/sdfProperty/batterythreshold",
+        "batterythreshold": {
             "description": "The threshold percentage for the low battery warning.",
             "type": "integer",
             "minimum": 0,
             "maximum": 100
         },
-        "energy.battery_charge": {
-            "sdf:jsonPointer": "#/sdfObject/energy.battery/sdfProperty/charge",
+        "charge": {
             "description": "The current charge percentage.",
             "readOnly": true,
             "type": "integer",
             "minimum": 0,
             "maximum": 100
         },
-        "energy.battery_charging": {
-            "sdf:jsonPointer": "#/sdfObject/energy.battery/sdfProperty/charging",
+        "charging": {
             "description": "The status of charging.",
             "readOnly": true,
             "type": "boolean"
         },
-        "energy.battery_defect": {
-            "sdf:jsonPointer": "#/sdfObject/energy.battery/sdfProperty/defect",
+        "defect": {
             "description": "Battery defect detected. True = defect, False = no defect",
             "readOnly": true,
             "type": "boolean"
         },
-        "energy.battery_timestamp": {
-            "sdf:jsonPointer": "#/sdfObject/energy.battery/sdfProperty/timestamp",
+        "timestamp": {
             "description": "An RFC3339 formatted time indicating when the data was observed (e.g.: 2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00). Note that 1/100 time resolution should be used.",
             "readOnly": true,
             "type": "string",

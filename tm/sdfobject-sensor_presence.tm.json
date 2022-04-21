@@ -2,31 +2,25 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "Presence Sensor",
-    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-sensor_presence.sdf.json",
-            "rel": "alternate"
-        }
+    "sdf:objectKey": "sensor.presence",
+    "tm:required": [
+        "#/properties/value"
     ],
+    "sdf:title": "Presence Sensor",
+    "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-02-15"
     },
-    "tm:required": [
-        "#/properties/sensor.presence_value"
-    ],
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource describes whether presence has been sensed or not. The Property \"value\" is a boolean. A value of 'true' means that presence has been sensed. A value of 'false' means that presence not been sensed.",
     "properties": {
-        "sensor.presence_value": {
-            "sdf:jsonPointer": "#/sdfObject/sensor.presence/sdfProperty/value",
+        "value": {
             "description": "The presences sensor, true = precense sensed, false = precensenot sensed.",
             "readOnly": true,
             "type": "boolean"

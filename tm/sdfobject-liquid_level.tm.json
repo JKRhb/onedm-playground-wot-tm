@@ -2,46 +2,38 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "Liquid Level",
-    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-liquid_level.sdf.json",
-            "rel": "alternate"
-        }
+    "sdf:objectKey": "liquid.level",
+    "tm:required": [
+        "#/properties/desiredlevel"
     ],
+    "sdf:title": "Liquid Level",
+    "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-02-15"
     },
-    "tm:required": [
-        "#/properties/liquid.level_desiredlevel"
-    ],
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource describes the attributes associated with liquid level. The Property \"currentlevel\" and \"desiredlevel\" are defined in terms of a percentage. The behaviour of when the currentlevel and desiredlevel are not equal is determined by the device manufacturer.",
     "properties": {
-        "liquid.level_currentlevel": {
-            "sdf:jsonPointer": "#/sdfObject/liquid.level/sdfProperty/currentlevel",
+        "currentlevel": {
             "description": "The current level of the liquid in percentage.",
             "readOnly": true,
             "type": "integer",
             "minimum": 0,
             "maximum": 100
         },
-        "liquid.level_desiredlevel": {
-            "sdf:jsonPointer": "#/sdfObject/liquid.level/sdfProperty/desiredlevel",
+        "desiredlevel": {
             "description": "The desired level of the liquid in percentage.",
             "type": "integer",
             "minimum": 0,
             "maximum": 100
         },
-        "liquid.level_step": {
-            "sdf:jsonPointer": "#/sdfObject/liquid.level/sdfProperty/step",
+        "step": {
             "description": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.",
             "readOnly": true,
             "type": "integer"

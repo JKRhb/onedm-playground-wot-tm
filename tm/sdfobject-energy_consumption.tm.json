@@ -2,38 +2,31 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "Energy Consumption",
-    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-energy_consumption.sdf.json",
-            "rel": "alternate"
-        }
+    "sdf:objectKey": "energy.consumption",
+    "tm:required": [
+        "#/properties/power",
+        "#/properties/energy"
     ],
+    "sdf:title": "Energy Consumption",
+    "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-02-15"
     },
-    "tm:required": [
-        "#/properties/energy.consumption_power",
-        "#/properties/energy.consumption_energy"
-    ],
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource describes the energy consumed by the Device since power up (the energy value is in Watt Hours [Wh]) and the instantaneous power draw of the device (the power value is in Watts [W]) at the time the resource was queried. The Property \"power\" value is in Watts [W]. The Property \"energy\" value is in Watt Hours [Wh]. The Resource provides the current power draw and cumulative energy usage.",
     "properties": {
-        "energy.consumption_power": {
-            "sdf:jsonPointer": "#/sdfObject/energy.consumption/sdfProperty/power",
+        "power": {
             "description": "The instantaneous Power.",
             "readOnly": true,
             "type": "number"
         },
-        "energy.consumption_energy": {
-            "sdf:jsonPointer": "#/sdfObject/energy.consumption/sdfProperty/energy",
+        "energy": {
             "description": "The energy consumed.",
             "readOnly": true,
             "type": "number"

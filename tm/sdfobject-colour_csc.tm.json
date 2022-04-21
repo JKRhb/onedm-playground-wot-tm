@@ -2,31 +2,25 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "Colour Space Coordinates",
-    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-colour_csc.sdf.json",
-            "rel": "alternate"
-        }
+    "sdf:objectKey": "colour.csc",
+    "tm:required": [
+        "#/properties/csc"
     ],
+    "sdf:title": "Colour Space Coordinates",
+    "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-02-15"
     },
-    "tm:required": [
-        "#/properties/colour.csc_csc"
-    ],
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource describes the colour using colour space co-ordinates. The Property \"csc\" is the colour space coordinates in CIE colour space. The first item in the array is the X coordinate. The second item in the array is the Y coordinate. If the Property \"precision\" is provided it applies to both the X and Y coordinates. The Resource provides the colour using colour space coordinates.",
     "properties": {
-        "colour.csc_csc": {
-            "sdf:jsonPointer": "#/sdfObject/colour.csc/sdfProperty/csc",
+        "csc": {
             "description": "The X and Y coordinates of the colour in CIE colour space.",
             "type": "array",
             "minItems": 2,
@@ -37,8 +31,7 @@
                 "maximum": 1
             }
         },
-        "colour.csc_precision": {
-            "sdf:jsonPointer": "#/sdfObject/colour.csc/sdfProperty/precision",
+        "precision": {
             "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
             "readOnly": true,
             "type": "number"

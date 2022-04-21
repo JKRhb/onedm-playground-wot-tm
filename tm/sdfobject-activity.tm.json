@@ -2,31 +2,25 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "Activity",
-    "description": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-activity.sdf.json",
-            "rel": "alternate"
-        }
+    "sdf:objectKey": "activity",
+    "tm:required": [
+        "#/properties/activity"
     ],
+    "sdf:title": "Activity",
+    "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-03-04"
     },
-    "tm:required": [
-        "#/properties/activity_activity"
-    ],
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource describes the Properties associated with a person's physical activity. All Properties are read-only values that are provided by the server. When range (from \"oic. r. baseresource\") is omitted the default is 0 to +MAXFLOAT.",
     "properties": {
-        "activity_activity": {
-            "sdf:jsonPointer": "#/sdfObject/activity/sdfProperty/activity",
+        "activity": {
             "description": "This Property describes the recognized current activity type of user",
             "readOnly": true,
             "type": "string",
@@ -39,36 +33,31 @@
                 "unknown"
             ]
         },
-        "activity_steps_day": {
-            "sdf:jsonPointer": "#/sdfObject/activity/sdfProperty/steps_day",
+        "steps_day": {
             "description": "This Property describes the user's step count that measures the number of steps the user has taken since the beginning of the day.",
             "readOnly": true,
             "type": "integer",
             "minimum": 0
         },
-        "activity_steps_reset": {
-            "sdf:jsonPointer": "#/sdfObject/activity/sdfProperty/steps_reset",
+        "steps_reset": {
             "description": "This Property describes the user's step count that measures the number of steps the user has taken since the last reset.",
             "readOnly": true,
             "type": "integer",
             "minimum": 0
         },
-        "activity_ccal_day": {
-            "sdf:jsonPointer": "#/sdfObject/activity/sdfProperty/ccal_day",
+        "ccal_day": {
             "description": "This Property describes the burned off calories of user since the beginning of the day.",
             "readOnly": true,
             "type": "number",
             "minimum": 0.0
         },
-        "activity_ccal_reset": {
-            "sdf:jsonPointer": "#/sdfObject/activity/sdfProperty/ccal_reset",
+        "ccal_reset": {
             "description": "This Property describes the burned off calories of user since the last reset.",
             "readOnly": true,
             "type": "number",
             "minimum": 0.0
         },
-        "activity_steps_day_range": {
-            "sdf:jsonPointer": "#/sdfObject/activity/sdfProperty/steps_day_range",
+        "steps_day_range": {
             "description": "The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.",
             "readOnly": true,
             "type": "array",
@@ -78,14 +67,12 @@
                 "type": "integer"
             }
         },
-        "activity_steps_day_step": {
-            "sdf:jsonPointer": "#/sdfObject/activity/sdfProperty/steps_day_step",
+        "steps_day_step": {
             "description": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.",
             "readOnly": true,
             "type": "integer"
         },
-        "activity_steps_reset_range": {
-            "sdf:jsonPointer": "#/sdfObject/activity/sdfProperty/steps_reset_range",
+        "steps_reset_range": {
             "description": "The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.",
             "readOnly": true,
             "type": "array",
@@ -95,14 +82,12 @@
                 "type": "integer"
             }
         },
-        "activity_steps_reset_step": {
-            "sdf:jsonPointer": "#/sdfObject/activity/sdfProperty/steps_reset_step",
+        "steps_reset_step": {
             "description": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.",
             "readOnly": true,
             "type": "integer"
         },
-        "activity_ccal_day_range": {
-            "sdf:jsonPointer": "#/sdfObject/activity/sdfProperty/ccal_day_range",
+        "ccal_day_range": {
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
             "readOnly": true,
             "type": "array",
@@ -112,20 +97,17 @@
                 "type": "number"
             }
         },
-        "activity_ccal_day_step": {
-            "sdf:jsonPointer": "#/sdfObject/activity/sdfProperty/ccal_day_step",
+        "ccal_day_step": {
             "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
             "readOnly": true,
             "type": "number"
         },
-        "activity_ccal_day_precision": {
-            "sdf:jsonPointer": "#/sdfObject/activity/sdfProperty/ccal_day_precision",
+        "ccal_day_precision": {
             "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
             "readOnly": true,
             "type": "number"
         },
-        "activity_ccal_reset_range": {
-            "sdf:jsonPointer": "#/sdfObject/activity/sdfProperty/ccal_reset_range",
+        "ccal_reset_range": {
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
             "readOnly": true,
             "type": "array",
@@ -135,14 +117,12 @@
                 "type": "number"
             }
         },
-        "activity_ccal_reset_step": {
-            "sdf:jsonPointer": "#/sdfObject/activity/sdfProperty/ccal_reset_step",
+        "ccal_reset_step": {
             "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
             "readOnly": true,
             "type": "number"
         },
-        "activity_ccal_reset_precision": {
-            "sdf:jsonPointer": "#/sdfObject/activity/sdfProperty/ccal_reset_precision",
+        "ccal_reset_precision": {
             "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
             "readOnly": true,
             "type": "number"

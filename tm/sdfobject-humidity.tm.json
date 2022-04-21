@@ -2,38 +2,31 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "Humidity",
-    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-humidity.sdf.json",
-            "rel": "alternate"
-        }
+    "sdf:objectKey": "humidity",
+    "tm:required": [
+        "#/properties/desiredHumidity"
     ],
+    "sdf:title": "Humidity",
+    "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-02-15"
     },
-    "tm:required": [
-        "#/properties/humidity_desiredHumidity"
-    ],
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource describes a sensed or desired humidity. The Property \"humidity\" is an integer describing the percentage measured relative humidity. The Property \"desiredHumidity\" is an integer showing the desired target relative humidity.",
     "properties": {
-        "humidity_desiredHumidity": {
-            "sdf:jsonPointer": "#/sdfObject/humidity/sdfProperty/desiredHumidity",
-            "description": "The desired value for humidity.",
+        "desiredHumidity": {
+            "description": "Desired value for Humidity",
             "type": "integer",
             "minimum": 0,
             "maximum": 100
         },
-        "humidity_humidity": {
-            "sdf:jsonPointer": "#/sdfObject/humidity/sdfProperty/humidity",
+        "humidity": {
             "description": "The current sensed value for humidity.",
             "readOnly": true,
             "type": "integer",

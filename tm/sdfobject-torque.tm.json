@@ -2,38 +2,31 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "Torque",
-    "description": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-torque.sdf.json",
-            "rel": "alternate"
-        }
+    "sdf:objectKey": "torque",
+    "tm:required": [
+        "#/properties/torque"
     ],
+    "sdf:title": "Torque",
+    "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-09-25"
     },
-    "tm:required": [
-        "#/properties/torque_torque"
-    ],
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource describes the torque, which is the rotational equivalent of linear force. The unit, which is the default SI unit, is N*m (Newton metre). The torque Property is a read-only value that is provided by the server. When range (from \"oic. r. baseresource\") is omitted the default is 0 to +MAXFLOAT.",
     "properties": {
-        "torque_torque": {
-            "sdf:jsonPointer": "#/sdfObject/torque/sdfProperty/torque",
+        "torque": {
             "description": "This Resource describes the torque, which is the rotational equivalent of linear force, in N*m (Newton metre).",
             "readOnly": true,
             "type": "number",
             "minimum": 0.0
         },
-        "torque_range": {
-            "sdf:jsonPointer": "#/sdfObject/torque/sdfProperty/range",
+        "range": {
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
             "readOnly": true,
             "type": "array",
@@ -43,8 +36,7 @@
                 "type": "number"
             }
         },
-        "torque_step": {
-            "sdf:jsonPointer": "#/sdfObject/torque/sdfProperty/step",
+        "step": {
             "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
             "readOnly": true,
             "type": "number"

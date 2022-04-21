@@ -2,31 +2,25 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "Sleep Sensor",
-    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-sensor_sleep.sdf.json",
-            "rel": "alternate"
-        }
+    "sdf:objectKey": "sensor.sleep",
+    "tm:required": [
+        "#/properties/value"
     ],
+    "sdf:title": "Sleep Sensor",
+    "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-02-15"
     },
-    "tm:required": [
-        "#/properties/sensor.sleep_value"
-    ],
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource describes whether human sleep has been sensed or not. The Property \"value\" is a boolean. A value of 'true' means that sleep has been sensed. A value of 'false' means that sleep not been sensed.",
     "properties": {
-        "sensor.sleep_value": {
-            "sdf:jsonPointer": "#/sdfObject/sensor.sleep/sdfProperty/value",
+        "value": {
             "description": "The sleep sensor, true = sleep sensed, false = sleep not sensed.",
             "readOnly": true,
             "type": "boolean"

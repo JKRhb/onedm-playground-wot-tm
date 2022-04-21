@@ -2,73 +2,61 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "Geolocation",
-    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-sensor_geolocation.sdf.json",
-            "rel": "alternate"
-        }
+    "sdf:objectKey": "sensor.geolocation",
+    "tm:required": [
+        "#/properties/latitude",
+        "#/properties/longitude",
+        "#/properties/alt"
     ],
+    "sdf:title": "Geolocation",
+    "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-02-15"
     },
-    "tm:required": [
-        "#/properties/sensor.geolocation_latitude",
-        "#/properties/sensor.geolocation_longitude",
-        "#/properties/sensor.geolocation_alt"
-    ],
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource describes the properties associated with the current geolocation coordinate. Geolocation is a geolocation coordinate data. The Property \"latitude\" is a device's current Latitude coordinate (degrees). The Property \"longitude\" is a device's current Longitude coordinate (degrees). The Property \"alt\" is a device's current distance (metres) above or below 'local' sea-level. The Property \"accuracy\" is the accuracy level of the latitude and longitude coordinates (metres). The Property \"altitudeAccuracy\" is the accuracy level of the altitude coordinates (metres). The Property \"heading\" is a direction of travel of device (degree). The Property \"speed\" is a device's current velocity (metres per second).",
     "properties": {
-        "sensor.geolocation_longitude": {
-            "sdf:jsonPointer": "#/sdfObject/sensor.geolocation/sdfProperty/longitude",
+        "longitude": {
             "description": "The Device's Current Longitude coordinate (degrees).",
             "readOnly": true,
             "type": "number"
         },
-        "sensor.geolocation_heading": {
-            "sdf:jsonPointer": "#/sdfObject/sensor.geolocation/sdfProperty/heading",
+        "heading": {
             "description": "The direction of travel of the Device (degree).",
             "readOnly": true,
             "type": "number",
             "minimum": 0,
             "maximum": 360
         },
-        "sensor.geolocation_latitude": {
-            "sdf:jsonPointer": "#/sdfObject/sensor.geolocation/sdfProperty/latitude",
+        "latitude": {
             "description": "The Device's Current Latitude coordinate (degrees).",
             "readOnly": true,
             "type": "number"
         },
-        "sensor.geolocation_altitudeAccuracy": {
-            "sdf:jsonPointer": "#/sdfObject/sensor.geolocation/sdfProperty/altitudeAccuracy",
+        "altitudeAccuracy": {
             "description": "The accuracy level of the altitude coordinates (metres).",
             "readOnly": true,
             "type": "number",
             "minimum": 0
         },
-        "sensor.geolocation_alt": {
-            "sdf:jsonPointer": "#/sdfObject/sensor.geolocation/sdfProperty/alt",
+        "alt": {
             "description": "The current distance (metres) above or below 'local' sea-level.",
             "readOnly": true,
             "type": "number"
         },
-        "sensor.geolocation_accuracy": {
-            "sdf:jsonPointer": "#/sdfObject/sensor.geolocation/sdfProperty/accuracy",
+        "accuracy": {
             "description": "The accuracy level of the latitude and longitude coordinates (metres).",
             "readOnly": true,
             "type": "number",
             "minimum": 0
         },
-        "sensor.geolocation_speed": {
-            "sdf:jsonPointer": "#/sdfObject/sensor.geolocation/sdfProperty/speed",
+        "speed": {
             "description": "The Device's current velocity (metres per second).",
             "readOnly": true,
             "type": "number",

@@ -2,32 +2,26 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "Movement",
-    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-movement_linear.sdf.json",
-            "rel": "alternate"
-        }
+    "sdf:objectKey": "movement.linear",
+    "tm:required": [
+        "#/properties/movementSettings",
+        "#/properties/movement"
     ],
+    "sdf:title": "Movement",
+    "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-02-15"
     },
-    "tm:required": [
-        "#/properties/movement.linear_movementSettings",
-        "#/properties/movement.linear_movement"
-    ],
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource specifies linear movement. The Property \"movementSettings\" is an array of strings containing possible movement values (e. g. spin, stop, left, right). The Property \"movement\" is the currently selected movement value. The Property \"movementModifier\" is a modifier to the movement value (e. g. \"spin\", \"90\")",
     "properties": {
-        "movement.linear_movementSettings": {
-            "sdf:jsonPointer": "#/sdfObject/movement.linear/sdfProperty/movementSettings",
+        "movementSettings": {
             "description": "The array of possible movement values.",
             "readOnly": true,
             "type": "array",
@@ -35,13 +29,11 @@
                 "type": "string"
             }
         },
-        "movement.linear_movementModifier": {
-            "sdf:jsonPointer": "#/sdfObject/movement.linear/sdfProperty/movementModifier",
+        "movementModifier": {
             "description": "The modifier to the movement value (e.g. spin-90, left-20), units are device dependent.",
             "type": "string"
         },
-        "movement.linear_movement": {
-            "sdf:jsonPointer": "#/sdfObject/movement.linear/sdfProperty/movement",
+        "movement": {
             "description": "The current movement value.",
             "type": "string"
         }

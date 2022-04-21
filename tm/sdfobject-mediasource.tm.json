@@ -2,37 +2,30 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "Media Source",
-    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-mediasource.sdf.json",
-            "rel": "alternate"
-        }
+    "sdf:objectKey": "mediasource",
+    "tm:required": [
+        "#/properties/sourceName",
+        "#/properties/status"
     ],
+    "sdf:title": "Media Source",
+    "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-02-15"
     },
-    "tm:required": [
-        "#/properties/mediasource_sourceName",
-        "#/properties/mediasource_status"
-    ],
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource defines a single media source that exists on a device. The source can be an input source or output source, this resource is agnostic of that. The Property \"sourceName\" specifies a pre-defined media input or output (e. g. \"HDMI\", \"DVI\"). The Property \"sourceNumber\" is a label to specify the instance (e. g. \"PC\", \"1\"). The Property \"sourceType\" is an enumeration defining whether the source is audio, video or both. The Property \"status\" is a boolean that determines if the specific source instance is selected or not. A status of true means that the source instance is selected. A status of false means that the source instance is not selected.",
     "properties": {
-        "mediasource_status": {
-            "sdf:jsonPointer": "#/sdfObject/mediasource/sdfProperty/status",
+        "status": {
             "description": "Specifies if the specific source instance is selected or not.",
             "type": "boolean"
         },
-        "mediasource_sourceType": {
-            "sdf:jsonPointer": "#/sdfObject/mediasource/sdfProperty/sourceType",
+        "sourceType": {
             "description": "Specifies the type of the source.",
             "readOnly": true,
             "type": "string",
@@ -42,13 +35,11 @@
                 "audioPlusVideo"
             ]
         },
-        "mediasource_sourceName": {
-            "sdf:jsonPointer": "#/sdfObject/mediasource/sdfProperty/sourceName",
+        "sourceName": {
             "description": "Specifies a pre-defined media input or output.",
             "type": "string"
         },
-        "mediasource_sourceNumber": {
-            "sdf:jsonPointer": "#/sdfObject/mediasource/sdfProperty/sourceNumber",
+        "sourceNumber": {
             "description": "Label to specify the instance.",
             "type": "string"
         }

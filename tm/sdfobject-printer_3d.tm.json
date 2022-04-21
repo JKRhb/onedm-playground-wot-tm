@@ -2,48 +2,40 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "3D Printer",
-    "description": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-printer_3d.sdf.json",
-            "rel": "alternate"
-        }
+    "sdf:objectKey": "printer.3d",
+    "tm:required": [
+        "#/properties/3dprinttype",
+        "#/properties/printsizex",
+        "#/properties/printsizey",
+        "#/properties/printsizez",
+        "#/properties/wanconnected",
+        "#/properties/memorysize"
     ],
+    "sdf:title": "3D Printer",
+    "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-02-22"
     },
-    "tm:required": [
-        "#/properties/printer.3d_3dprinttype",
-        "#/properties/printer.3d_printsizex",
-        "#/properties/printer.3d_printsizey",
-        "#/properties/printer.3d_printsizez",
-        "#/properties/printer.3d_wanconnected",
-        "#/properties/printer.3d_memorysize"
-    ],
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource describes the attributes associated with 3D Printer. The type of 3D printing technology is specified by an enumerated string value. The maximum sizes in mm are included for the x, y, and z dimensions. A designation of whether the device is capable of WAN connectivity is represented in a boolean. The memory capacity is captured in MB.",
     "properties": {
-        "printer.3d_printsizey": {
-            "sdf:jsonPointer": "#/sdfObject/printer.3d/sdfProperty/printsizey",
+        "printsizey": {
             "description": "This Property represents the maximum size of printing object in the direction of Y-axis. The unit is mm.",
             "readOnly": true,
             "type": "number"
         },
-        "printer.3d_memorysize": {
-            "sdf:jsonPointer": "#/sdfObject/printer.3d/sdfProperty/memorysize",
+        "memorysize": {
             "description": "This Property represents the total memory size of the printer. The unit is MB(Mega Bytes)",
             "readOnly": true,
             "type": "number"
         },
-        "printer.3d_3dprinttype": {
-            "sdf:jsonPointer": "#/sdfObject/printer.3d/sdfProperty/3dprinttype",
+        "3dprinttype": {
             "description": "The type of 3D printing technology.",
             "readOnly": true,
             "type": "string",
@@ -59,20 +51,17 @@
                 "Unknown"
             ]
         },
-        "printer.3d_wanconnected": {
-            "sdf:jsonPointer": "#/sdfObject/printer.3d/sdfProperty/wanconnected",
+        "wanconnected": {
             "description": "This Property indicates the connectivity capability of the 3D printer. If the value is false, the printer does not have network facility to Wide Area Network such as internet and GSM. If the value is true, the printer has network connectivity",
             "readOnly": true,
             "type": "boolean"
         },
-        "printer.3d_printsizex": {
-            "sdf:jsonPointer": "#/sdfObject/printer.3d/sdfProperty/printsizex",
+        "printsizex": {
             "description": "This Property represents the maximum size of printing object in the direction of X-axis. The unit is mm.",
             "readOnly": true,
             "type": "number"
         },
-        "printer.3d_printsizez": {
-            "sdf:jsonPointer": "#/sdfObject/printer.3d/sdfProperty/printsizez",
+        "printsizez": {
             "description": "This Property represents the maximum size of printing object in the direction of Z-axis. The unit is mm.",
             "readOnly": true,
             "type": "number"

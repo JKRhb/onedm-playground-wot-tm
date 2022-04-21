@@ -2,38 +2,31 @@
     "@context": [
         "http://www.w3.org/ns/td",
         {
+            "ocf": "https://onedm.org/ecosystem/ocf",
             "sdf": "https://example.com/sdf"
         }
     ],
     "@type": "tm:ThingModel",
-    "title": "Signal Strength",
-    "description": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
-    "links": [
-        {
-            "href": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
-            "rel": "license"
-        },
-        {
-            "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-signalstrength.sdf.json",
-            "rel": "alternate"
-        }
+    "sdf:objectKey": "signalstrength",
+    "tm:required": [
+        "#/properties/lqi",
+        "#/properties/rssi"
     ],
+    "sdf:title": "Signal Strength",
+    "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "sdf:license": "BSD-3-Clause",
     "version": {
         "model": "2019-02-15"
     },
-    "tm:required": [
-        "#/properties/signalstrength_lqi",
-        "#/properties/signalstrength_rssi"
-    ],
+    "sdf:defaultNamespace": "ocf",
+    "description": "This Resource describes the strength of a signal by means of lqi and rssi. The Property \"lqi\" is a floating point number that represents Link Quality Indicator. The Property \"rssi\" is a floating point number that represents the received signal strength indicator.",
     "properties": {
-        "signalstrength_lqi": {
-            "sdf:jsonPointer": "#/sdfObject/signalstrength/sdfProperty/lqi",
+        "lqi": {
             "description": "The current value of Link Quality Indicator.",
             "readOnly": true,
             "type": "number"
         },
-        "signalstrength_rssi": {
-            "sdf:jsonPointer": "#/sdfObject/signalstrength/sdfProperty/rssi",
+        "rssi": {
             "description": "The current value of Received Signal Strength Indicator.",
             "readOnly": true,
             "type": "number"

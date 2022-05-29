@@ -26,16 +26,19 @@
     "description": "This Resource describes the attributes associated with 3D Printer. The type of 3D printing technology is specified by an enumerated string value. The maximum sizes in mm are included for the x, y, and z dimensions. A designation of whether the device is capable of WAN connectivity is represented in a boolean. The memory capacity is captured in MB.",
     "properties": {
         "printsizey": {
+            "observable": true,
             "description": "This Property represents the maximum size of printing object in the direction of Y-axis. The unit is mm.",
             "readOnly": true,
             "type": "number"
         },
         "memorysize": {
+            "observable": true,
             "description": "This Property represents the total memory size of the printer. The unit is MB(Mega Bytes)",
             "readOnly": true,
             "type": "number"
         },
         "3dprinttype": {
+            "observable": true,
             "description": "The type of 3D printing technology.",
             "readOnly": true,
             "type": "string",
@@ -52,16 +55,19 @@
             ]
         },
         "wanconnected": {
+            "observable": true,
             "description": "This Property indicates the connectivity capability of the 3D printer. If the value is false, the printer does not have network facility to Wide Area Network such as internet and GSM. If the value is true, the printer has network connectivity",
             "readOnly": true,
             "type": "boolean"
         },
         "printsizex": {
+            "observable": true,
             "description": "This Property represents the maximum size of printing object in the direction of X-axis. The unit is mm.",
             "readOnly": true,
             "type": "number"
         },
         "printsizez": {
+            "observable": true,
             "description": "This Property represents the maximum size of printing object in the direction of Z-axis. The unit is mm.",
             "readOnly": true,
             "type": "number"

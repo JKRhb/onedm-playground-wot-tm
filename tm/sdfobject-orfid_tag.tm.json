@@ -22,11 +22,13 @@
     "description": "The Property \"tagid\" is an integer showing the currently read optical augmented RFID tag's identity information.",
     "properties": {
         "tagid": {
+            "observable": true,
             "description": "The tag read by the RFID reader.",
             "readOnly": true,
             "type": "integer"
         },
         "reading": {
+            "observable": true,
             "description": "The reading indication. true: the tagid is read e.g. being valid. false: the tagid is invalid.",
             "readOnly": true,
             "type": "boolean"

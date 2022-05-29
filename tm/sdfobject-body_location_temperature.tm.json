@@ -21,6 +21,7 @@
     "description": "This Resource describes the Properties associated with body location for temperature measurement of a person. The bloc Property is a read-only value that is provided by the Server.",
     "properties": {
         "bloc": {
+            "observable": true,
             "description": "A list specific to temperature site",
             "readOnly": true,
             "type": "string",

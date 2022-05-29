@@ -21,10 +21,12 @@
     "description": "This Resource describes the attributes associated with a grinder. The Property \"coarseness\" of the grounds is an integer. The higher the value, the less coarse. The Property \"remaining\" is a percentage that represents the unground material left.",
     "properties": {
         "coarseness": {
+            "observable": true,
             "description": "The desired coarseness when grinding.",
             "type": "integer"
         },
         "remaining": {
+            "observable": true,
             "description": "The percentage of unground material left.",
             "readOnly": true,
             "type": "integer",
@@ -32,6 +34,7 @@
             "maximum": 100
         },
         "range": {
+            "observable": true,
             "description": "The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.",
             "readOnly": true,
             "type": "array",
@@ -42,6 +45,7 @@
             }
         },
         "step": {
+            "observable": true,
             "description": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.",
             "readOnly": true,
             "type": "integer"

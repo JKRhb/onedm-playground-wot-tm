@@ -21,6 +21,7 @@
     "description": "This Resource describes the Properties associated with a Pulsatile Occurrence detected by a Pulse Oximeter. The occurrence Property is a read-only value that is provided by the server. When range (from \"oic. r. baseresource\") is omitted the default is 0 to +MAXFLOAT.",
     "properties": {
         "occurrence": {
+            "observable": true,
             "description": "This Property describes the Pulsatile Occurrence detected by a Pulse Oximeter. BEAT - Pulsatile occurrence has occurred. BEAT_MAX_INRUSH - Maximal inrush of the pulsatile wave has occurred. NOS - No pulsatile event occurred.",
             "readOnly": true,
             "type": "string",

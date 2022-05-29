@@ -24,6 +24,7 @@
     "description": "This Resource describes the Properties associated with Status for Continuous Glucose Meter (CGM).",
     "properties": {
         "cgmtype": {
+            "observable": true,
             "description": "This Property describes the CGM measurement type.",
             "readOnly": true,
             "type": "string",
@@ -39,22 +40,26 @@
             ]
         },
         "cgmstatus": {
+            "observable": true,
             "description": "This Property describes the specific notifications given by the CGM device including, but not limited to, warnings, errors, and handling events.",
             "readOnly": true,
             "type": "string"
         },
         "gtrend": {
+            "observable": true,
             "description": "This Property describes the rate of change in glucose measurements at a time instant.",
             "readOnly": true,
             "type": "number",
             "minimum": 0.0
         },
         "malfunction": {
+            "observable": true,
             "description": "This Property describes the sensor malfunction detection check.",
             "readOnly": true,
             "type": "boolean"
         },
         "range": {
+            "observable": true,
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
             "readOnly": true,
             "type": "array",
@@ -65,11 +70,13 @@
             }
         },
         "step": {
+            "observable": true,
             "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
             "readOnly": true,
             "type": "number"
         },
         "precision": {
+            "observable": true,
             "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
             "readOnly": true,
             "type": "number"

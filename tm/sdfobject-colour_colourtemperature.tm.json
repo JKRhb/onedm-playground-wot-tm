@@ -21,11 +21,13 @@
     "description": "This Resource describes the colour using colour temperature conventions. The Property \"ct\" is the Mired colour temperature. The equivalent value in Kelvin is obtained by Colour Temp(K) = 1,000,000/Colour Temp(Mired) THe Resource provides the colour using colour temperature conventions.",
     "properties": {
         "ct": {
+            "observable": true,
             "description": "The Mired colour temperature.",
             "type": "integer",
             "minimum": 0
         },
         "range": {
+            "observable": true,
             "description": "The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.",
             "readOnly": true,
             "type": "array",
@@ -36,6 +38,7 @@
             }
         },
         "step": {
+            "observable": true,
             "description": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.",
             "readOnly": true,
             "type": "integer"

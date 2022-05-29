@@ -22,17 +22,20 @@
     "description": "This IPSO object is used to represent the state of a Multi-state selector switch with a number of fixed positions.",
     "properties": {
         "Multi-state_Input": {
+            "observable": true,
             "title": "Multi-state Input",
             "description": "The current state of a Multi-state input or selector.",
             "readOnly": true,
             "type": "integer"
         },
         "Application_Type": {
+            "observable": true,
             "title": "Application Type",
             "description": "The application type of the sensor or actuator as a string depending on the use case.",
             "type": "string"
         },
         "Timestamp": {
+            "observable": true,
             "title": "Timestamp",
             "description": "The timestamp of when the measurement was performed.",
             "readOnly": true,
@@ -40,6 +43,7 @@
             "sdf:sdfType": "unix-time"
         },
         "Fractional_Timestamp": {
+            "observable": true,
             "title": "Fractional Timestamp",
             "description": "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).",
             "readOnly": true,

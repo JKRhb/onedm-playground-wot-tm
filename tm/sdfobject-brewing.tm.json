@@ -21,14 +21,17 @@
     "description": "This Resource describes the attributes associated with brewing. This resource is used for configuration only. The Operation of the Device is handled independently of this Resource. The amount requested is in ml. The strength of a brewed drink is an integer, the range of which may be enforced by the presence of a strengthrange Property.",
     "properties": {
         "strength": {
+            "observable": true,
             "description": "The strength of a brewed drink.",
             "type": "integer"
         },
         "amountrequested": {
+            "observable": true,
             "description": "The amount requested in ml.",
             "type": "integer"
         },
         "strengthrange": {
+            "observable": true,
             "readOnly": true,
             "type": "array",
             "minItems": 2,

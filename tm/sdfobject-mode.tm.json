@@ -21,6 +21,7 @@
     "description": "This Resource describes the modes of operation that a Device can provide. The mode can be read or set. The Property \"supportedModes\" is an array of possible modes the device supports. The Property \"modes\" is an array of the currently active mode(s).",
     "properties": {
         "modes": {
+            "observable": true,
             "description": "Desired mode",
             "type": "array",
             "items": {
@@ -28,6 +29,7 @@
             }
         },
         "supportedModes": {
+            "observable": true,
             "description": "The array of possible modes the device supports.",
             "readOnly": true,
             "type": "array",

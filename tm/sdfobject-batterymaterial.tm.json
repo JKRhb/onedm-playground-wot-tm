@@ -21,6 +21,7 @@
     "description": "This Resource describes the battery material represented as an enumerated set of strings.",
     "properties": {
         "material": {
+            "observable": true,
             "description": "The battery construction material (type).",
             "readOnly": true,
             "type": "string",

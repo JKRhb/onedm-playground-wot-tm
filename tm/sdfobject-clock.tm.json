@@ -21,11 +21,13 @@
     "description": "This Resource describes the properties associated with clock and time. Clock is a time information. The Property \"datetime\" is using RFC3339 datetime format (e. g: \"2007-04-05T14:30Z\") (Time+Date+Timezone) The Property \"countdown\" is the desired total seconds for countdown.",
     "properties": {
         "countdown": {
+            "observable": true,
             "description": "The desired total seconds for countdown.",
             "type": "number",
             "minimum": 0
         },
         "datetime": {
+            "observable": true,
             "description": "Rhe date time using RFC3339 datetime format (e.g: 2007-04-05T14:30:00Z, 2007-04-05T14:30:00+09:00).",
             "type": "string",
             "format": "date-time"

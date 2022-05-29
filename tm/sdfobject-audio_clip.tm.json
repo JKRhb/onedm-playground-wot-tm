@@ -28,12 +28,14 @@
     },
     "properties": {
         "Clip": {
+            "observable": true,
             "title": "Clip",
             "description": "Audio clip that is playable (e.g., a short audio recording indicating the floor in an elevator).",
             "type": "string",
             "sdf:sdfType": "byte-string"
         },
         "Level": {
+            "observable": true,
             "title": "Level",
             "description": "Used to represent a level control such as audio volume.",
             "type": "number",
@@ -42,12 +44,14 @@
             "maximum": 100
         },
         "Duration": {
+            "observable": true,
             "title": "Duration",
             "description": "The duration of the sound once trigger.",
             "type": "number",
             "unit": "s"
         },
         "Application_Type": {
+            "observable": true,
             "title": "Application Type",
             "description": "The application type of the sensor or actuator as a string depending on the use case.",
             "type": "string"

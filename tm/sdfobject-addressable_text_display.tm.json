@@ -28,33 +28,39 @@
     },
     "properties": {
         "Text": {
+            "observable": true,
             "title": "Text",
             "description": "A string of text.",
             "type": "string"
         },
         "X_Coordinate": {
+            "observable": true,
             "title": "X Coordinate",
             "description": "X Coordinate.",
             "type": "integer"
         },
         "Y_Coordinate": {
+            "observable": true,
             "title": "Y Coordinate",
             "description": "Y Coordinate.",
             "type": "integer"
         },
         "Max_X_Coordinate": {
+            "observable": true,
             "title": "Max X Coordinate",
             "description": "The highest X coordinate the display supports before wrapping to the next line.",
             "readOnly": true,
             "type": "integer"
         },
         "Max_Y_Coordinate": {
+            "observable": true,
             "title": "Max Y Coordinate",
             "description": "The highest Y coordinate the display supports before wrapping to the next line.",
             "readOnly": true,
             "type": "integer"
         },
         "Level": {
+            "observable": true,
             "title": "Level",
             "description": "Used to represent a level control such as audio volume.",
             "type": "number",
@@ -63,6 +69,7 @@
             "maximum": 100
         },
         "Contrast": {
+            "observable": true,
             "title": "Contrast",
             "description": "Proportional control, integer value between 0 and 100 as a percentage.",
             "type": "number",
@@ -71,6 +78,7 @@
             "maximum": 100
         },
         "Application_Type": {
+            "observable": true,
             "title": "Application Type",
             "description": "The application type of the sensor or actuator as a string depending on the use case.",
             "type": "string"

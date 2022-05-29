@@ -21,17 +21,20 @@
     "description": "This Resource describes Properties associated with the energy associated with the consumption of natural gas The gas value is in kilowatt hours [kWh]. The volume value is in metres cubed [m3]. Provides the cumulative gas energy, the cumulative gas volume and the calorific value and conversion factor used/required to convert from gas volume (m3[TB1]) to gas energy (KWh).",
     "properties": {
         "gas": {
+            "observable": true,
             "description": "gas energy consumed in kWh",
             "readOnly": true,
             "type": "number",
             "minimum": 0
         },
         "precision": {
+            "observable": true,
             "description": "Accuracy granularity of the exposed value",
             "readOnly": true,
             "type": "number"
         },
         "volume": {
+            "observable": true,
             "description": "gas volume consumed in m3 (metres cubed)",
             "readOnly": true,
             "type": "number",

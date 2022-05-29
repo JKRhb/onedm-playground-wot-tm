@@ -22,17 +22,20 @@
     "description": "This Resource describes the Properties associated with Calibrate for Continuous Glucose Meter (CGM).",
     "properties": {
         "Cvalue": {
+            "observable": true,
             "description": "This Property describes the Sensor Calibration Value in mg/dL units. This blood glucose measurement using other external glucose meter.",
             "readOnly": false,
             "type": "number",
             "minimum": 0
         },
         "Cstatus": {
+            "observable": true,
             "description": "Sensor calibration required flag",
             "readOnly": true,
             "type": "boolean"
         },
         "range": {
+            "observable": true,
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
             "readOnly": true,
             "type": "array",
@@ -43,11 +46,13 @@
             }
         },
         "step": {
+            "observable": true,
             "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
             "readOnly": true,
             "type": "number"
         },
         "precision": {
+            "observable": true,
             "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
             "readOnly": true,
             "type": "number"

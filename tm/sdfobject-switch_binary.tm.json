@@ -21,6 +21,7 @@
     "description": "This Resource describes a binary switch (on/off). The Property \"value\" is a boolean. A value of 'true' means that the switch is on. A value of 'false' means that the switch is off.",
     "properties": {
         "value": {
+            "observable": true,
             "description": "The status of the switch.",
             "type": "boolean"
         }

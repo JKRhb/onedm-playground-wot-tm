@@ -22,12 +22,14 @@
     "description": "This Resource describes the Properties associated with a context carbohydrates. The carb Property has a default unit of grams[g]. The carb and meal Properties are read-only values that are provided by the Server. When range is omitted the default is 0 to +MAXFLOAT.",
     "properties": {
         "carb": {
+            "observable": true,
             "description": "The amount of carbohydrates undertaken in grams",
             "readOnly": true,
             "type": "number",
             "minimum": 0.0
         },
         "meal": {
+            "observable": true,
             "description": "Recorded time of carbohydrates intake",
             "readOnly": true,
             "type": "string",
@@ -46,6 +48,7 @@
             ]
         },
         "range": {
+            "observable": true,
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
             "readOnly": true,
             "type": "array",
@@ -56,11 +59,13 @@
             }
         },
         "step": {
+            "observable": true,
             "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
             "readOnly": true,
             "type": "number"
         },
         "precision": {
+            "observable": true,
             "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
             "readOnly": true,
             "type": "number"

@@ -24,12 +24,12 @@
             "description": "This Property describes the Pulsatile Occurrence detected by a Pulse Oximeter. BEAT - Pulsatile occurrence has occurred. BEAT_MAX_INRUSH - Maximal inrush of the pulsatile wave has occurred. NOS - No pulsatile event occurred.",
             "readOnly": true,
             "type": "string",
+            "default": "NOS",
             "enum": [
                 "BEAT",
                 "BEAT_MAX_INRUSH",
                 "NOS"
-            ],
-            "default": "NOS"
+            ]
         }
     },
     "links": [

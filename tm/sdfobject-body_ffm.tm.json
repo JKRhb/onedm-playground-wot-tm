@@ -30,12 +30,12 @@
             "description": "Body fat free mass units",
             "readOnly": true,
             "type": "string",
+            "default": "kg",
             "enum": [
                 "kg",
                 "lb",
                 "percent"
-            ],
-            "default": "kg"
+            ]
         },
         "range": {
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",

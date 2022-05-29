@@ -29,13 +29,13 @@
             "description": "Height unit",
             "readOnly": true,
             "type": "string",
+            "default": "m",
             "enum": [
                 "m",
                 "cm",
                 "ft",
                 "in"
-            ],
-            "default": "m"
+            ]
         },
         "range": {
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",

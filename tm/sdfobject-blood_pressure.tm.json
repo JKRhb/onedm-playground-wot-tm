@@ -31,11 +31,11 @@
             "description": "Blood pressure unit",
             "readOnly": true,
             "type": "string",
+            "default": "mmHg",
             "enum": [
                 "mmHg",
                 "kPa"
-            ],
-            "default": "mmHg"
+            ]
         },
         "systolic": {
             "description": "Systolic blood pressure",

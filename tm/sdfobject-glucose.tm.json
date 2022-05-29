@@ -30,11 +30,11 @@
             "description": "Glucose unit",
             "readOnly": true,
             "type": "string",
+            "default": "mg/dL",
             "enum": [
                 "mg/dL",
                 "mmol/L"
-            ],
-            "default": "mg/dL"
+            ]
         },
         "range": {
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",

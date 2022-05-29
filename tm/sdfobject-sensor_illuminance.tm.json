@@ -21,21 +21,21 @@
     "description": "This Resource describes an illuminance sensor. The Property \"illuminance\" is a float and represents the sensed luminous flux per unit area in lux.",
     "properties": {
         "illuminance": {
-            "observable": true,
             "description": "The sensed luminous flux per unit area in lux.",
-            "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "observable": true,
+            "readOnly": true
         },
         "range": {
-            "observable": true,
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
-            "readOnly": true,
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
             "items": {
                 "type": "number"
-            }
+            },
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

@@ -22,30 +22,30 @@
     "description": "This Resource defines a single media source that exists on a device. The source can be an input source or output source, this resource is agnostic of that. The Property \"sourceName\" specifies a pre-defined media input or output (e. g. \"HDMI\", \"DVI\"). The Property \"sourceNumber\" is a label to specify the instance (e. g. \"PC\", \"1\"). The Property \"sourceType\" is an enumeration defining whether the source is audio, video or both. The Property \"status\" is a boolean that determines if the specific source instance is selected or not. A status of true means that the source instance is selected. A status of false means that the source instance is not selected.",
     "properties": {
         "status": {
-            "observable": true,
             "description": "Specifies if the specific source instance is selected or not.",
-            "type": "boolean"
+            "type": "boolean",
+            "observable": true
         },
         "sourceType": {
-            "observable": true,
             "description": "Specifies the type of the source.",
-            "readOnly": true,
             "type": "string",
             "enum": [
                 "audioOnly",
                 "videoOnly",
                 "audioPlusVideo"
-            ]
+            ],
+            "observable": true,
+            "readOnly": true
         },
         "sourceName": {
-            "observable": true,
             "description": "Specifies a pre-defined media input or output.",
-            "type": "string"
+            "type": "string",
+            "observable": true
         },
         "sourceNumber": {
-            "observable": true,
             "description": "Label to specify the instance.",
-            "type": "string"
+            "type": "string",
+            "observable": true
         }
     },
     "links": [

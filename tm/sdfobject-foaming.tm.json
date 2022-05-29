@@ -21,26 +21,26 @@
     "description": "This Resource describes the attributes associated with foaming. The Property \"foamstrength\" of the liquid is represented as an integer. The foam strength is an integer, the range of which may be enforced by the presence of the Property \"range\".",
     "properties": {
         "foamstrength": {
-            "observable": true,
             "description": "The desired foaminess of the liquid.",
-            "type": "integer"
+            "type": "integer",
+            "observable": true
         },
         "range": {
-            "observable": true,
             "description": "The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.",
-            "readOnly": true,
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
             "items": {
                 "type": "integer"
-            }
+            },
+            "observable": true,
+            "readOnly": true
         },
         "step": {
-            "observable": true,
             "description": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.",
-            "readOnly": true,
-            "type": "integer"
+            "type": "integer",
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

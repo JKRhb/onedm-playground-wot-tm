@@ -21,12 +21,12 @@
     "description": "This Resource describes the muscle oxygen saturation (SmO2), which is the percentage of hemoglobin that is saturated with oxygen in the capillaries of a muscle. The unit is percentage. The smo2 Property is a read-only value that is provided by the server.",
     "properties": {
         "muscleoxygensaturation": {
-            "observable": true,
             "description": "This Property describes the muscle oxygen saturation (SmO2), which is the percentage of hemoglobin that is saturated with oxygen in the capillaries of a muscle. The unit is percentage.",
-            "readOnly": true,
             "type": "number",
             "minimum": 0,
-            "maximum": 100
+            "maximum": 100,
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

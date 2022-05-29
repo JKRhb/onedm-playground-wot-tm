@@ -21,10 +21,10 @@
     "description": "This Resource specifies UV radiation measurement. The Property \"measurement\" is the current measured UV Index",
     "properties": {
         "measurement": {
-            "observable": true,
             "description": "The measured UV Index.",
-            "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

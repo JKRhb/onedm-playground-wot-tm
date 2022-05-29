@@ -21,15 +21,15 @@
     "description": "This Resource describes the Properties associated with context tester. The tester Property is a read-only value that is provided by the Server where especially hcp stands for HealthCare Professional.",
     "properties": {
         "tester": {
-            "observable": true,
             "description": "The possible cases of testers who may perform the blood sugar measurement.",
-            "readOnly": true,
             "type": "string",
             "enum": [
                 "self",
                 "hcp",
                 "lab"
-            ]
+            ],
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

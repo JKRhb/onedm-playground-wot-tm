@@ -21,9 +21,7 @@
     "description": "This Resource describes the Properties associated with a person's physical activity. All Properties are read-only values that are provided by the server. When range (from \"oic. r. baseresource\") is omitted the default is 0 to +MAXFLOAT.",
     "properties": {
         "activity": {
-            "observable": true,
             "description": "This Property describes the recognized current activity type of user",
-            "readOnly": true,
             "type": "string",
             "enum": [
                 "sleep",
@@ -32,115 +30,117 @@
                 "walk",
                 "run",
                 "unknown"
-            ]
+            ],
+            "observable": true,
+            "readOnly": true
         },
         "steps_day": {
-            "observable": true,
             "description": "This Property describes the user's step count that measures the number of steps the user has taken since the beginning of the day.",
-            "readOnly": true,
             "type": "integer",
-            "minimum": 0
+            "minimum": 0,
+            "observable": true,
+            "readOnly": true
         },
         "steps_reset": {
-            "observable": true,
             "description": "This Property describes the user's step count that measures the number of steps the user has taken since the last reset.",
-            "readOnly": true,
             "type": "integer",
-            "minimum": 0
+            "minimum": 0,
+            "observable": true,
+            "readOnly": true
         },
         "ccal_day": {
-            "observable": true,
             "description": "This Property describes the burned off calories of user since the beginning of the day.",
-            "readOnly": true,
             "type": "number",
-            "minimum": 0.0
+            "minimum": 0.0,
+            "observable": true,
+            "readOnly": true
         },
         "ccal_reset": {
-            "observable": true,
             "description": "This Property describes the burned off calories of user since the last reset.",
-            "readOnly": true,
             "type": "number",
-            "minimum": 0.0
+            "minimum": 0.0,
+            "observable": true,
+            "readOnly": true
         },
         "steps_day_range": {
-            "observable": true,
             "description": "The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.",
-            "readOnly": true,
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
             "items": {
                 "type": "integer"
-            }
+            },
+            "observable": true,
+            "readOnly": true
         },
         "steps_day_step": {
-            "observable": true,
             "description": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.",
-            "readOnly": true,
-            "type": "integer"
+            "type": "integer",
+            "observable": true,
+            "readOnly": true
         },
         "steps_reset_range": {
-            "observable": true,
             "description": "The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.",
-            "readOnly": true,
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
             "items": {
                 "type": "integer"
-            }
+            },
+            "observable": true,
+            "readOnly": true
         },
         "steps_reset_step": {
-            "observable": true,
             "description": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.",
-            "readOnly": true,
-            "type": "integer"
+            "type": "integer",
+            "observable": true,
+            "readOnly": true
         },
         "ccal_day_range": {
-            "observable": true,
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
-            "readOnly": true,
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
             "items": {
                 "type": "number"
-            }
+            },
+            "observable": true,
+            "readOnly": true
         },
         "ccal_day_step": {
-            "observable": true,
             "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
-            "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "observable": true,
+            "readOnly": true
         },
         "ccal_day_precision": {
-            "observable": true,
             "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
-            "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "observable": true,
+            "readOnly": true
         },
         "ccal_reset_range": {
-            "observable": true,
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
-            "readOnly": true,
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
             "items": {
                 "type": "number"
-            }
+            },
+            "observable": true,
+            "readOnly": true
         },
         "ccal_reset_step": {
-            "observable": true,
             "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
-            "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "observable": true,
+            "readOnly": true
         },
         "ccal_reset_precision": {
-            "observable": true,
             "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
-            "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

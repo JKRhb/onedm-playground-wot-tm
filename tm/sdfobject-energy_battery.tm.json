@@ -21,56 +21,56 @@
     "description": "This Resource describes the attributes associated with a battery. The Property \"charge\" is an integer showing the current battery charge level as a percentage in the range 0 (fully discharged) to 100 (fully charged). The Property \"capacity\" represents the total capacity of battery in Amp Hours (Ah). The \"charging\" status and \"discharging\" status are represented by boolean values set to \"true\" indicating enabled and \"false\" indicating disabled. Low battery status is represented by a boolean value set to \"true\" indicating low charge level and \"false\" indicating otherwise, based upon the battery threshold represented as a percentage.",
     "properties": {
         "discharging": {
-            "observable": true,
             "description": "The status of discharging.",
-            "readOnly": true,
-            "type": "boolean"
+            "type": "boolean",
+            "observable": true,
+            "readOnly": true
         },
         "lowbattery": {
-            "observable": true,
             "description": "The status of the low battery warning based upon the defined threshold.",
-            "readOnly": true,
-            "type": "boolean"
+            "type": "boolean",
+            "observable": true,
+            "readOnly": true
         },
         "capacity": {
-            "observable": true,
             "description": "The total capacity in Amp-hours (Ah).",
-            "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "observable": true,
+            "readOnly": true
         },
         "batterythreshold": {
-            "observable": true,
             "description": "The threshold percentage for the low battery warning.",
             "type": "integer",
             "minimum": 0,
-            "maximum": 100
+            "maximum": 100,
+            "observable": true
         },
         "charge": {
-            "observable": true,
             "description": "The current charge percentage.",
-            "readOnly": true,
             "type": "integer",
             "minimum": 0,
-            "maximum": 100
+            "maximum": 100,
+            "observable": true,
+            "readOnly": true
         },
         "charging": {
-            "observable": true,
             "description": "The status of charging.",
-            "readOnly": true,
-            "type": "boolean"
+            "type": "boolean",
+            "observable": true,
+            "readOnly": true
         },
         "defect": {
-            "observable": true,
             "description": "Battery defect detected. True = defect, False = no defect",
-            "readOnly": true,
-            "type": "boolean"
+            "type": "boolean",
+            "observable": true,
+            "readOnly": true
         },
         "timestamp": {
-            "observable": true,
             "description": "An RFC3339 formatted time indicating when the data was observed (e.g.: 2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00). Note that 1/100 time resolution should be used.",
-            "readOnly": true,
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

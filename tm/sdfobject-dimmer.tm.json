@@ -22,33 +22,33 @@
     "description": "This IPSO object should be used with a dimmer or level control to report the state of the control.",
     "properties": {
         "Level": {
-            "observable": true,
             "title": "Level",
             "description": "Used to represent a level control such as audio volume.",
             "type": "number",
             "unit": "/100",
             "minimum": 0,
-            "maximum": 100
+            "maximum": 100,
+            "observable": true
         },
         "On_time": {
-            "observable": true,
             "title": "On time",
             "description": "The time in seconds that the device has been on. Writing a value of 0 resets the counter.",
             "type": "integer",
-            "unit": "s"
+            "unit": "s",
+            "observable": true
         },
         "Off_Time": {
-            "observable": true,
             "title": "Off Time",
             "description": "The time in seconds in the off state. Writing a value of 0 resets the counter.",
             "type": "integer",
-            "unit": "s"
+            "unit": "s",
+            "observable": true
         },
         "Application_Type": {
-            "observable": true,
             "title": "Application Type",
             "description": "The application type of the sensor or actuator as a string depending on the use case.",
-            "type": "string"
+            "type": "string",
+            "observable": true
         }
     },
     "links": [

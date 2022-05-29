@@ -21,19 +21,19 @@
     "description": "This Resource describes a sensed or desired humidity. The Property \"humidity\" is an integer describing the percentage measured relative humidity. The Property \"desiredHumidity\" is an integer showing the desired target relative humidity.",
     "properties": {
         "desiredHumidity": {
-            "observable": true,
             "description": "Desired value for Humidity",
             "type": "integer",
             "minimum": 0,
-            "maximum": 100
+            "maximum": 100,
+            "observable": true
         },
         "humidity": {
-            "observable": true,
             "description": "The current sensed value for humidity.",
-            "readOnly": true,
             "type": "integer",
             "minimum": 0,
-            "maximum": 100
+            "maximum": 100,
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

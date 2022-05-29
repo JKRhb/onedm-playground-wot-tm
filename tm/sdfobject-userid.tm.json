@@ -21,10 +21,10 @@
     "description": "This Resource describes the Properties associated with user id of an OCF Client. The userid Property is a single value of type string. The userid Property is a read-only value that is provided by the Server.",
     "properties": {
         "userid": {
-            "observable": true,
             "description": "Id of a patient/user of healthcare devices",
-            "readOnly": true,
-            "type": "string"
+            "type": "string",
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

@@ -21,10 +21,10 @@
     "description": "This Resource describes the attributes associated with energy generation The Property \"energygenerated\" is a number that provides the energy generated in Watt-hour(Wh).",
     "properties": {
         "energygenerated": {
-            "observable": true,
             "description": "The energy generated in Watt-hour(Wh).",
-            "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

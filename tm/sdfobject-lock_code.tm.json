@@ -21,12 +21,12 @@
     "description": "The Resource describing a lock code. The Property \"lockCodeList\" is an array of possible codes that may be associated with a lock. The codes are all presented as strings.",
     "properties": {
         "lockCodeList": {
-            "observable": true,
             "type": "array",
             "items": {
                 "description": "The value for the lock code.",
                 "type": "string"
-            }
+            },
+            "observable": true
         }
     },
     "links": [

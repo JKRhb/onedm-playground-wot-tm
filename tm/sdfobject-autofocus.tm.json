@@ -21,9 +21,9 @@
     "description": "This Resource describes an auto focus on/off feature. The Property \"autoFocus\" is a boolean. An \"autoFocus\" value of 'true' means that the auto focus feature is on. An \"autoFocus\" value of 'false' means that the auto focus feature is off. Note that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.",
     "properties": {
         "autoFocus": {
-            "observable": true,
             "description": "The status of the Auto Focus feature.",
-            "type": "boolean"
+            "type": "boolean",
+            "observable": true
         }
     },
     "links": [

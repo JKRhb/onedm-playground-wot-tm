@@ -21,11 +21,11 @@
     "description": "This Resource describes a Colour saturation value. The Property \"colourSaturation\" is an integer. A \"colourSaturation\" has a range of [0,100]. A \"colourSaturation\" value of 0 means producing black and white images. A \"colourSaturation\" value of 50 means producing device specific normal colour images. A \"colourSaturation\" value of 100 means producing device very full colour images.",
     "properties": {
         "colourSaturation": {
-            "observable": true,
             "description": "The colour saturation value.",
             "type": "integer",
             "minimum": 0,
-            "maximum": 100
+            "maximum": 100,
+            "observable": true
         }
     },
     "links": [

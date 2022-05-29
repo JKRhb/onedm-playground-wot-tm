@@ -21,18 +21,18 @@
     "description": "This Resource describes Properties associated with the energy associated with the consumption of different fuels (including natural gas) The calorific value is a number the calorific value is a measure of the available heat energy, used as part of the calculation to convert a volume of a fuel (e. g. m3) to an energy value (e. g. KWh).",
     "properties": {
         "precision": {
-            "observable": true,
             "description": "Accuracy granularity of the exposed value",
-            "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "observable": true,
+            "readOnly": true
         },
         "calorific": {
-            "observable": true,
             "description": "Calorific value of fuel",
-            "readOnly": true,
             "type": "number",
             "minimum": 0,
-            "exclusiveMinimum": true
+            "exclusiveMinimum": true,
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

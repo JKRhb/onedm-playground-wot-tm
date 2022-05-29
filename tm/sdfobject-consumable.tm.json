@@ -22,33 +22,33 @@
     "description": "This Resource specifies a thing that can be consumed such as filter material, printer toner etc The Propert \"typeofconsumable\" is an enumeration defining the thing being consumed as defined by the Smart Home Device Specification The Property \"remaining\" is an integer capturing the percentatge remaining life The Property \"orderpercentage\" is an integer capturing the percentage life at which replacement or replenishment is recommended by the manufacturer The Property \"url\" is a string containing a URL at which further information may be obtained with respect to the consumable.",
     "properties": {
         "remaining": {
-            "observable": true,
             "description": "The percentage remaining lifespan.",
-            "readOnly": true,
             "type": "integer",
             "minimum": 0,
-            "maximum": 100
+            "maximum": 100,
+            "observable": true,
+            "readOnly": true
         },
         "typeofconsumable": {
-            "observable": true,
             "description": "The thing that is being consumed.",
-            "readOnly": true,
-            "type": "string"
+            "type": "string",
+            "observable": true,
+            "readOnly": true
         },
         "url": {
-            "observable": true,
             "description": "The URL at which additional ordering information may be found.",
-            "readOnly": true,
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "observable": true,
+            "readOnly": true
         },
         "orderpercentage": {
-            "observable": true,
             "description": "The percentage at which re-ordering is recommended by the manufacturer.",
-            "readOnly": true,
             "type": "integer",
             "minimum": 0,
-            "maximum": 100
+            "maximum": 100,
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

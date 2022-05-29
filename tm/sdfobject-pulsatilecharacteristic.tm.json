@@ -21,29 +21,29 @@
     "description": "This Resource describes the Properties associated with a pulsatile characteristic of the pulsative wave of a Pulse Oximeter. The characteristic Property is a read-only value that is provided by the server. When range (from \"oic. r. baseresource\") is omitted the default is 0 to +MAXFLOAT.",
     "properties": {
         "characteristic": {
-            "observable": true,
             "description": "This Property describes the current pulsatile characteristic measurement. The value is an integer bit mapped value. The following describes what each integer means. 0 - Quality of the detected pulse is nominal, in that there are no recognized abnormalities in the detected pulse. 1 - Perfusion or quality of the detected pulse is marginal. 2 - Perfusion or quality of the detected pulse is minimal. 3 - Perfusion or quality of the detected pulse is unacceptable.",
-            "readOnly": true,
             "type": "integer",
             "minimum": 0,
-            "maximum": 3
+            "maximum": 3,
+            "observable": true,
+            "readOnly": true
         },
         "range": {
-            "observable": true,
             "description": "The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.",
-            "readOnly": true,
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
             "items": {
                 "type": "integer"
-            }
+            },
+            "observable": true,
+            "readOnly": true
         },
         "step": {
-            "observable": true,
             "description": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.",
-            "readOnly": true,
-            "type": "integer"
+            "type": "integer",
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

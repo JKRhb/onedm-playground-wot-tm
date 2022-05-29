@@ -18,33 +18,33 @@
     "description": "This Resource defines basic audio control functions. The Property \"volume\" is an integer containing a percentage [0,100]. A volume of 0 (zero) means no sound produced. A volume of 100 means maximum sound production. The Property \"mute\" is implemented as a boolean. A mute value of true means that the device is muted (no audio). A mute value of false means that the device is not muted (audio).",
     "properties": {
         "mute": {
-            "observable": true,
             "description": "The mute setting of an audio rendering device.",
-            "type": "boolean"
+            "type": "boolean",
+            "observable": true
         },
         "volume": {
-            "observable": true,
             "description": "The volume setting of an audio rendering device.",
             "type": "integer",
             "minimum": 0,
-            "maximum": 100
+            "maximum": 100,
+            "observable": true
         },
         "range": {
-            "observable": true,
             "description": "The valid range for the Property in the Resource as an integer. The first value in the array is the minimum value, the second value in the array is the maximum value.",
-            "readOnly": true,
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
             "items": {
                 "type": "integer"
-            }
+            },
+            "observable": true,
+            "readOnly": true
         },
         "step": {
-            "observable": true,
             "description": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.",
-            "readOnly": true,
-            "type": "integer"
+            "type": "integer",
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

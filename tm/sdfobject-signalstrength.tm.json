@@ -22,16 +22,16 @@
     "description": "This Resource describes the strength of a signal by means of lqi and rssi. The Property \"lqi\" is a floating point number that represents Link Quality Indicator. The Property \"rssi\" is a floating point number that represents the received signal strength indicator.",
     "properties": {
         "lqi": {
-            "observable": true,
             "description": "The current value of Link Quality Indicator.",
-            "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "observable": true,
+            "readOnly": true
         },
         "rssi": {
-            "observable": true,
             "description": "The current value of Received Signal Strength Indicator.",
-            "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

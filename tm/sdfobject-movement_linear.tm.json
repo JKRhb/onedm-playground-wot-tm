@@ -22,23 +22,23 @@
     "description": "This Resource specifies linear movement. The Property \"movementSettings\" is an array of strings containing possible movement values (e. g. spin, stop, left, right). The Property \"movement\" is the currently selected movement value. The Property \"movementModifier\" is a modifier to the movement value (e. g. \"spin\", \"90\")",
     "properties": {
         "movementSettings": {
-            "observable": true,
             "description": "The array of possible movement values.",
-            "readOnly": true,
             "type": "array",
             "items": {
                 "type": "string"
-            }
+            },
+            "observable": true,
+            "readOnly": true
         },
         "movementModifier": {
-            "observable": true,
             "description": "The modifier to the movement value (e.g. spin-90, left-20), units are device dependent.",
-            "type": "string"
+            "type": "string",
+            "observable": true
         },
         "movement": {
-            "observable": true,
             "description": "The current movement value.",
-            "type": "string"
+            "type": "string",
+            "observable": true
         }
     },
     "links": [

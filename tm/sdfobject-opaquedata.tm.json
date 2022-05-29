@@ -23,34 +23,34 @@
     "description": "This Resource defines opaque data that can be transfered between endpoints where the data itself is not interpretable by the OCF endpoints. The stringdata is a string of ASCII characters.",
     "properties": {
         "payload": {
-            "observable": true,
             "description": "This Property contains the opaque data.",
-            "type": "string"
+            "type": "string",
+            "observable": true
         },
         "encoding": {
-            "observable": true,
             "description": "This Property describes the encoding of the payload, e.g. binary as base64, json, xml, utf-8.",
-            "type": "string"
+            "type": "string",
+            "observable": true
         },
         "payloadtype": {
-            "observable": true,
             "description": "This Property describes the identification of the payload, e.g. what the payload is representing .",
-            "type": "string"
+            "type": "string",
+            "observable": true
         },
         "size": {
-            "observable": true,
             "description": "The size in bytes of the decoded binary object.",
-            "type": "integer"
+            "type": "integer",
+            "observable": true
         },
         "hash": {
-            "observable": true,
             "description": "The hash code of the blob. If present, it is used to check the decoded content of the object data point for integrity. The algorithm used for generating the hash value is SHA-2 [15]. The data point contains the hash as a hex encoded value.",
-            "type": "string"
+            "type": "string",
+            "observable": true
         },
         "system": {
-            "observable": true,
             "description": "The eco system that is using the payload.",
-            "type": "string"
+            "type": "string",
+            "observable": true
         }
     },
     "links": [

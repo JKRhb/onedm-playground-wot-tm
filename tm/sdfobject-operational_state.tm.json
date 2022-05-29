@@ -18,52 +18,52 @@
     "description": "This Resource describes the operational and job states on a device. The states can be read or set, setting indicates a desired state. A device may reject an attempt to set a state that would result in adverse operational characteristics. The Property \"machineStates\" is an array of the possible operational states. The Property \"currentMachineState\" is the current state of operation of the device. The Property \"jobStates\" is an array of the possible job states. The Property \"currentJobState\" is the currently active jobState. The Property \"runningTime\" is the ISO8601 encoded elapsed time in the current operational state. The Property \"remainingTime\" is the ISO8601 encoded time till completion of the current operational state. The Property \"progressPercentage\" is the percentage completeness of the current jobState.",
     "properties": {
         "currentMachineState": {
-            "observable": true,
             "description": "The current state of operation of the device.",
-            "type": "string"
+            "type": "string",
+            "observable": true
         },
         "currentJobState": {
-            "observable": true,
             "description": "THe currently active jobState.",
-            "type": "string"
+            "type": "string",
+            "observable": true
         },
         "machineStates": {
-            "observable": true,
             "description": "The array of the possible operational states.",
-            "readOnly": true,
             "type": "array",
             "items": {
                 "type": "string"
-            }
+            },
+            "observable": true,
+            "readOnly": true
         },
         "runningTime": {
-            "observable": true,
             "description": "A string representing duration formatted as defined in ISO 8601. Allowable formats are: P[n]Y[n]M[n]DT[n]H[n]M[n]S, P[n]W, P[n]Y[n]-M[n]-DT[0-23]H[0-59]:M[0-59]:S, and P[n]W, P[n]Y[n]M[n]DT[0-23]H[0-59]M[0-59]S. P is mandatory, all other elements are optional, time elements must follow a T.",
             "type": "string",
-            "pattern": "^(P(?!$)([0-9]+Y)?([0-9]+M)?([0-9]+W)?([0-9]+D)?((T(?=[0-9]+[HMS])([0-9]+H)?([0-9]+M)?([0-9]+S)?)?))$|^(P[0-9]+W)$|^(P[0-9]{4})-(1[0-2]|0[1-9])-(3[0-1]|2[0-9]|1[0-9]|0[1-9])T(2[0-3]|1[0-9]|0[1-9]):([0-5][0-9]):([0-5][0-9])$|^(P[0-9]{4})(1[0-2]|0[1-9])(3[0-1]|2[0-9]|1[0-9]|0[1-9])T(2[0-3]|1[0-9]|0[1-9])([0-5][0-9])([0-5][0-9])$"
+            "pattern": "^(P(?!$)([0-9]+Y)?([0-9]+M)?([0-9]+W)?([0-9]+D)?((T(?=[0-9]+[HMS])([0-9]+H)?([0-9]+M)?([0-9]+S)?)?))$|^(P[0-9]+W)$|^(P[0-9]{4})-(1[0-2]|0[1-9])-(3[0-1]|2[0-9]|1[0-9]|0[1-9])T(2[0-3]|1[0-9]|0[1-9]):([0-5][0-9]):([0-5][0-9])$|^(P[0-9]{4})(1[0-2]|0[1-9])(3[0-1]|2[0-9]|1[0-9]|0[1-9])T(2[0-3]|1[0-9]|0[1-9])([0-5][0-9])([0-5][0-9])$",
+            "observable": true
         },
         "remainingTime": {
-            "observable": true,
             "description": "A string representing duration formatted as defined in ISO 8601. Allowable formats are: P[n]Y[n]M[n]DT[n]H[n]M[n]S, P[n]W, P[n]Y[n]-M[n]-DT[0-23]H[0-59]:M[0-59]:S, and P[n]W, P[n]Y[n]M[n]DT[0-23]H[0-59]M[0-59]S. P is mandatory, all other elements are optional, time elements must follow a T.",
             "type": "string",
-            "pattern": "^(P(?!$)([0-9]+Y)?([0-9]+M)?([0-9]+W)?([0-9]+D)?((T(?=[0-9]+[HMS])([0-9]+H)?([0-9]+M)?([0-9]+S)?)?))$|^(P[0-9]+W)$|^(P[0-9]{4})-(1[0-2]|0[1-9])-(3[0-1]|2[0-9]|1[0-9]|0[1-9])T(2[0-3]|1[0-9]|0[1-9]):([0-5][0-9]):([0-5][0-9])$|^(P[0-9]{4})(1[0-2]|0[1-9])(3[0-1]|2[0-9]|1[0-9]|0[1-9])T(2[0-3]|1[0-9]|0[1-9])([0-5][0-9])([0-5][0-9])$"
+            "pattern": "^(P(?!$)([0-9]+Y)?([0-9]+M)?([0-9]+W)?([0-9]+D)?((T(?=[0-9]+[HMS])([0-9]+H)?([0-9]+M)?([0-9]+S)?)?))$|^(P[0-9]+W)$|^(P[0-9]{4})-(1[0-2]|0[1-9])-(3[0-1]|2[0-9]|1[0-9]|0[1-9])T(2[0-3]|1[0-9]|0[1-9]):([0-5][0-9]):([0-5][0-9])$|^(P[0-9]{4})(1[0-2]|0[1-9])(3[0-1]|2[0-9]|1[0-9]|0[1-9])T(2[0-3]|1[0-9]|0[1-9])([0-5][0-9])([0-5][0-9])$",
+            "observable": true
         },
         "progressPercentage": {
-            "observable": true,
             "description": "The percentage completeness of the current jobState.",
-            "readOnly": true,
             "type": "integer",
             "minimum": 0,
-            "maximum": 100
+            "maximum": 100,
+            "observable": true,
+            "readOnly": true
         },
         "jobStates": {
-            "observable": true,
             "description": "The Array of the possible job states.",
-            "readOnly": true,
             "type": "array",
             "items": {
                 "type": "string"
-            }
+            },
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

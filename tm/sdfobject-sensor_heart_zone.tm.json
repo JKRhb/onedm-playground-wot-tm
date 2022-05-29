@@ -21,9 +21,7 @@
     "description": "This Resource describes a measured heart rate by the current Zone using the Zoladz method. The Zoladz method defines Zones based on maximum heart rate; Zone 1 is the lowest, Zone 5 is the highest. The heartRateZone is an enumeration containing one of: \"Zone1\", \"Zone2\", \"Zone3\", \"Zone4\", and \"Zone5\".",
     "properties": {
         "heartRateZone": {
-            "observable": true,
             "description": "Current heart rate zone based on the Zoladz system.",
-            "readOnly": true,
             "type": "string",
             "enum": [
                 "Zone1",
@@ -31,7 +29,9 @@
                 "Zone3",
                 "Zone4",
                 "Zone5"
-            ]
+            ],
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

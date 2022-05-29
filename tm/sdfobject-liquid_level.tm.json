@@ -21,25 +21,25 @@
     "description": "This Resource describes the attributes associated with liquid level. The Property \"currentlevel\" and \"desiredlevel\" are defined in terms of a percentage. The behaviour of when the currentlevel and desiredlevel are not equal is determined by the device manufacturer.",
     "properties": {
         "currentlevel": {
-            "observable": true,
             "description": "The current level of the liquid in percentage.",
-            "readOnly": true,
             "type": "integer",
             "minimum": 0,
-            "maximum": 100
+            "maximum": 100,
+            "observable": true,
+            "readOnly": true
         },
         "desiredlevel": {
-            "observable": true,
             "description": "The desired level of the liquid in percentage.",
             "type": "integer",
             "minimum": 0,
-            "maximum": 100
+            "maximum": 100,
+            "observable": true
         },
         "step": {
-            "observable": true,
             "description": "Step value across the defined range when the range is an integer.  This is the increment for valid values across the range; so if range is 0..10 and step is 2 then valid values are 0,2,4,6,8,10.",
-            "readOnly": true,
-            "type": "integer"
+            "type": "integer",
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

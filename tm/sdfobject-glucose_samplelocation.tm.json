@@ -21,16 +21,16 @@
     "description": "This Resource describes the Properties associated with context sample Location. AST means Alternative Site Test specifying that the location of test performed was from an alternative site on the body. The samplelocation Property is a read-only value that is provided by the Server.",
     "properties": {
         "samplelocation": {
-            "observable": true,
             "description": "The possible blood locations where the blood sample may be taken.",
-            "readOnly": true,
             "type": "string",
             "enum": [
                 "finger",
                 "ast",
                 "earlobe",
                 "ctrlsolution"
-            ]
+            ],
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

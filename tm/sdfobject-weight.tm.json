@@ -22,15 +22,13 @@
     "description": "This Resource describes the Properties associated with weight of an object. The unit is a single value that is one of kg, g, lb or oz. If the unit Property is missing the default is kilograms [kg]. The unit Property is a read-only value that is provided by the server. When range is omitted the default is 0 to +MAXFLOAT.",
     "properties": {
         "weight": {
-            "observable": true,
             "description": "Weight of an object",
             "type": "number",
-            "minimum": 0.0
+            "minimum": 0.0,
+            "observable": true
         },
         "units": {
-            "observable": true,
             "description": "Weight unit",
-            "readOnly": true,
             "type": "string",
             "default": "kg",
             "enum": [
@@ -38,30 +36,32 @@
                 "g",
                 "lb",
                 "oz"
-            ]
+            ],
+            "observable": true,
+            "readOnly": true
         },
         "range": {
-            "observable": true,
             "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
-            "readOnly": true,
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
             "items": {
                 "type": "number"
-            }
+            },
+            "observable": true,
+            "readOnly": true
         },
         "step": {
-            "observable": true,
             "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
-            "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "observable": true,
+            "readOnly": true
         },
         "precision": {
-            "observable": true,
             "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision",
-            "readOnly": true,
-            "type": "number"
+            "type": "number",
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

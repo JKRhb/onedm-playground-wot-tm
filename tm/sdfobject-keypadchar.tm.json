@@ -21,7 +21,6 @@
     "description": "This Resource describes a char (0-9,*,#) which is selected on a number keypad.",
     "properties": {
         "keyvalue": {
-            "observable": true,
             "description": "The value of the key pad char.",
             "type": "string",
             "enum": [
@@ -37,7 +36,8 @@
                 "9",
                 "*",
                 "#"
-            ]
+            ],
+            "observable": true
         }
     },
     "links": [

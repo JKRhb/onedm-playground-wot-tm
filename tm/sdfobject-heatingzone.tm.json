@@ -22,16 +22,16 @@
     "description": "This Resource provides information about the status of a (single) heating zone of a Cook-Top. It describes the case of a Cook-Top whose zones can be activated dynamically (i. e. the device implements pot recognition). The Property \"maxheatinglevel\" defines the max level for the heating zone The Property \"heatinglevel\" is the current heating level of the zone For each element, the value range is from 0 (indication that the zone is not heating) to \"maxheatinglevel\".",
     "properties": {
         "heatinglevel": {
-            "observable": true,
             "description": "The current heating level for the zone.",
-            "readOnly": true,
-            "type": "integer"
+            "type": "integer",
+            "observable": true,
+            "readOnly": true
         },
         "maxheatinglevel": {
-            "observable": true,
             "description": "The maximum heating level for the zone.",
-            "readOnly": true,
-            "type": "integer"
+            "type": "integer",
+            "observable": true,
+            "readOnly": true
         }
     },
     "links": [

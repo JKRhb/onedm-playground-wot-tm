@@ -15,7 +15,7 @@
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
     "version": {
-        "model": "2022-02-21"
+        "model": "2022-03-26"
     },
     "sdf:defaultNamespace": "oma",
     "title": "Temperature",
@@ -95,10 +95,49 @@
         },
         "Measurement_Quality_Indicator": {
             "title": "Measurement Quality Indicator",
-            "description": "Measurement quality indicator reported by a smart sensor. 0: UNCHECKED No quality checks were done because they do not exist or can not be applied. 1: REJECTED WITH CERTAINTY The measured value is invalid. 2: REJECTED WITH PROBABILITY The measured value is likely invalid. 3: ACCEPTED BUT SUSPICIOUS The measured value is likely OK. 4: ACCEPTED The measured value is OK. 5-15: Reserved for future extensions. 16-23: Vendor specific measurement quality.",
+            "description": "Measurement quality indicator reported by a smart sensor.",
             "type": "integer",
             "minimum": 0,
             "maximum": 23,
+            "enum": [
+                {
+                    "sdf:choiceName": "UNCHECKED",
+                    "description": "No quality checks were done because they do not exist or can not be applied.",
+                    "const": 0
+                },
+                {
+                    "sdf:choiceName": "REJECTED WITH CERTAINTY",
+                    "description": "The measured value is invalid.",
+                    "const": 1
+                },
+                {
+                    "sdf:choiceName": "REJECTED WITH PROBABILITY",
+                    "description": "The measured value is likely invalid.",
+                    "const": 2
+                },
+                {
+                    "sdf:choiceName": "ACCEPTED BUT SUSPICIOUS",
+                    "description": "The measured value is likely OK.",
+                    "const": 3
+                },
+                {
+                    "sdf:choiceName": "ACCEPTED",
+                    "description": "The measured value is OK.",
+                    "const": 4
+                },
+                {
+                    "sdf:choiceName": "RESERVED",
+                    "description": "Reserved for future extensions.",
+                    "minimum": 5,
+                    "maximum": 15
+                },
+                {
+                    "sdf:choiceName": "VENDOR SPECIFIC",
+                    "description": "Vendor specific measurement quality.",
+                    "minimum": 16,
+                    "maximum": 23
+                }
+            ],
             "observable": true,
             "readOnly": true
         },

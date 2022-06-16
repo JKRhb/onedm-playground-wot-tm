@@ -100,7 +100,7 @@
                     "OnOffControl": {
                         "description": "implemented as a bitmap, modeled as an array of unique string items",
                         "type": "array",
-                        "uniqueItems": true,
+                        "sdf:uniqueItems": true,
                         "items": {
                             "enum": [
                                 {

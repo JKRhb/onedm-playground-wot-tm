@@ -24,7 +24,7 @@
         "adfStates": {
             "description": "The array of the possible adf states.",
             "type": "array",
-            "uniqueItems": true,
+            "sdf:uniqueItems": true,
             "items": {
                 "type": "string"
             },

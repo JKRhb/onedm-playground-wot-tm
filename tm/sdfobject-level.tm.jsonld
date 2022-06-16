@@ -62,7 +62,7 @@
         "LevelOptions": {
             "description": "implemented as a bitmap, modeled as an array with unique items",
             "type": "array",
-            "uniqueItems": true,
+            "sdf:uniqueItems": true,
             "items": {
                 "enum": [
                     {

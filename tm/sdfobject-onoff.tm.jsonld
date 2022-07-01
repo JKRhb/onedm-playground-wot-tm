@@ -32,14 +32,14 @@
     "sdf:defaultNamespace": "pg",
     "title": "OnOff",
     "schemaDefinitions": {
-        "TransitionTimeData": {
+        "sdfObject~1OnOff~1sdfData~1TransitionTimeData": {
             "type": "number",
             "unit": "s",
             "multipleOf": 0.1,
             "minimum": 0,
             "maximum": 6553.5
         },
-        "StartUpOnOffMode": {
+        "sdfObject~1OnOff~1sdfData~1StartUpOnOffMode": {
             "enum": [
                 {
                     "sdf:choiceName": "SetOnOffTo0"
@@ -110,10 +110,10 @@
                         }
                     },
                     "OnTime": {
-                        "tm:ref": "#/schemaDefinitions/TransitionTimeData"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1OnOff~1sdfData~1TransitionTimeData"
                     },
                     "OffWaitTime": {
-                        "tm:ref": "#/schemaDefinitions/TransitionTimeData"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1OnOff~1sdfData~1TransitionTimeData"
                     }
                 }
             }
@@ -134,19 +134,19 @@
         },
         "OnTime": {
             "title": "OnTime",
-            "tm:ref": "#/schemaDefinitions/TransitionTimeData",
+            "tm:ref": "#/schemaDefinitions/sdfObject~1OnOff~1sdfData~1TransitionTimeData",
             "default": 0,
             "observable": true
         },
         "OffWaitTime": {
             "title": "OffWaitTime",
-            "tm:ref": "#/schemaDefinitions/TransitionTimeData",
+            "tm:ref": "#/schemaDefinitions/sdfObject~1OnOff~1sdfData~1TransitionTimeData",
             "default": 0,
             "observable": true
         },
         "StartUpOnOff": {
             "title": "StartUpOnOff",
-            "tm:ref": "#/schemaDefinitions/StartUpOnOffMode",
+            "tm:ref": "#/schemaDefinitions/sdfObject~1OnOff~1sdfData~1StartUpOnOffMode",
             "observable": true
         }
     }

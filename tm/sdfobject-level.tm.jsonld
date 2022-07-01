@@ -37,14 +37,14 @@
     "sdf:defaultNamespace": "pg",
     "title": "Level",
     "schemaDefinitions": {
-        "TransitionTimeData": {
+        "sdfObject~1Level~1sdfData~1TransitionTimeData": {
             "type": "number",
             "unit": "s",
             "multipleOf": 0.1,
             "minimum": 0,
             "maximum": 6553.5
         },
-        "MoveStepMode": {
+        "sdfObject~1Level~1sdfData~1MoveStepMode": {
             "enum": [
                 {
                     "sdf:choiceName": "Up"
@@ -54,12 +54,12 @@
                 }
             ]
         },
-        "LevelData": {
+        "sdfObject~1Level~1sdfData~1LevelData": {
             "type": "integer",
             "minimum": 0,
             "maximum": 254
         },
-        "LevelOptions": {
+        "sdfObject~1Level~1sdfData~1LevelOptions": {
             "description": "implemented as a bitmap, modeled as an array with unique items",
             "type": "array",
             "sdf:uniqueItems": true,
@@ -74,7 +74,7 @@
                 ]
             }
         },
-        "FrequencyData": {
+        "sdfObject~1Level~1sdfData~1FrequencyData": {
             "type": "integer",
             "minimum": 0,
             "maximum": 65535
@@ -92,19 +92,19 @@
                 "properties": {
                     "Level": {
                         "title": "Level",
-                        "tm:ref": "#/schemaDefinitions/LevelData"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1LevelData"
                     },
                     "TransitionTime": {
                         "title": "TransitionTime",
-                        "tm:ref": "#/schemaDefinitions/TransitionTimeData"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1TransitionTimeData"
                     },
                     "OptionsMask": {
                         "title": "OptionsMask",
-                        "tm:ref": "#/schemaDefinitions/LevelOptions"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1LevelOptions"
                     },
                     "OptionsOverride": {
                         "title": "OptionsMask",
-                        "tm:ref": "#/schemaDefinitions/LevelOptions"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1LevelOptions"
                     }
                 }
             }
@@ -120,7 +120,7 @@
                 "properties": {
                     "MoveMode": {
                         "title": "MoveMode",
-                        "tm:ref": "#/schemaDefinitions/MoveStepMode"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1MoveStepMode"
                     },
                     "Rate": {
                         "title": "Rate",
@@ -130,11 +130,11 @@
                     },
                     "OptionsMask": {
                         "title": "OptionsMask",
-                        "tm:ref": "#/schemaDefinitions/LevelOptions"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1LevelOptions"
                     },
                     "OptionsOverride": {
                         "title": "OptionsMask",
-                        "tm:ref": "#/schemaDefinitions/LevelOptions"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1LevelOptions"
                     }
                 }
             }
@@ -151,7 +151,7 @@
                 "properties": {
                     "StepMode": {
                         "title": "Step mode",
-                        "tm:ref": "#/schemaDefinitions/MoveStepMode"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1MoveStepMode"
                     },
                     "StepSize": {
                         "title": "Step size",
@@ -161,15 +161,15 @@
                     },
                     "TransitionTime": {
                         "title": "Step Transition Time",
-                        "tm:ref": "#/schemaDefinitions/TransitionTimeData"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1TransitionTimeData"
                     },
                     "OptionsMask": {
                         "title": "OptionsMask",
-                        "tm:ref": "#/schemaDefinitions/LevelOptions"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1LevelOptions"
                     },
                     "OptionsOverride": {
                         "title": "OptionsMask",
-                        "tm:ref": "#/schemaDefinitions/LevelOptions"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1LevelOptions"
                     }
                 }
             }
@@ -181,11 +181,11 @@
                 "properties": {
                     "OptionsMask": {
                         "title": "OptionsMask",
-                        "tm:ref": "#/schemaDefinitions/LevelOptions"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1LevelOptions"
                     },
                     "OptionsOverride": {
                         "title": "OptionsMask",
-                        "tm:ref": "#/schemaDefinitions/LevelOptions"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1LevelOptions"
                     }
                 }
             }
@@ -215,7 +215,7 @@
                 ],
                 "properties": {
                     "Frequency": {
-                        "tm:ref": "#/schemaDefinitions/FrequencyData"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1FrequencyData"
                     }
                 }
             }
@@ -224,43 +224,43 @@
     "properties": {
         "CurrentLevel": {
             "title": "CurrentLevel",
-            "tm:ref": "#/schemaDefinitions/LevelData",
+            "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1LevelData",
             "observable": true
         },
         "RemainingTime": {
             "title": "RemainingTime",
-            "tm:ref": "#/schemaDefinitions/TransitionTimeData",
+            "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1TransitionTimeData",
             "default": 0,
             "observable": true
         },
         "MinLevel": {
             "title": "MinLevel",
-            "tm:ref": "#/schemaDefinitions/LevelData",
+            "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1LevelData",
             "observable": true
         },
         "MaxLevel": {
             "title": "MaxLevel",
-            "tm:ref": "#/schemaDefinitions/LevelData",
+            "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1LevelData",
             "observable": true
         },
         "CurrentFrequency": {
             "title": "CurrentFrequency",
-            "tm:ref": "#/schemaDefinitions/FrequencyData",
+            "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1FrequencyData",
             "observable": true
         },
         "MinFrequency": {
             "title": "CurrentFrequency",
-            "tm:ref": "#/schemaDefinitions/FrequencyData",
+            "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1FrequencyData",
             "observable": true
         },
         "MaxFrequency": {
             "title": "CurrentFrequency",
-            "tm:ref": "#/schemaDefinitions/FrequencyData",
+            "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1FrequencyData",
             "observable": true
         },
         "OnOffTransitionTime": {
             "title": "OnOffTransitionTime",
-            "tm:ref": "#/schemaDefinitions/TransitionTimeData",
+            "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1TransitionTimeData",
             "default": 0,
             "observable": true
         },
@@ -274,12 +274,12 @@
         },
         "OnTransitionTime": {
             "title": "OnTransitionTime",
-            "tm:ref": "#/schemaDefinitions/TransitionTimeData",
+            "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1TransitionTimeData",
             "observable": true
         },
         "OffTransitionTime": {
             "title": "OffTransitionTime",
-            "tm:ref": "#/schemaDefinitions/TransitionTimeData",
+            "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1TransitionTimeData",
             "observable": true
         },
         "DefaultMoveRate": {
@@ -291,7 +291,7 @@
         },
         "Options": {
             "title": "Options",
-            "tm:ref": "#/schemaDefinitions/LevelOptions",
+            "tm:ref": "#/schemaDefinitions/sdfObject~1Level~1sdfData~1LevelOptions",
             "default": [],
             "observable": true
         },

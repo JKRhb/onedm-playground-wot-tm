@@ -25,7 +25,7 @@
     },
     "sdf:defaultNamespace": "pg",
     "schemaDefinitions": {
-        "GenericOnOffData": {
+        "sdfObject~1GenericOnOff~1sdfData~1GenericOnOffData": {
             "description": "the on/off state property",
             "enum": [
                 {
@@ -36,14 +36,14 @@
                 }
             ]
         },
-        "TransitionTimeSteps": {
+        "sdfObject~1GenericOnOff~1sdfData~1TransitionTimeSteps": {
             "description": "Number of steps in the transition",
             "type": "number",
             "multipleOf": 1,
             "minimum": 0,
             "maximum": 63
         },
-        "StepResolution": {
+        "sdfObject~1GenericOnOff~1sdfData~1StepResolution": {
             "description": "Step Resolution, time per step",
             "enum": [
                 {
@@ -60,7 +60,7 @@
                 }
             ]
         },
-        "DelayData": {
+        "sdfObject~1GenericOnOff~1sdfData~1DelayData": {
             "description": "delay in increments of 5mS",
             "type": "number",
             "unit": "s",
@@ -76,16 +76,16 @@
                 "type": "object",
                 "properties": {
                     "PresentOnOff": {
-                        "tm:ref": "#/schemaDefinitions/GenericOnOffData"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1GenericOnOff~1sdfData~1GenericOnOffData"
                     },
                     "TargetOnOff": {
-                        "tm:ref": "#/schemaDefinitions/GenericOnOffData"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1GenericOnOff~1sdfData~1GenericOnOffData"
                     },
                     "RemainingTimeSteps": {
-                        "tm:ref": "#/schemaDefinitions/TransitionTimeSteps"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1GenericOnOff~1sdfData~1TransitionTimeSteps"
                     },
                     "StepResolution": {
-                        "tm:ref": "#/schemaDefinitions/StepResolution"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1GenericOnOff~1sdfData~1StepResolution"
                     }
                 }
             }
@@ -96,16 +96,16 @@
                 "type": "object",
                 "properties": {
                     "OnOff": {
-                        "tm:ref": "#/schemaDefinitions/GenericOnOffData"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1GenericOnOff~1sdfData~1GenericOnOffData"
                     },
                     "TransitionTimeSteps": {
-                        "tm:ref": "#/schemaDefinitions/TransitionTimeSteps"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1GenericOnOff~1sdfData~1TransitionTimeSteps"
                     },
                     "StepResolution": {
-                        "tm:ref": "#/schemaDefinitions/StepResolution"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1GenericOnOff~1sdfData~1StepResolution"
                     },
                     "Delay": {
-                        "tm:ref": "#/schemaDefinitions/DelayData"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1GenericOnOff~1sdfData~1DelayData"
                     }
                 }
             }
@@ -113,7 +113,7 @@
     },
     "properties": {
         "OnOff": {
-            "tm:ref": "#/schemaDefinitions/GenericOnOffData",
+            "tm:ref": "#/schemaDefinitions/sdfObject~1GenericOnOff~1sdfData~1GenericOnOffData",
             "observable": true
         }
     }

@@ -25,13 +25,13 @@
     },
     "sdf:defaultNamespace": "pg",
     "schemaDefinitions": {
-        "TransitionTimeSteps": {
+        "sdfObject~1GenericDefaultTransitionTime~1sdfData~1TransitionTimeSteps": {
             "description": "Number of steps in the transition",
             "type": "integer",
             "minimum": 0,
             "maximum": 63
         },
-        "StepResolution": {
+        "sdfObject~1GenericDefaultTransitionTime~1sdfData~1StepResolution": {
             "description": "Step Resolution, time per step",
             "enum": [
                 {
@@ -56,10 +56,10 @@
                 "type": "object",
                 "properties": {
                     "TransitionTimeSteps": {
-                        "tm:ref": "#/schemaDefinitions/TransitionTimeSteps"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1GenericDefaultTransitionTime~1sdfData~1TransitionTimeSteps"
                     },
                     "StepResolution": {
-                        "tm:ref": "#/schemaDefinitions/StepResolution"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1GenericDefaultTransitionTime~1sdfData~1StepResolution"
                     }
                 }
             }
@@ -70,10 +70,10 @@
                 "type": "object",
                 "properties": {
                     "TransitionTimeSteps": {
-                        "tm:ref": "#/schemaDefinitions/TransitionTimeSteps"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1GenericDefaultTransitionTime~1sdfData~1TransitionTimeSteps"
                     },
                     "StepResolution": {
-                        "tm:ref": "#/schemaDefinitions/StepResolution"
+                        "tm:ref": "#/schemaDefinitions/sdfObject~1GenericDefaultTransitionTime~1sdfData~1StepResolution"
                     }
                 }
             }
@@ -81,11 +81,11 @@
     },
     "properties": {
         "DefaultTransitionTimeSteps": {
-            "tm:ref": "#/schemaDefinitions/TransitionTimeSteps",
+            "tm:ref": "#/schemaDefinitions/sdfObject~1GenericDefaultTransitionTime~1sdfData~1TransitionTimeSteps",
             "observable": true
         },
         "DefaultStepResolution": {
-            "tm:ref": "#/schemaDefinitions/StepResolution",
+            "tm:ref": "#/schemaDefinitions/sdfObject~1GenericDefaultTransitionTime~1sdfData~1StepResolution",
             "observable": true
         }
     }

@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Power",
     "tm:required": [
-        "#/properties/Sensor_Value"
+        "/properties/Sensor_Value"
     ],
     "sdf:title": "OMA LwM2M Power (Object ID 3328)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

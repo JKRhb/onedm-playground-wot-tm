@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "spo2",
     "tm:required": [
-        "#/properties/spo2"
+        "/properties/spo2"
     ],
     "sdf:title": "SpO2 for Pulse Oximeter",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",

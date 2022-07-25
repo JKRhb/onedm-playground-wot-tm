@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Loudness",
     "tm:required": [
-        "#/properties/Sensor_Value"
+        "/properties/Sensor_Value"
     ],
     "sdf:title": "OMA LwM2M Loudness (Object ID 3324)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

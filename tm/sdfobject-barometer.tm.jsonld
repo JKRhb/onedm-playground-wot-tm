@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Barometer",
     "tm:required": [
-        "#/properties/Sensor_Value"
+        "/properties/Sensor_Value"
     ],
     "sdf:title": "OMA LwM2M Barometer (Object ID 3315)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

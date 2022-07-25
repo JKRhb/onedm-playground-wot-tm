@@ -9,10 +9,10 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "cgm.status",
     "tm:required": [
-        "#/properties/cgmtype",
-        "#/properties/cgmstatus",
-        "#/properties/gtrend",
-        "#/properties/malfunction"
+        "/properties/cgmtype",
+        "/properties/cgmstatus",
+        "/properties/gtrend",
+        "/properties/malfunction"
     ],
     "sdf:title": "Status for Continuous Glucose Meter (CGM)",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",

@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Analog_Input",
     "tm:required": [
-        "#/properties/Analog_Input_Current_Value"
+        "/properties/Analog_Input_Current_Value"
     ],
     "sdf:title": "OMA LwM2M Analog Input (Object ID 3202)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

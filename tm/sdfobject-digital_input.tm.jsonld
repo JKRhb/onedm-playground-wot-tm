@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Digital_Input",
     "tm:required": [
-        "#/properties/Digital_Input_State"
+        "/properties/Digital_Input_State"
     ],
     "sdf:title": "OMA LwM2M Digital Input (Object ID 3200)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

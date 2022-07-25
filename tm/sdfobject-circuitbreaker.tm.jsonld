@@ -9,11 +9,11 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "circuitbreaker",
     "tm:required": [
-        "#/properties/status",
-        "#/properties/ratedcurrent",
-        "#/properties/ratedbreakingcurrent",
-        "#/properties/ratedvoltage",
-        "#/properties/timestamp"
+        "/properties/status",
+        "/properties/ratedcurrent",
+        "/properties/ratedbreakingcurrent",
+        "/properties/ratedvoltage",
+        "/properties/timestamp"
     ],
     "sdf:title": "Circuit Breaker (IEC 61850)",
     "sdf:copyright": "copyright 2019 Open Connectivity Foundation, Inc. All rights reserved.",

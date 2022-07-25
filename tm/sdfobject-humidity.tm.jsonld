@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "humidity",
     "tm:required": [
-        "#/properties/desiredHumidity"
+        "/properties/desiredHumidity"
     ],
     "sdf:title": "Humidity",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",

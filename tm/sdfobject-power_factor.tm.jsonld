@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Power_Factor",
     "tm:required": [
-        "#/properties/Sensor_Value"
+        "/properties/Sensor_Value"
     ],
     "sdf:title": "OMA LwM2M Power Factor (Object ID 3329)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

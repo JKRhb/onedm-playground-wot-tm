@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Actuation",
     "tm:required": [
-        "#/properties/On_Off"
+        "/properties/On_Off"
     ],
     "sdf:title": "OMA LwM2M Actuation (Object ID 3306)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

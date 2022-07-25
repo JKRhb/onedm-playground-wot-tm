@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Frequency",
     "tm:required": [
-        "#/properties/Sensor_Value"
+        "/properties/Sensor_Value"
     ],
     "sdf:title": "OMA LwM2M Frequency (Object ID 3318)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

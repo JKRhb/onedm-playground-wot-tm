@@ -9,8 +9,8 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "sensor.props",
     "tm:required": [
-        "#/properties/silenttime",
-        "#/properties/sensitivity"
+        "/properties/silenttime",
+        "/properties/sensitivity"
     ],
     "sdf:title": "Sensor Properties",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",

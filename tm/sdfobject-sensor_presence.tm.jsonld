@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "sensor.presence",
     "tm:required": [
-        "#/properties/value"
+        "/properties/value"
     ],
     "sdf:title": "Presence Sensor",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",

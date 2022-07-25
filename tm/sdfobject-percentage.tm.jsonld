@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Percentage",
     "tm:required": [
-        "#/properties/Sensor_Value"
+        "/properties/Sensor_Value"
     ],
     "sdf:title": "OMA LwM2M Percentage (Object ID 3320)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "On_Off_switch",
     "tm:required": [
-        "#/properties/Digital_Input_State"
+        "/properties/Digital_Input_State"
     ],
     "sdf:title": "OMA LwM2M On/Off switch (Object ID 3342)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

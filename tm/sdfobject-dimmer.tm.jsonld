@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Dimmer",
     "tm:required": [
-        "#/properties/Level"
+        "/properties/Level"
     ],
     "sdf:title": "OMA LwM2M Dimmer (Object ID 3343)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

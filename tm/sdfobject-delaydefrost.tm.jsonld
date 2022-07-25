@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "delaydefrost",
     "tm:required": [
-        "#/properties/status"
+        "/properties/status"
     ],
     "sdf:title": "Delay Defrost",
     "sdf:copyright": "copyright 2016-2021 Open Connectivity Foundation, Inc. All rights reserved.",

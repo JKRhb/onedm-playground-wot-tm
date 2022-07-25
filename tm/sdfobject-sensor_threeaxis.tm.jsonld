@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "sensor.threeaxis",
     "tm:required": [
-        "#/properties/orientation"
+        "/properties/orientation"
     ],
     "sdf:title": "Three Axis Sensor",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",

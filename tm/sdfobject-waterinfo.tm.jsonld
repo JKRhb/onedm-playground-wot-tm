@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "waterinfo",
     "tm:required": [
-        "#/properties/currentwatertype"
+        "/properties/currentwatertype"
     ],
     "sdf:title": "Water Info",
     "sdf:copyright": "Copyright 2019 Open Connectivity Foundation, Inc. All rights reserved.",

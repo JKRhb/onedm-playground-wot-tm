@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "conversionfactor",
     "tm:required": [
-        "#/properties/conversion"
+        "/properties/conversion"
     ],
     "sdf:title": "Conversion Factor",
     "sdf:copyright": "Copyright 2019 Open Connectivity Foundation, Inc. All rights reserved.",

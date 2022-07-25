@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "foaming",
     "tm:required": [
-        "#/properties/foamstrength"
+        "/properties/foamstrength"
     ],
     "sdf:title": "Foaming",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",

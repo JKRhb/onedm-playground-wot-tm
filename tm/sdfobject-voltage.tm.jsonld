@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Voltage",
     "tm:required": [
-        "#/properties/Sensor_Value"
+        "/properties/Sensor_Value"
     ],
     "sdf:title": "OMA LwM2M Voltage (Object ID 3316)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

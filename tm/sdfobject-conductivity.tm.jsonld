@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Conductivity",
     "tm:required": [
-        "#/properties/Sensor_Value"
+        "/properties/Sensor_Value"
     ],
     "sdf:title": "OMA LwM2M Conductivity (Object ID 3327)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

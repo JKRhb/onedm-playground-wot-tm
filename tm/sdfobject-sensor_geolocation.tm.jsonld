@@ -9,9 +9,9 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "sensor.geolocation",
     "tm:required": [
-        "#/properties/latitude",
-        "#/properties/longitude",
-        "#/properties/alt"
+        "/properties/latitude",
+        "/properties/longitude",
+        "/properties/alt"
     ],
     "sdf:title": "Geolocation",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",

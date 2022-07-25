@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Timer",
     "tm:required": [
-        "#/properties/Delay_Duration"
+        "/properties/Delay_Duration"
     ],
     "sdf:title": "OMA LwM2M Timer (Object ID 3340)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Bitmap",
     "tm:required": [
-        "#/properties/Bitmap_Input"
+        "/properties/Bitmap_Input"
     ],
     "sdf:title": "OMA LwM2M Bitmap (Object ID 3349)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

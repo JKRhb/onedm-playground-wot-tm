@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "body.slm",
     "tm:required": [
-        "#/properties/slm"
+        "/properties/slm"
     ],
     "sdf:title": "Body Soft Lean Mass",
     "sdf:copyright": "Copyright 2016-2019 Open Connectivity Foundation, Inc. All rights reserved.",

@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "time.period",
     "tm:required": [
-        "#/properties/startTime"
+        "/properties/startTime"
     ],
     "sdf:title": "Time Period",
     "sdf:copyright": "copyright 2016-2017, 2019, 2020 Open Connectivity Foundation, Inc. All rights reserved.",

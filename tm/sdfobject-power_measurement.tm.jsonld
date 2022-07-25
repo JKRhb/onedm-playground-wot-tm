@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Power_Measurement",
     "tm:required": [
-        "#/properties/Instantaneous_active_power"
+        "/properties/Instantaneous_active_power"
     ],
     "sdf:title": "OMA LwM2M Power Measurement (Object ID 3305)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "keycardswitch",
     "tm:required": [
-        "#/properties/stateofcard"
+        "/properties/stateofcard"
     ],
     "sdf:title": "KeyCard Switch",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",

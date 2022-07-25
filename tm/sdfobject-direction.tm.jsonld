@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Direction",
     "tm:required": [
-        "#/properties/Compass_Direction"
+        "/properties/Compass_Direction"
     ],
     "sdf:title": "OMA LwM2M Direction (Object ID 3332)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

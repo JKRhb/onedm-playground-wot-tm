@@ -9,8 +9,8 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "cgm.calibrate",
     "tm:required": [
-        "#/properties/Cvalue",
-        "#/properties/Cstatus"
+        "/properties/Cvalue",
+        "/properties/Cstatus"
     ],
     "sdf:title": "Calibrate for Continuous Glucose Meter (CGM)",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",

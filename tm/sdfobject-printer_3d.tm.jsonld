@@ -9,12 +9,12 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "printer.3d",
     "tm:required": [
-        "#/properties/3dprinttype",
-        "#/properties/printsizex",
-        "#/properties/printsizey",
-        "#/properties/printsizez",
-        "#/properties/wanconnected",
-        "#/properties/memorysize"
+        "/properties/3dprinttype",
+        "/properties/printsizex",
+        "/properties/printsizey",
+        "/properties/printsizez",
+        "/properties/wanconnected",
+        "/properties/memorysize"
     ],
     "sdf:title": "3D Printer",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",

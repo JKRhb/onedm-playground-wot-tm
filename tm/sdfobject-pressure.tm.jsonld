@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Pressure",
     "tm:required": [
-        "#/properties/Sensor_Value"
+        "/properties/Sensor_Value"
     ],
     "sdf:title": "OMA LwM2M Pressure (Object ID 3323)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

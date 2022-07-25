@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "sensor.activity.count",
     "tm:required": [
-        "#/properties/count"
+        "/properties/count"
     ],
     "sdf:title": "Activity Count",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",

@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "colour.autowhitebalance",
     "tm:required": [
-        "#/properties/autoWhiteBalance"
+        "/properties/autoWhiteBalance"
     ],
     "sdf:title": "Auto White Balance",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",

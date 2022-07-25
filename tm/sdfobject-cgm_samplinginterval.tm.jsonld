@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "cgm.samplinginterval",
     "tm:required": [
-        "#/properties/interval"
+        "/properties/interval"
     ],
     "sdf:title": "Sampling Interval for Continuous Glucose Meter (CGM)",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",

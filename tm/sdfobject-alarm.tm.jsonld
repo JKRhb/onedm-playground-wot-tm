@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "alarm",
     "tm:required": [
-        "#/properties/status"
+        "/properties/status"
     ],
     "sdf:title": "Alarm",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",

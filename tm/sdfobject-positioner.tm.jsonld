@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Positioner",
     "tm:required": [
-        "#/properties/Current_Position"
+        "/properties/Current_Position"
     ],
     "sdf:title": "OMA LwM2M Positioner (Object ID 3337)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

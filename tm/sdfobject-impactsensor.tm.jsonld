@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "impactsensor",
     "tm:required": [
-        "#/properties/impactstatus"
+        "/properties/impactstatus"
     ],
     "sdf:title": "Impact Sensor",
     "sdf:copyright": "copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",

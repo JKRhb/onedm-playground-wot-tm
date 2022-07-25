@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "muscleoxygensaturation",
     "tm:required": [
-        "#/properties/muscleoxygensaturation"
+        "/properties/muscleoxygensaturation"
     ],
     "sdf:title": "Muscle Oxygen Saturation",
     "sdf:copyright": "Copyright 2019 Open Connectivity Foundation, Inc. All rights reserved.",

@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "energy.battery",
     "tm:required": [
-        "#/properties/batterythreshold"
+        "/properties/batterythreshold"
     ],
     "sdf:title": "Battery",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",

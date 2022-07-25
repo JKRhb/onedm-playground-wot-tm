@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Multi-state_Selector",
     "tm:required": [
-        "#/properties/Multi-state_Input"
+        "/properties/Multi-state_Input"
     ],
     "sdf:title": "OMA LwM2M Multi-state Selector (Object ID 3348)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

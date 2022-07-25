@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "colour.csc",
     "tm:required": [
-        "#/properties/csc"
+        "/properties/csc"
     ],
     "sdf:title": "Colour Space Coordinates",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",

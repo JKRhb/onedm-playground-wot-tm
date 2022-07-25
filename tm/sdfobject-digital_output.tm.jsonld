@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Digital_Output",
     "tm:required": [
-        "#/properties/Digital_Output_State"
+        "/properties/Digital_Output_State"
     ],
     "sdf:title": "OMA LwM2M Digital Output (Object ID 3201)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

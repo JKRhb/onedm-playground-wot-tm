@@ -9,9 +9,9 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "colour.chroma",
     "tm:required": [
-        "#/properties/hue",
-        "#/properties/saturation",
-        "#/properties/csc"
+        "/properties/hue",
+        "/properties/saturation",
+        "/properties/csc"
     ],
     "sdf:title": "Colour Chroma",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",

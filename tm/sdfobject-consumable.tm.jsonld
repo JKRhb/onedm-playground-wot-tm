@@ -9,8 +9,8 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "consumable",
     "tm:required": [
-        "#/properties/typeofconsumable",
-        "#/properties/remaining"
+        "/properties/typeofconsumable",
+        "/properties/remaining"
     ],
     "sdf:title": "Consumable",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",

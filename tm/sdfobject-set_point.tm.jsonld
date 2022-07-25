@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Set_Point",
     "tm:required": [
-        "#/properties/Set_Point_Value"
+        "/properties/Set_Point_Value"
     ],
     "sdf:title": "OMA LwM2M Set Point (Object ID 3308)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Temperature",
     "tm:required": [
-        "#/properties/Sensor_Value"
+        "/properties/Sensor_Value"
     ],
     "sdf:title": "OMA LwM2M Temperature (Object ID 3303)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

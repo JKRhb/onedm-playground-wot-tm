@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "colour.colourtemperature",
     "tm:required": [
-        "#/properties/ct"
+        "/properties/ct"
     ],
     "sdf:title": "Colour Temperature",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",

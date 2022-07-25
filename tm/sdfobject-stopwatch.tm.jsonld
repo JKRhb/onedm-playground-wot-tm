@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Stopwatch",
     "tm:required": [
-        "#/properties/Cumulative_Time"
+        "/properties/Cumulative_Time"
     ],
     "sdf:title": "OMA LwM2M Stopwatch (Object ID 3350)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

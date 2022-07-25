@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Push_button",
     "tm:required": [
-        "#/properties/Digital_Input_State"
+        "/properties/Digital_Input_State"
     ],
     "sdf:title": "OMA LwM2M Push button (Object ID 3347)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Colour",
     "tm:required": [
-        "#/properties/Colour"
+        "/properties/Colour"
     ],
     "sdf:title": "OMA LwM2M Colour (Object ID 3335)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

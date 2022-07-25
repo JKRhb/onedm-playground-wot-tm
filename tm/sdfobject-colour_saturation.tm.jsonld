@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "colour.saturation",
     "tm:required": [
-        "#/properties/colourSaturation"
+        "/properties/colourSaturation"
     ],
     "sdf:title": "Colour Saturation",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",

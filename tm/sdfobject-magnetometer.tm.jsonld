@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Magnetometer",
     "tm:required": [
-        "#/properties/X_Value"
+        "/properties/X_Value"
     ],
     "sdf:title": "OMA LwM2M Magnetometer (Object ID 3314)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

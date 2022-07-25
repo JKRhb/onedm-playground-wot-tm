@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Presence",
     "tm:required": [
-        "#/properties/Digital_Input_State"
+        "/properties/Digital_Input_State"
     ],
     "sdf:title": "OMA LwM2M Presence (Object ID 3302)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

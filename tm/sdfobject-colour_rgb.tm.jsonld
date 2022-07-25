@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "colour.rgb",
     "tm:required": [
-        "#/properties/rgbValue"
+        "/properties/rgbValue"
     ],
     "sdf:title": "Colour RGB",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",

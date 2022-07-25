@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "switch.fault",
     "tm:required": [
-        "#/properties/state"
+        "/properties/state"
     ],
     "sdf:title": "Fault Interrupter Switch",
     "sdf:copyright": "Copyright 2019 Open Connectivity Foundation, Inc. All rights reserved.",

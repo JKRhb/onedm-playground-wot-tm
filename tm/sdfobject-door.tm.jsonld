@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "door",
     "tm:required": [
-        "#/properties/openAlarm"
+        "/properties/openAlarm"
     ],
     "sdf:title": "Door",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",

@@ -9,8 +9,8 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "orfid.station",
     "tm:required": [
-        "#/properties/event",
-        "#/properties/actionrequest"
+        "/properties/event",
+        "/properties/actionrequest"
     ],
     "sdf:title": "Optical RFID Station",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",

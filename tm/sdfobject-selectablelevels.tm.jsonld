@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "selectablelevels",
     "tm:required": [
-        "#/properties/targetlevel"
+        "/properties/targetlevel"
     ],
     "sdf:title": "Selectable Levels",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",

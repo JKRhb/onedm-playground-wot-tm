@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Humidity",
     "tm:required": [
-        "#/properties/Sensor_Value"
+        "/properties/Sensor_Value"
     ],
     "sdf:title": "OMA LwM2M Humidity (Object ID 3304)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

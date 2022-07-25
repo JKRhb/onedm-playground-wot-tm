@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "sensor.radiation.uv",
     "tm:required": [
-        "#/properties/measurement"
+        "/properties/measurement"
     ],
     "sdf:title": "UV Radiation",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",

@@ -9,8 +9,8 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Location",
     "tm:required": [
-        "#/properties/Numeric_Latitude",
-        "#/properties/Numeric_Longitude"
+        "/properties/Numeric_Latitude",
+        "/properties/Numeric_Longitude"
     ],
     "sdf:title": "OMA LwM2M Location (Object ID 3336)",
     "sdf:copyright": "Copyright 2021 Open Mobile Alliance.",

@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "heartrate",
     "tm:required": [
-        "#/properties/heartrate"
+        "/properties/heartrate"
     ],
     "sdf:title": "Heart Rate",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",

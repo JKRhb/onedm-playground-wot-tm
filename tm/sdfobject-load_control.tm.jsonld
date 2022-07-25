@@ -9,9 +9,9 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Load_Control",
     "tm:required": [
-        "#/properties/Event_Identifier",
-        "#/properties/Start_Time",
-        "#/properties/Duration_In_Min"
+        "/properties/Event_Identifier",
+        "/properties/Start_Time",
+        "/properties/Duration_In_Min"
     ],
     "sdf:title": "OMA LwM2M Load Control (Object ID 3310)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

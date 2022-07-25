@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "keypadchar",
     "tm:required": [
-        "#/properties/keyvalue"
+        "/properties/keyvalue"
     ],
     "sdf:title": "KeyPadChar",
     "sdf:copyright": "copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",

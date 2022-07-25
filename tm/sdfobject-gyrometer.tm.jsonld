@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Gyrometer",
     "tm:required": [
-        "#/properties/X_Value"
+        "/properties/X_Value"
     ],
     "sdf:title": "OMA LwM2M Gyrometer (Object ID 3334)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

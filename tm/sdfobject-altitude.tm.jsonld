@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Altitude",
     "tm:required": [
-        "#/properties/Sensor_Value"
+        "/properties/Sensor_Value"
     ],
     "sdf:title": "OMA LwM2M Altitude (Object ID 3321)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

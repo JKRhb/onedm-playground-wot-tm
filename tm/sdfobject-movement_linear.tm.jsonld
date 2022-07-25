@@ -9,8 +9,8 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "movement.linear",
     "tm:required": [
-        "#/properties/movementSettings",
-        "#/properties/movement"
+        "/properties/movementSettings",
+        "/properties/movement"
     ],
     "sdf:title": "Movement",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",

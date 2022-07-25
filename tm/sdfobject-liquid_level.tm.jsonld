@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "liquid.level",
     "tm:required": [
-        "#/properties/desiredlevel"
+        "/properties/desiredlevel"
     ],
     "sdf:title": "Liquid Level",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",

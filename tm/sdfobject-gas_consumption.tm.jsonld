@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "gas.consumption",
     "tm:required": [
-        "#/properties/gas"
+        "/properties/gas"
     ],
     "sdf:title": "Gas Consumption",
     "sdf:copyright": "Copyright 2019 Open Connectivity Foundation, Inc. All rights reserved.",

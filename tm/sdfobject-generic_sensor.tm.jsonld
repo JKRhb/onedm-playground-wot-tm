@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Generic_Sensor",
     "tm:required": [
-        "#/properties/Sensor_Value"
+        "/properties/Sensor_Value"
     ],
     "sdf:title": "OMA LwM2M Generic Sensor (Object ID 3300)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

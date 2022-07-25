@@ -9,9 +9,9 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "airquality",
     "tm:required": [
-        "#/properties/contaminantvalue",
-        "#/properties/contaminanttype",
-        "#/properties/valuetype"
+        "/properties/contaminantvalue",
+        "/properties/contaminanttype",
+        "/properties/valuetype"
     ],
     "sdf:title": "Air Quality",
     "sdf:copyright": "copyright 2016-2017, 2019, 2020 Open Connectivity Foundation, Inc. All rights reserved.",

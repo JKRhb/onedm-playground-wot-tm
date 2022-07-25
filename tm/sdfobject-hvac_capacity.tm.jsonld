@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "hvac.capacity",
     "tm:required": [
-        "#/properties/capacity"
+        "/properties/capacity"
     ],
     "sdf:title": "HVAC Capacity",
     "sdf:copyright": "copyright 2019 Open Connectivity Foundation, Inc. All rights reserved.",

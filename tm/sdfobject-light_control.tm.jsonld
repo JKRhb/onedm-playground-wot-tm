@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Light_Control",
     "tm:required": [
-        "#/properties/On_Off"
+        "/properties/On_Off"
     ],
     "sdf:title": "OMA LwM2M Light Control (Object ID 3311)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

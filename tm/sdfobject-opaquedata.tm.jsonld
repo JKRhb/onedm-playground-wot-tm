@@ -9,9 +9,9 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "opaquedata",
     "tm:required": [
-        "#/properties/payload",
-        "#/properties/encoding",
-        "#/properties/system"
+        "/properties/payload",
+        "/properties/encoding",
+        "/properties/system"
     ],
     "sdf:title": "Opaque Data",
     "sdf:copyright": "copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",

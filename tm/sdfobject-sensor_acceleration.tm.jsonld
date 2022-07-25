@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "sensor.acceleration",
     "tm:required": [
-        "#/properties/acceleration"
+        "/properties/acceleration"
     ],
     "sdf:title": "Acceleration Sensor",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",

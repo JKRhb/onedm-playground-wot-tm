@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Addressable_Text_Display",
     "tm:required": [
-        "#/properties/Text"
+        "/properties/Text"
     ],
     "sdf:title": "OMA LwM2M Addressable Text Display (Object ID 3341)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

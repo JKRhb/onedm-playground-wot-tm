@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Acidity",
     "tm:required": [
-        "#/properties/Sensor_Value"
+        "/properties/Sensor_Value"
     ],
     "sdf:title": "OMA LwM2M Acidity (Object ID 3326)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

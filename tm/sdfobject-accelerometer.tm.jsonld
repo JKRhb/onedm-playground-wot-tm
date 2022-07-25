@@ -9,7 +9,7 @@
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Accelerometer",
     "tm:required": [
-        "#/properties/X_Value"
+        "/properties/X_Value"
     ],
     "sdf:title": "OMA LwM2M Accelerometer (Object ID 3313)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",

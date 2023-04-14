@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Dimmer",
-    "tm:required": [
-        "/properties/Level"
-    ],
     "sdf:title": "OMA LwM2M Dimmer (Object ID 3343)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -51,6 +48,11 @@
             "observable": true
         }
     },
+    "tm:optional": [
+        "/properties/Application_Type",
+        "/properties/Off_Time",
+        "/properties/On_time"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-dimmer.sdf.json",

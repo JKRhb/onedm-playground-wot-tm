@@ -8,10 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "cgm.calibrate",
-    "tm:required": [
-        "/properties/Cvalue",
-        "/properties/Cstatus"
-    ],
     "sdf:title": "Calibrate for Continuous Glucose Meter (CGM)",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -58,6 +54,11 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/precision",
+        "/properties/range",
+        "/properties/step"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-cgm_calibrate.sdf.json",

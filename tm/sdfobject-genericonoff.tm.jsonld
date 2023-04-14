@@ -116,5 +116,10 @@
             "tm:ref": "#/schemaDefinitions/sdfObject~1GenericOnOff~1sdfData~1GenericOnOffData",
             "observable": true
         }
-    }
+    },
+    "tm:optional": [
+        "/actions/OnOffGet",
+        "/actions/OnOffSet",
+        "/properties/OnOff"
+    ]
 }

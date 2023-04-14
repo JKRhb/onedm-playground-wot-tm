@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Power_Measurement",
-    "tm:required": [
-        "/properties/Instantaneous_active_power"
-    ],
     "sdf:title": "OMA LwM2M Power Measurement (Object ID 3305)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -199,6 +196,30 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/actions/Reset_Cumulative_energy",
+        "/actions/Reset_Min_and_Max_Measured_Values",
+        "/properties/Active_Power_Calibration",
+        "/properties/Application_Type",
+        "/properties/Cumulative_active_power",
+        "/properties/Cumulative_reactive_power",
+        "/properties/Current_Calibration",
+        "/properties/Fractional_Timestamp",
+        "/properties/Instantaneous_reactive_power",
+        "/properties/Max_Measured_active_power",
+        "/properties/Max_Measured_reactive_power",
+        "/properties/Max_Range_active_power",
+        "/properties/Max_Range_reactive_power",
+        "/properties/Measurement_Quality_Indicator",
+        "/properties/Measurement_Quality_Level",
+        "/properties/Min_Measured_active_power",
+        "/properties/Min_Measured_reactive_power",
+        "/properties/Min_Range_active_power",
+        "/properties/Min_Range_reactive_power",
+        "/properties/Power_factor",
+        "/properties/Reactive_Power_Calibration",
+        "/properties/Timestamp"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-power_measurement.sdf.json",

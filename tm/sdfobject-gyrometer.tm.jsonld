@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Gyrometer",
-    "tm:required": [
-        "/properties/X_Value"
-    ],
     "sdf:title": "OMA LwM2M Gyrometer (Object ID 3334)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -154,6 +151,25 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/actions/Reset_Min_and_Max_Measured_Values",
+        "/properties/Application_Type",
+        "/properties/Fractional_Timestamp",
+        "/properties/Max_Range_Value",
+        "/properties/Max_X_Value",
+        "/properties/Max_Y_Value",
+        "/properties/Max_Z_Value",
+        "/properties/Measurement_Quality_Indicator",
+        "/properties/Measurement_Quality_Level",
+        "/properties/Min_Range_Value",
+        "/properties/Min_X_Value",
+        "/properties/Min_Y_Value",
+        "/properties/Min_Z_Value",
+        "/properties/Sensor_Units",
+        "/properties/Timestamp",
+        "/properties/Y_Value",
+        "/properties/Z_Value"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-gyrometer.sdf.json",

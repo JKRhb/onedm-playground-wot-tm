@@ -8,16 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "inverter",
-    "tm:required": [
-        "/properties/status",
-        "/properties/ratedpower",
-        "/properties/minvoltmppt",
-        "/properties/maxvoltmppt",
-        "/properties/inputvoltage",
-        "/properties/inputcurrent",
-        "/properties/outputpower",
-        "/properties/timestamp"
-    ],
     "sdf:title": "Inverter (IEC 61850)",
     "sdf:copyright": "copyright 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",

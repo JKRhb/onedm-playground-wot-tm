@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "humidity",
-    "tm:required": [
-        "/properties/desiredHumidity"
-    ],
     "sdf:title": "Humidity",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -36,6 +33,9 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/humidity"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-humidity.sdf.json",

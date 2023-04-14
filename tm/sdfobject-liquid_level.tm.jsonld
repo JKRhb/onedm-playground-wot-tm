@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "liquid.level",
-    "tm:required": [
-        "/properties/desiredlevel"
-    ],
     "sdf:title": "Liquid Level",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -42,6 +39,10 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/currentlevel",
+        "/properties/step"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-liquid_level.sdf.json",

@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Multi-state_Selector",
-    "tm:required": [
-        "/properties/Multi-state_Input"
-    ],
     "sdf:title": "OMA LwM2M Multi-state Selector (Object ID 3348)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -53,6 +50,11 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/Application_Type",
+        "/properties/Fractional_Timestamp",
+        "/properties/Timestamp"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-multi-state_selector.sdf.json",

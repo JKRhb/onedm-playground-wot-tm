@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Power_Control",
-    "tm:required": [
-        "/properties/On_Off"
-    ],
     "sdf:title": "OMA LwM2M Power Control (Object ID 3312)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -83,6 +80,15 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/Application_Type",
+        "/properties/Cumulative_active_power",
+        "/properties/Dimmer",
+        "/properties/Fractional_Timestamp",
+        "/properties/On_time",
+        "/properties/Power_factor",
+        "/properties/Timestamp"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-power_control.sdf.json",

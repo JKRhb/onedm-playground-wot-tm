@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Colour",
-    "tm:required": [
-        "/properties/Colour"
-    ],
     "sdf:title": "OMA LwM2M Colour (Object ID 3335)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -77,6 +74,14 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/Application_Type",
+        "/properties/Fractional_Timestamp",
+        "/properties/Measurement_Quality_Indicator",
+        "/properties/Measurement_Quality_Level",
+        "/properties/Sensor_Units",
+        "/properties/Timestamp"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-colour.sdf.json",

@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "grinder",
-    "tm:required": [
-        "/properties/coarseness"
-    ],
     "sdf:title": "Grinder",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -51,6 +48,11 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/range",
+        "/properties/remaining",
+        "/properties/step"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-grinder.sdf.json",

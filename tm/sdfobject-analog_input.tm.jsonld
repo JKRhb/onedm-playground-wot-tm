@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Analog_Input",
-    "tm:required": [
-        "/properties/Analog_Input_Current_Value"
-    ],
     "sdf:title": "OMA LwM2M Analog Input (Object ID 3202)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -112,6 +109,19 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/actions/Reset_Min_and_Max_Measured_Values",
+        "/properties/Application_Type",
+        "/properties/Fractional_Timestamp",
+        "/properties/Max_Measured_Value",
+        "/properties/Max_Range_Value",
+        "/properties/Measurement_Quality_Indicator",
+        "/properties/Measurement_Quality_Level",
+        "/properties/Min_Measured_Value",
+        "/properties/Min_Range_Value",
+        "/properties/Sensor_Type",
+        "/properties/Timestamp"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-analog_input.sdf.json",

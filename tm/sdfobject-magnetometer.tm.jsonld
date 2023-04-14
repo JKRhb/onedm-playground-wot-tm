@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Magnetometer",
-    "tm:required": [
-        "/properties/X_Value"
-    ],
     "sdf:title": "OMA LwM2M Magnetometer (Object ID 3314)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -102,6 +99,17 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/Application_Type",
+        "/properties/Compass_Direction",
+        "/properties/Fractional_Timestamp",
+        "/properties/Measurement_Quality_Indicator",
+        "/properties/Measurement_Quality_Level",
+        "/properties/Sensor_Units",
+        "/properties/Timestamp",
+        "/properties/Y_Value",
+        "/properties/Z_Value"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-magnetometer.sdf.json",

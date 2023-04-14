@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "On_Off_switch",
-    "tm:required": [
-        "/properties/Digital_Input_State"
-    ],
     "sdf:title": "OMA LwM2M On/Off switch (Object ID 3342)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -74,6 +71,14 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/Application_Type",
+        "/properties/Digital_Input_Counter",
+        "/properties/Fractional_Timestamp",
+        "/properties/Off_Time",
+        "/properties/On_time",
+        "/properties/Timestamp"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-on_off_switch.sdf.json",

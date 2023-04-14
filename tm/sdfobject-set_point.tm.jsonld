@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Set_Point",
-    "tm:required": [
-        "/properties/Set_Point_Value"
-    ],
     "sdf:title": "OMA LwM2M Set Point (Object ID 3308)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -65,6 +62,13 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/Application_Type",
+        "/properties/Colour",
+        "/properties/Fractional_Timestamp",
+        "/properties/Sensor_Units",
+        "/properties/Timestamp"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-set_point.sdf.json",

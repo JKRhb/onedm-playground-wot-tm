@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "light.ramptime",
-    "tm:required": [
-        "/properties/rampTime"
-    ],
     "sdf:title": "Ramp Time",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -49,6 +46,11 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/precision",
+        "/properties/range",
+        "/properties/step"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-light_ramptime.sdf.json",

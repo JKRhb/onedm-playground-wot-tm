@@ -8,13 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "pvconnectionterminal",
-    "tm:required": [
-        "/properties/ratedarrayvoltage",
-        "/properties/ratedarraycurrent",
-        "/properties/arrayvoltage",
-        "/properties/arraycurrent",
-        "/properties/timestamp"
-    ],
     "sdf:title": "PV array system connection terminal (IEC 61850)",
     "sdf:copyright": "copyright 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -68,6 +61,10 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/insulationresistance",
+        "/properties/leakagecurrent"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-pvconnectionterminal.sdf.json",

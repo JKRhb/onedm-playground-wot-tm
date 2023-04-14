@@ -7,9 +7,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "switch.restricted",
-    "tm:required": [
-        "/properties/state"
-    ],
     "sdf:title": "Restricted Switch",
     "sdf:copyright": "Copyright 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "links": [

@@ -156,5 +156,12 @@
             "tm:ref": "#/schemaDefinitions/sdfObject~1GenericLevel~1sdfData~1GenericLevelData",
             "observable": true
         }
-    }
+    },
+    "tm:optional": [
+        "/actions/DeltaSet",
+        "/actions/LevelGet",
+        "/actions/LevelSet",
+        "/actions/MoveSet",
+        "/properties/Level"
+    ]
 }

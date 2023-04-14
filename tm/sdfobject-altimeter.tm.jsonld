@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "altimeter",
-    "tm:required": [
-        "/properties/alt"
-    ],
     "sdf:title": "Altimeter",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -50,6 +47,11 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/precision",
+        "/properties/range",
+        "/properties/step"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-altimeter.sdf.json",

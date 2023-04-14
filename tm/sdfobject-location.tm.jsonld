@@ -8,10 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Location",
-    "tm:required": [
-        "/properties/Numeric_Latitude",
-        "/properties/Numeric_Longitude"
-    ],
     "sdf:title": "OMA LwM2M Location (Object ID 3336)",
     "sdf:copyright": "Copyright 2021 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -107,6 +103,16 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/Application_Type",
+        "/properties/Compass_Direction",
+        "/properties/Fractional_Timestamp",
+        "/properties/Measurement_Quality_Indicator",
+        "/properties/Measurement_Quality_Level",
+        "/properties/Numeric_Uncertainty",
+        "/properties/Timestamp",
+        "/properties/Velocity"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-location.sdf.json",

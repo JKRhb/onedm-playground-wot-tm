@@ -8,12 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "OnOff",
-    "tm:required": [
-        "/properties/OnOff",
-        "/actions/On",
-        "/actions/Off",
-        "/actions/Toggle"
-    ],
     "sdf:title": "Example SDF model for the ZCL OnOff cluster",
     "sdf:copyright": "Copyright (c) 2019-2021, Zigbee Alliance All rights reserved.",
     "links": [
@@ -149,5 +143,14 @@
             "tm:ref": "#/schemaDefinitions/sdfObject~1OnOff~1sdfData~1StartUpOnOffMode",
             "observable": true
         }
-    }
+    },
+    "tm:optional": [
+        "/actions/OffWithEffect",
+        "/actions/OnWithRecallGlobalScene",
+        "/actions/OnWithTimedOff",
+        "/properties/GlobalSceneControl",
+        "/properties/OffWaitTime",
+        "/properties/OnTime",
+        "/properties/StartUpOnOff"
+    ]
 }

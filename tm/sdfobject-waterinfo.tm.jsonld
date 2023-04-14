@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "waterinfo",
-    "tm:required": [
-        "/properties/currentwatertype"
-    ],
     "sdf:title": "Water Info",
     "sdf:copyright": "Copyright 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -53,6 +50,11 @@
             "observable": true
         }
     },
+    "tm:optional": [
+        "/properties/currentadditivetypes",
+        "/properties/supportedadditivetypes",
+        "/properties/supportedwatertypes"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-waterinfo.sdf.json",

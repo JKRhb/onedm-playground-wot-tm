@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Load",
-    "tm:required": [
-        "/properties/Sensor_Value"
-    ],
     "sdf:title": "OMA LwM2M Load (Object ID 3322)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -118,6 +115,20 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/actions/Reset_Min_and_Max_Measured_Values",
+        "/properties/Application_Type",
+        "/properties/Current_Calibration",
+        "/properties/Fractional_Timestamp",
+        "/properties/Max_Measured_Value",
+        "/properties/Max_Range_Value",
+        "/properties/Measurement_Quality_Indicator",
+        "/properties/Measurement_Quality_Level",
+        "/properties/Min_Measured_Value",
+        "/properties/Min_Range_Value",
+        "/properties/Sensor_Units",
+        "/properties/Timestamp"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-load.sdf.json",

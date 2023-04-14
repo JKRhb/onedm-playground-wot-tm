@@ -88,5 +88,11 @@
             "tm:ref": "#/schemaDefinitions/sdfObject~1GenericDefaultTransitionTime~1sdfData~1StepResolution",
             "observable": true
         }
-    }
+    },
+    "tm:optional": [
+        "/actions/DefaultTransitionTimeGet",
+        "/actions/DefaultTransitionTimeSet",
+        "/properties/DefaultStepResolution",
+        "/properties/DefaultTransitionTimeSteps"
+    ]
 }

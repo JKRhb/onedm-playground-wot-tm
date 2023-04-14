@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "door",
-    "tm:required": [
-        "/properties/openAlarm"
-    ],
     "sdf:title": "Door",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -42,6 +39,10 @@
             "observable": true
         }
     },
+    "tm:optional": [
+        "/properties/openDuration",
+        "/properties/openState"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-door.sdf.json",

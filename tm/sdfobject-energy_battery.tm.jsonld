@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "energy.battery",
-    "tm:required": [
-        "/properties/batterythreshold"
-    ],
     "sdf:title": "Battery",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -73,6 +70,15 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/capacity",
+        "/properties/charge",
+        "/properties/charging",
+        "/properties/defect",
+        "/properties/discharging",
+        "/properties/lowbattery",
+        "/properties/timestamp"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-energy_battery.sdf.json",

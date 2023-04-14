@@ -8,14 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "cgm.threshold",
-    "tm:required": [
-        "/properties/plow",
-        "/properties/phigh",
-        "/properties/dhypo",
-        "/properties/dhyper",
-        "/properties/gir",
-        "/properties/gdr"
-    ],
     "sdf:title": "Threshold for Continuous Glucose Meter (CGM)",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -91,6 +83,11 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/precision",
+        "/properties/range",
+        "/properties/step"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-cgm_threshold.sdf.json",

@@ -8,10 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "signalstrength",
-    "tm:required": [
-        "/properties/lqi",
-        "/properties/rssi"
-    ],
     "sdf:title": "Signal Strength",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",

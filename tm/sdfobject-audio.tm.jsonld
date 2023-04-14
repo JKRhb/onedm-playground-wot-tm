@@ -47,6 +47,12 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/mute",
+        "/properties/range",
+        "/properties/step",
+        "/properties/volume"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-audio.sdf.json",

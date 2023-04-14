@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "vehicle.connector",
-    "tm:required": [
-        "/properties/connected"
-    ],
     "sdf:title": "Vehicle Connector",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -39,6 +36,10 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/ratedchargingcapacity",
+        "/properties/rateddischargingcapacity"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-vehicle_connector.sdf.json",

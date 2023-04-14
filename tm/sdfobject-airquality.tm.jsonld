@@ -8,11 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "airquality",
-    "tm:required": [
-        "/properties/contaminantvalue",
-        "/properties/contaminanttype",
-        "/properties/valuetype"
-    ],
     "sdf:title": "Air Quality",
     "sdf:copyright": "copyright 2016-2017, 2019, 2020 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -71,6 +66,9 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/range"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-airquality.sdf.json",

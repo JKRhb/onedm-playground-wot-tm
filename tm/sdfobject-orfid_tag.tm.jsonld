@@ -8,10 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "orfid.tag",
-    "tm:required": [
-        "/properties/tagid",
-        "/properties/reading"
-    ],
     "sdf:title": "Optical RFID Tag",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",

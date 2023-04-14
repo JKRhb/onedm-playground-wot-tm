@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "brewing",
-    "tm:required": [
-        "/properties/amountrequested"
-    ],
     "sdf:title": "Brewing",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -41,6 +38,10 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/strength",
+        "/properties/strengthrange"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-brewing.sdf.json",

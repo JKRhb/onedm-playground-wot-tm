@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "sensor",
-    "tm:required": [
-        "/properties/value"
-    ],
     "sdf:title": "Generic Sensor",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -56,6 +53,12 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/measurement",
+        "/properties/precision",
+        "/properties/range",
+        "/properties/step"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-sensor.sdf.json",

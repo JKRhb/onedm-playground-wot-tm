@@ -8,11 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "opaquedata",
-    "tm:required": [
-        "/properties/payload",
-        "/properties/encoding",
-        "/properties/system"
-    ],
     "sdf:title": "Opaque Data",
     "sdf:copyright": "copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -53,6 +48,11 @@
             "observable": true
         }
     },
+    "tm:optional": [
+        "/properties/hash",
+        "/properties/payloadtype",
+        "/properties/size"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-opaquedata.sdf.json",

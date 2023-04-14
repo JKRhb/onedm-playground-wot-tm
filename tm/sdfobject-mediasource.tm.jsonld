@@ -8,10 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "mediasource",
-    "tm:required": [
-        "/properties/sourceName",
-        "/properties/status"
-    ],
     "sdf:title": "Media Source",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -48,6 +44,10 @@
             "observable": true
         }
     },
+    "tm:optional": [
+        "/properties/sourceNumber",
+        "/properties/sourceType"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-mediasource.sdf.json",

@@ -8,13 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "sleep",
-    "tm:required": [
-        "/properties/awake",
-        "/properties/nrem1",
-        "/properties/nrem2",
-        "/properties/nrem3",
-        "/properties/rem"
-    ],
     "sdf:title": "Sleep",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -128,6 +121,17 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/deepsleep",
+        "/properties/lightsleep",
+        "/properties/nrem4",
+        "/properties/precision",
+        "/properties/range_phases",
+        "/properties/range_score",
+        "/properties/sleepscore",
+        "/properties/step_phases",
+        "/properties/step_score"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-sleep.sdf.json",

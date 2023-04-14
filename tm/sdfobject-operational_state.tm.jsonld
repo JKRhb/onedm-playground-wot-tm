@@ -66,6 +66,15 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/currentJobState",
+        "/properties/currentMachineState",
+        "/properties/jobStates",
+        "/properties/machineStates",
+        "/properties/progressPercentage",
+        "/properties/remainingTime",
+        "/properties/runningTime"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-operational_state.sdf.json",

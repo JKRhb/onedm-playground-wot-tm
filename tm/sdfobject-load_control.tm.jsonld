@@ -8,11 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Load_Control",
-    "tm:required": [
-        "/properties/Event_Identifier",
-        "/properties/Start_Time",
-        "/properties/Duration_In_Min"
-    ],
     "sdf:title": "OMA LwM2M Load Control (Object ID 3310)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -94,6 +89,14 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/Application_Type",
+        "/properties/Avg_Load_AdjPct",
+        "/properties/Criticality_Level",
+        "/properties/Duty_Cycle",
+        "/properties/Fractional_Timestamp",
+        "/properties/Timestamp"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-load_control.sdf.json",

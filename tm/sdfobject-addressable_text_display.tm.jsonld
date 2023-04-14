@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Addressable_Text_Display",
-    "tm:required": [
-        "/properties/Text"
-    ],
     "sdf:title": "OMA LwM2M Addressable Text Display (Object ID 3341)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -84,6 +81,16 @@
             "observable": true
         }
     },
+    "tm:optional": [
+        "/actions/Clear_Display",
+        "/properties/Application_Type",
+        "/properties/Contrast",
+        "/properties/Level",
+        "/properties/Max_X_Coordinate",
+        "/properties/Max_Y_Coordinate",
+        "/properties/X_Coordinate",
+        "/properties/Y_Coordinate"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-addressable_text_display.sdf.json",

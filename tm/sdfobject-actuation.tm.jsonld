@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Actuation",
-    "tm:required": [
-        "/properties/On_Off"
-    ],
     "sdf:title": "OMA LwM2M Actuation (Object ID 3306)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -74,6 +71,14 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/Application_Type",
+        "/properties/Dimmer",
+        "/properties/Fractional_Timestamp",
+        "/properties/Multi-state_Output",
+        "/properties/On_time",
+        "/properties/Timestamp"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-actuation.sdf.json",

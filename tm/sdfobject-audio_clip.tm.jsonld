@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Audio_Clip",
-    "tm:required": [
-        "/properties/Clip"
-    ],
     "sdf:title": "OMA LwM2M Audio Clip (Object ID 3339)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -57,6 +54,12 @@
             "observable": true
         }
     },
+    "tm:optional": [
+        "/actions/Trigger",
+        "/properties/Application_Type",
+        "/properties/Duration",
+        "/properties/Level"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-audio_clip.sdf.json",

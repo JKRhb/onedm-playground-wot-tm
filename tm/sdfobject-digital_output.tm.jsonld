@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Digital_Output",
-    "tm:required": [
-        "/properties/Digital_Output_State"
-    ],
     "sdf:title": "OMA LwM2M Digital Output (Object ID 3201)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -58,6 +55,12 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/Application_Type",
+        "/properties/Digital_Output_Polarity",
+        "/properties/Fractional_Timestamp",
+        "/properties/Timestamp"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-digital_output.sdf.json",

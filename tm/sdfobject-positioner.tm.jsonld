@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Positioner",
-    "tm:required": [
-        "/properties/Current_Position"
-    ],
     "sdf:title": "OMA LwM2M Positioner (Object ID 3337)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -104,6 +101,18 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/actions/Reset_Min_and_Max_Measured_Values",
+        "/properties/Application_Type",
+        "/properties/Fractional_Timestamp",
+        "/properties/Max_Limit",
+        "/properties/Max_Measured_Value",
+        "/properties/Min_Limit",
+        "/properties/Min_Measured_Value",
+        "/properties/Remaining_Time",
+        "/properties/Timestamp",
+        "/properties/Transition_Time"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-positioner.sdf.json",

@@ -8,11 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "ptz",
-    "tm:required": [
-        "/properties/pan",
-        "/properties/tilt",
-        "/properties/zoomFactor"
-    ],
     "sdf:title": "Pan Tilt Zoom Movement",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -81,6 +76,12 @@
             "observable": true
         }
     },
+    "tm:optional": [
+        "/properties/pan_range",
+        "/properties/precision",
+        "/properties/tilt_range",
+        "/properties/zoomFactorRange"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-ptz.sdf.json",

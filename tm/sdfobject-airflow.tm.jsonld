@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "airflow",
-    "tm:required": [
-        "/properties/speed"
-    ],
     "sdf:title": "Air Flow",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -68,6 +65,13 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/automode",
+        "/properties/direction",
+        "/properties/range",
+        "/properties/step",
+        "/properties/supporteddirections"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-airflow.sdf.json",

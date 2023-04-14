@@ -8,10 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Up_Down_Control",
-    "tm:required": [
-        "/properties/Increase_Input_State",
-        "/properties/Decrease_Input_State"
-    ],
     "sdf:title": "OMA LwM2M Up/Down Control (Object ID 3344)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -55,6 +51,11 @@
             "observable": true
         }
     },
+    "tm:optional": [
+        "/properties/Application_Type",
+        "/properties/Down_Counter",
+        "/properties/Up_Counter"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-up_down_control.sdf.json",

@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Digital_Input",
-    "tm:required": [
-        "/properties/Digital_Input_State"
-    ],
     "sdf:title": "OMA LwM2M Digital Input (Object ID 3200)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -94,6 +91,17 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/actions/Digital_Input_Counter_Reset",
+        "/properties/Application_Type",
+        "/properties/Digital_Input_Counter",
+        "/properties/Digital_Input_Debounce",
+        "/properties/Digital_Input_Edge_Selection",
+        "/properties/Digital_Input_Polarity",
+        "/properties/Fractional_Timestamp",
+        "/properties/Sensor_Type",
+        "/properties/Timestamp"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-digital_input.sdf.json",

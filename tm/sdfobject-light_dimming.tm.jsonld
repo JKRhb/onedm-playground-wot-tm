@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "light.dimming",
-    "tm:required": [
-        "/properties/dimmingSetting"
-    ],
     "sdf:title": "Dimming",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -43,6 +40,10 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/range",
+        "/properties/step"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-light_dimming.sdf.json",

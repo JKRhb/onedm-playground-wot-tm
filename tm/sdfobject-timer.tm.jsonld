@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Timer",
-    "tm:required": [
-        "/properties/Delay_Duration"
-    ],
     "sdf:title": "OMA LwM2M Timer (Object ID 3340)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -97,6 +94,18 @@
             "observable": true
         }
     },
+    "tm:optional": [
+        "/actions/Trigger",
+        "/properties/Application_Type",
+        "/properties/Counter",
+        "/properties/Cumulative_Time",
+        "/properties/Digital_Input_Counter",
+        "/properties/Digital_State",
+        "/properties/Minimum_Off-time",
+        "/properties/On_Off",
+        "/properties/Remaining_Time",
+        "/properties/Timer_Mode"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-timer.sdf.json",

@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "speed",
-    "tm:required": [
-        "/properties/speed"
-    ],
     "sdf:title": "Speed",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -45,6 +42,10 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/range",
+        "/properties/step"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-speed.sdf.json",

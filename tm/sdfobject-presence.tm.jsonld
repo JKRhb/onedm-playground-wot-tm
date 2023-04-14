@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Presence",
-    "tm:required": [
-        "/properties/Digital_Input_State"
-    ],
     "sdf:title": "OMA LwM2M Presence (Object ID 3302)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -105,6 +102,18 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/actions/Digital_Input_Counter_Reset",
+        "/properties/Application_Type",
+        "/properties/Busy_to_Clear_delay",
+        "/properties/Clear_to_Busy_delay",
+        "/properties/Digital_Input_Counter",
+        "/properties/Fractional_Timestamp",
+        "/properties/Measurement_Quality_Indicator",
+        "/properties/Measurement_Quality_Level",
+        "/properties/Sensor_Type",
+        "/properties/Timestamp"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-presence.sdf.json",

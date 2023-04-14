@@ -60,6 +60,14 @@
             "observable": true
         }
     },
+    "tm:optional": [
+        "/properties/Application_Type",
+        "/properties/Digital_Input_Counter",
+        "/properties/Digital_Input_State",
+        "/properties/X_Value",
+        "/properties/Y_Value",
+        "/properties/Z_Value"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-multiple_axis_joystick.sdf.json",

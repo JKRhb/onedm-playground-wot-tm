@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "spo2",
-    "tm:required": [
-        "/properties/spo2"
-    ],
     "sdf:title": "SpO2 for Pulse Oximeter",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -82,6 +79,15 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/perfusion",
+        "/properties/perfusion_precision",
+        "/properties/perfusion_range",
+        "/properties/perfusion_step",
+        "/properties/spo2_precision",
+        "/properties/spo2_range",
+        "/properties/spo2_step"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-spo2.sdf.json",

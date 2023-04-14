@@ -8,10 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Buzzer",
-    "tm:required": [
-        "/properties/On_Off",
-        "/properties/Minimum_Off-time"
-    ],
     "sdf:title": "OMA LwM2M Buzzer (Object ID 3338)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -76,6 +72,13 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/Application_Type",
+        "/properties/Delay_Duration",
+        "/properties/Fractional_Timestamp",
+        "/properties/Level",
+        "/properties/Timestamp"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-buzzer.sdf.json",

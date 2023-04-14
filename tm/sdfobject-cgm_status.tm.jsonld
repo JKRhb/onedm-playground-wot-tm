@@ -8,12 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "cgm.status",
-    "tm:required": [
-        "/properties/cgmtype",
-        "/properties/cgmstatus",
-        "/properties/gtrend",
-        "/properties/malfunction"
-    ],
     "sdf:title": "Status for Continuous Glucose Meter (CGM)",
     "sdf:copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -82,6 +76,11 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/precision",
+        "/properties/range",
+        "/properties/step"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-cgm_status.sdf.json",

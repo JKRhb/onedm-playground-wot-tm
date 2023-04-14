@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Light_Control",
-    "tm:required": [
-        "/properties/On_Off"
-    ],
     "sdf:title": "OMA LwM2M Light Control (Object ID 3311)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -78,6 +75,15 @@
             "observable": true
         }
     },
+    "tm:optional": [
+        "/properties/Application_Type",
+        "/properties/Colour",
+        "/properties/Cumulative_active_power",
+        "/properties/Dimmer",
+        "/properties/On_time",
+        "/properties/Power_factor",
+        "/properties/Sensor_Units"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-light_control.sdf.json",

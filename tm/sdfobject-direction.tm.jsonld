@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Direction",
-    "tm:required": [
-        "/properties/Compass_Direction"
-    ],
     "sdf:title": "OMA LwM2M Direction (Object ID 3332)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -94,6 +91,16 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/actions/Reset_Min_and_Max_Measured_Values",
+        "/properties/Application_Type",
+        "/properties/Fractional_Timestamp",
+        "/properties/Max_Measured_Value",
+        "/properties/Measurement_Quality_Indicator",
+        "/properties/Measurement_Quality_Level",
+        "/properties/Min_Measured_Value",
+        "/properties/Timestamp"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-direction.sdf.json",

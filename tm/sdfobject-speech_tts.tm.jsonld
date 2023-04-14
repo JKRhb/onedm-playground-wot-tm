@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "speech.tts",
-    "tm:required": [
-        "/properties/utterance"
-    ],
     "sdf:title": "Speech Synthesis-TTS",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -43,6 +40,10 @@
             "observable": true
         }
     },
+    "tm:optional": [
+        "/properties/supportedLanguages",
+        "/properties/supportedVoices"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-speech_tts.sdf.json",

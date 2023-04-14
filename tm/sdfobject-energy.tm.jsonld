@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Energy",
-    "tm:required": [
-        "/properties/Sensor_Value"
-    ],
     "sdf:title": "OMA LwM2M Energy (Object ID 3331)",
     "sdf:copyright": "Copyright 2019 Open Mobile Alliance.",
     "sdf:license": "BSD-3-Clause",
@@ -84,6 +81,15 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/actions/Reset_Cumulative_energy",
+        "/properties/Application_Type",
+        "/properties/Fractional_Timestamp",
+        "/properties/Measurement_Quality_Indicator",
+        "/properties/Measurement_Quality_Level",
+        "/properties/Sensor_Units",
+        "/properties/Timestamp"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-energy.sdf.json",

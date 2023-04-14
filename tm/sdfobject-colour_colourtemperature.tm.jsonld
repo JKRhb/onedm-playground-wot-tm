@@ -8,9 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "colour.colourtemperature",
-    "tm:required": [
-        "/properties/ct"
-    ],
     "sdf:title": "Colour Temperature",
     "sdf:copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
     "sdf:license": "BSD-3-Clause",
@@ -44,6 +41,10 @@
             "readOnly": true
         }
     },
+    "tm:optional": [
+        "/properties/range",
+        "/properties/step"
+    ],
     "links": [
         {
             "href": "https://raw.githubusercontent.com/one-data-model/playground/master/sdfObject/sdfobject-colour_colourtemperature.sdf.json",

@@ -8,17 +8,6 @@
     ],
     "@type": "tm:ThingModel",
     "sdf:objectKey": "Level",
-    "tm:required": [
-        "/properties/CurrentLevel",
-        "/actions/MoveToLevel",
-        "/actions/Move",
-        "/actions/Step",
-        "/actions/Stop",
-        "/actions/MoveToLevelwithOnOff",
-        "/actions/MovewithOnOff",
-        "/actions/StepwithOnOff",
-        "/actions/StopwithOnOff"
-    ],
     "sdf:title": "Example SDF model for the ZCL Level cluster",
     "sdf:copyright": "Copyright (c) 2019-2021, Zigbee Alliance All rights reserved.",
     "links": [
@@ -320,5 +309,21 @@
             ],
             "observable": true
         }
-    }
+    },
+    "tm:optional": [
+        "/actions/MoveToClosestFrequency",
+        "/properties/CurrentFrequency",
+        "/properties/DefaultMoveRate",
+        "/properties/MaxFrequency",
+        "/properties/MaxLevel",
+        "/properties/MinFrequency",
+        "/properties/MinLevel",
+        "/properties/OffTransitionTime",
+        "/properties/OnLevel",
+        "/properties/OnOffTransitionTime",
+        "/properties/OnTransitionTime",
+        "/properties/Options",
+        "/properties/RemainingTime",
+        "/properties/StartUpCurrentLevel"
+    ]
 }
